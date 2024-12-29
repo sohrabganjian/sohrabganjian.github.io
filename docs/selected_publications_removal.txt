@@ -1,0 +1,30 @@
+# Documentation of Changes: Selected Publications Removal
+
+## Description
+The "Selected Publications" section and its header were removed from the homepage of the AL Folio project. This change involved modifying the Liquid template responsible for rendering the publications and updating a parameter in the `_pages/about.md` file to disable the display.
+
+## Reason for Changes
+The goal was to simplify the homepage by temporarily removing the "Selected Publications" section and its header. This was done while preserving the code for future use, ensuring the functionality can easily be restored or adjusted as needed.
+
+## Files and Directories
+1. **File:** `_includes/selected_papers.liquid`
+   - **Change:** Commented out the bibliography rendering line:
+     ```
+     {% bibliography --group_by none --query @*[selected=true]* %}
+     ```
+   - **Reason:** To prevent the rendering of the "Selected Publications" section while keeping the code intact for future use.
+
+2. **File:** `_pages/about.md`
+   - **Change:** Updated the front matter parameter:
+     ```
+     selected_papers: false
+     ```
+   - **Reason:** To disable the display of the "Selected Publications" header on the homepage.
+
+
+## Summary
+The changes effectively removed the "Selected Publications" section and its header from the homepage without permanently deleting any code. Future restoration or further customization can be achieved by:
+- Uncommenting the `bibliography` line in `_includes/selected_papers.liquid`.
+- Setting `selected_papers: true` in `_pages/about.md`.
+
+These adjustments ensure the homepage remains clean and minimal while retaining flexibility for future iterations.

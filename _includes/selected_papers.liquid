@@ -1,3 +1,7 @@
 <div class="publications">
+  {% comment %}
+  The following line is commented out to prevent rendering the selected bibliography.
+  Uncomment it to restore the "Selected Publications" section.
   {% bibliography --group_by none --query @*[selected=true]* %}
+  {% endcomment %}
 </div>

@@ -44,7 +44,25 @@ body.sticky-bottom-footer {
  * Publications
  ******************************************************************************/
 
+
 // TODO: redefine publications layout.
+
+
+div.publication-item {
+  position: relative;
+  padding-left: 10px; /* Increase space for better alignment */
+}
+
+div.publication-item::before {
+  content: "•";
+  color: #{$global-colour}; /* Use the global SCSS variable */
+  position: absolute;
+  left: 3px; /* Adjust horizontal position */
+  top: -0.47em; /* Adjust vertical position */
+  font-size: 3rem; /* Increase size for better visibility */
+}
+
+
 
 /*****************************************************************************
 * Projects

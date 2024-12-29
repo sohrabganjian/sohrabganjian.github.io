@@ -1,0 +1,100 @@
+### Documentation: Changes to News and Latest Posts Sections
+
+The changes documented here were made to temporarily disable the "News" and "Latest Posts" sections on the site. The goal was to clean up the layout by removing these sections without permanently deleting their logic or configurations. All changes ensure that the functionality can be easily restored in the future if needed.
+
+
+---
+
+1. Changes to _config.yml
+
+---
+
+[1.1] Commented Out News Collection
+
+Code:
+collections:
+  # news:
+  #   output: true
+
+Reason:
+The `news` collection was commented out to temporarily disable its functionality and prevent it from being included in the site. This ensures the "News" section does not appear, but the configuration is preserved for future use.
+
+---
+
+[1.2] Commented Out Latest Posts
+
+Code:
+latest_posts:
+  # enabled: true
+
+Reason:
+The `latest_posts` configuration was commented out to disable the "Latest Posts" section from appearing on the site. The configuration is retained for potential reactivation in the future.
+
+---
+
+2. Changes to header.liquid in _includes
+
+---
+
+[2.1] Modified Navigation Logic
+
+File: _includes/header.liquid
+
+Code:
+{% if p.nav and p.autogen == null and p.title != "News" and p.title != "Latest Posts" %}
+
+Reason:
+Even after commenting out the `news` and `latest_posts` configurations in `_config.yml`, their navigation links still appeared in the header.  
+To fix this, the navigation loop in `header.liquid` was updated to exclude items with the titles "News" and "Latest Posts." This ensures the corresponding links do not show up in the navigation bar, even if they exist elsewhere in the configuration.
+
+---
+
+3. Changes to news.liquid in _includes
+
+---
+
+[3.1] Conditional Rendering
+
+Code:
+{% if site.news != blank %}
+  <!-- News section content -->
+{% endif %}
+
+Reason:
+This resolved the issue where the "News" section appeared with a fallback message ("No news so far...") even when no news items were present.
+
+---
+
+[3.2] Preservation of Fallback Logic
+
+Code:
+{% comment %}
+  {% else %}
+    <p>No news so far...</p>
+{% endcomment %}
+
+Reason:
+The original fallback message was retained in a comment block for easy reactivation if needed in the future.
+
+---
+
+4. Changes to about.liquid in _layouts
+
+---
+
+[4.1] Conditional Check for News Section
+
+Code:
+{% if page.news and site.announcements.enabled and site.news.size > 0 %}
+
+Reason:
+The previous steps of commenting out the `news` collection in `_config.yml` and updating `news.liquid` were not sufficient because:
+
+- `about.liquid` directly included the "News" header and the `news.liquid` file based on `page.news` and `site.announcements.enabled`.
+
+- These conditions were satisfied even when there were no news items, causing the "News" header to appear with no content.
+
+- Adding `site.news.size > 0` ensures the entire "News" section is skipped when the `news` collection is empty.
+
+---
+
