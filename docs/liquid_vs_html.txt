@@ -1,0 +1,57 @@
+### Liquid Files vs. HTML Files
+
+Liquid files (`.liquid`) and HTML files (`.html`) are both used to structure content for websites, but they have distinct purposes and functionalities.
+
+### What Are Liquid Files?
+- Liquid is a **templating language** created by Shopify, widely used in static site generators like Jekyll.
+- Liquid files (`.liquid`) are dynamic templates that enable the use of placeholders, logic, and loops to insert dynamic content into static pages.
+- They are often used in **Jekyll themes** to generate pages dynamically based on data in YAML files, collections, or configuration variables.
+
+**Key Features of Liquid:**
+1. **Placeholders**: Insert dynamic content using double curly braces (`{{ }}`).
+   Example:
+   {{ page.title }}  <!-- Outputs the title of the current page -->
+
+2. **Logic**: Use conditions with `{% if %}` and `{% else %}` for dynamic behavior.
+   Example:
+   {% if site.title %}
+     <h1>{{ site.title }}</h1>
+   {% else %}
+     <h1>Default Title</h1>
+   {% endif %}
+
+3. **Loops**: Iterate over collections or arrays.
+   Example:
+   {% for post in site.posts %}
+     <a href="{{ post.url }}">{{ post.title }}</a>
+   {% endfor %}
+
+### What Are HTML Files?
+- HTML (HyperText Markup Language) files define the **structure of web pages**.
+- HTML files are purely static and require manual updates for every change.
+- They do not support logic or placeholders directly; dynamic content requires a server-side language (e.g., PHP) or JavaScript.
+
+**Key Features of HTML:**
+1. **Static Markup**: Renders fixed content for the browser.
+   Example:
+   <h1>Welcome to My Website</h1>
+
+2. **No Logic or Variables**: All content must be hardcoded unless extended with JavaScript or a server-side script.
+
+3. **Universal Usage**: Browsers directly interpret HTML to render web pages.
+
+### Key Differences Between Liquid and HTML
+
+Feature: Liquid Files (.liquid) vs. HTML Files (.html)
+- **Purpose**: Liquid files are used for dynamic templating, while HTML files are used for static page structure.
+- **Dynamic Content**: Liquid supports placeholders, logic, and loops, whereas HTML does not support dynamic logic.
+- **Use Case**: Liquid generates dynamic pages in static sites; HTML creates static web pages.
+- **Syntax**: Liquid uses tags (`{% %}`) and placeholders (`{{ }}`), whereas HTML uses pure markup.
+- **Dependencies**: Liquid requires a static site generator like Jekyll, whereas HTML has no dependencies for basic use.
+
+### When to Use Which
+- Use Liquid: When you need templates that dynamically render content, such as blog posts, navigation menus, or custom pages.
+- Use HTML: When you want to create standalone, static pages or work outside of a templating engine.
+
+### Summary
+Liquid is a powerful templating language that brings logic and dynamic behavior to static site generators, whereas HTML is the backbone of all web pages, focusing purely on static content. Liquid files act as a bridge to generate HTML dynamically based on data, providing more flexibility for building websites efficiently.

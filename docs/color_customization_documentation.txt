@@ -1,0 +1,57 @@
+### Objective:
+This document outlines the changes made to modify theme text colors and background colors in the website. It also explains the relationship between the variables controlling these colors and provides details about the `_sass` folder and `.scss` files.
+
+### Overview of `_sass` Folder:
+The `_sass` folder contains SCSS (Sassy CSS) files used to define the styles for the website. SCSS is a CSS (Cascading Style Sheets) preprocessor that adds functionality like variables, nesting, and mixins to standard CSS, making it easier to manage and maintain styles for complex projects.
+
+- **SCSS Syntax**:
+  - Variables are defined using a `$` symbol (e.g., `$global-color: #ba8f02;`).
+  - Nesting allows hierarchical structuring of styles, which mirrors the HTML structure and improves readability.
+  - Files typically include reusable style definitions and are imported into a main stylesheet for streamlined management.
+
+### Changes Made:
+
+1. Updated Text and Hover Colors:
+   - File: `_sass/_themes.scss`
+   - Variables:
+     --global-theme-color: #{$global-colour};
+     --global-hover-color: #{$global-colour};
+
+   Reason:
+   These variables define the primary theme color and hover color for light mode. The `$global-colour` variable controls their values and is defined in `_sass/_variables.scss`.
+
+2. Defined `$global-colour`:
+   - File: `_sass/_variables.scss`
+   - Variable:
+     $global-colour: #ba8f02;
+
+   Reason:
+   This variable was added to represent a bold gold color for text and hover elements, ensuring a cohesive theme across the site.
+
+3. Updated Box Background Color:
+   - File: `_sass/_themes.scss`
+   - Variable:
+     --global-code-bg-color: #{$code-bg-color-light}; // Light Mode
+
+   Reason:
+   This variable controls the background color of code blocks and similar elements. It was updated to #f5e6c8 for better contrast with the gold text.
+
+4. Updated Dark Mode Colors:
+   - File: `_sass/_themes.scss`
+   - Section:
+     html[data-theme="dark"] {
+       --global-theme-color: #{$global-colour};
+       --global-hover-color: #{$global-colour};
+     }
+
+   Reason:
+   Ensures consistent application of the theme color in dark mode.
+
+5. Checked for Deployment:
+   - Verified that the variables `--global-theme-color`, `--global-hover-color`, and `--global-code-bg-color` are applied correctly in both light and dark modes before deployment.
+
+### Notes:
+- The `_sass` folder is integral to managing website styles and should be used for all theme-related changes to ensure maintainability.
+- SCSS (Sassy CSS) enhances CSS (Cascading Style Sheets) by introducing advanced features like variables and nesting, which simplify styling.
+- Before deploying changes, verify that all text and background colors meet accessibility standards, including sufficient contrast ratios.
+- Any additional customization should follow the same variable-based structure to maintain consistency and flexibility.

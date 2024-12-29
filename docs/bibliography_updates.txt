@@ -1,0 +1,32 @@
+# Updates to the Academic Website Configuration
+
+## Relevant Files
+- **`_pages/publication.md`**: Although not directly modified, this file organizes publication content on the website.
+- **`assets/css/main.scss`**: Acts as the main SCSS entry point but was not directly modified during this process.
+- **`_layouts/bib.liquid`**: Updated to include a new `<div>` wrapper for publication items with the class `publication-item`. This was essential for styling adjustments.
+- **`_sass/_layout.scss`**: Added CSS rules for the `publication-item` class to enhance alignment and visibility of publication items. The following styles were added:
+  ```scss
+  div.publication-item {
+    position: relative;
+    padding-left: 10px; /* Increase space for better alignment */
+  }
+
+  div.publication-item::before {
+    content: "•";
+    color: #{$global-colour}; /* Use the global SCSS variable */
+    position: absolute;
+    left: 3px; /* Adjust horizontal position */
+    top: -0.47em; /* Adjust vertical position */
+    font-size: 3rem; /* Increase size for better visibility */
+  }
+  ```
+- **`_bibliography/papers.bib`**: Updated with active bibliography entries. Comments using `%` were not recognized, so unused entries were moved to a new file.
+- **`_bibliography/paper_archived.bib`**: Created to store unused bibliography entries that were causing parsing errors in Jekyll Scholar.
+
+## Summary of Changes
+1. Moved unused bibliography entries from `papers.bib` to `paper_archived.bib` to prevent errors.
+2. Added a new `publication-item` class in `bib.liquid` to wrap each publication entry for enhanced styling.
+3. Adjusted styling in `_layout.scss` to add a prominent bullet point and improve the layout of publication items.
+4. Ensured `main.scss` and `publication.md` were acknowledged as part of the relevant file structure even though no direct changes were made to them.
+
+These updates streamline the appearance and functionality of the publications section while resolving errors caused by unused BibTeX entries.
