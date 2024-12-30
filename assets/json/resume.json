@@ -24,15 +24,84 @@
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Natural Resources Canada",
+      "location": "Ottawa, Canada",
+      "url": "https://natural-resources.canada.ca/home",
+      "summary": "Conducted cutting-edge research in quantum computing to support national resource management.",
+      "positions": [
+        {
+          "position": "Quantum Machine Learning Scientist",
+          "startDate": "2024-11",
+          "endDate": "present",
+          "highlights": [
+            "Developed quantum-enhanced optimization models.",
+            "Collaborated with interdisciplinary teams on national projects."
+          ]
+        },
+        {
+          "position": "Quantum Machine Learning Scientist Intern",
+          "startDate": "2024-07",
+          "endDate": "2024-10",
+          "highlights": [
+            "Published research on quantum algorithms.",
+            "Presented findings at international conferences."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Simon Fraser University",
+      "location": "Vancouver, Canada",
+      "url": "https://www.sfu.ca/",
+      "summary": "Contributed to the development of next-generation AI solutions.",
+      "positions": [
+        {
+          "position": "Researcher – NSERC Fellowship",
+          "startDate": "2021-04",
+          "endDate": "2021-08",
+          "highlights": [
+            "Designed scalable AI systems for predictive analytics.",
+            "Mentored junior developers on machine learning best practices."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Simon Fraser University",
+      "location": "Vancouver, Canada",
+      "url": "https://www.sfu.ca/",
+      "summary": "Contributed to the development of next-generation AI solutions.",
+      "positions": [
+        {
+          "position": "Researcher – NSERC Fellowship",
+          "startDate": "2020-04",
+          "endDate": "2020-08",
+          "highlights": [
+            "Designed scalable AI systems for predictive analytics.",
+            "Mentored junior developers on machine learning best practices."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Trulioo",
+      "location": "Vancouver, Canada",
+      "url": "https://www.trulioo.com/",
+      "summary": "Contributed to the development of next-generation AI solutions.",
+      "positions": [
+        {
+          "position": "Data Analyst - Co-op Student",
+          "startDate": "2019-08",
+          "endDate": "2020-04",
+          "highlights": [
+            "Designed scalable AI systems for predictive analytics.",
+            "Mentored junior developers on machine learning best practices."
+          ]
+        }
+      ]
     }
-  ],
+  ]
+,
   "volunteer": [
     {
       "organization": "People's Climate March",
