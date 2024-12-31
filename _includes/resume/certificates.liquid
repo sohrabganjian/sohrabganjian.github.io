@@ -1,7 +1,45 @@
+<style>
+  .list-groups {
+    width: 100%;
+  }
+
+  .list-group-table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .list-group-category-icon {
+    width: 30px;
+  }
+
+  .list-group-category {
+    text-align: left;
+    width: 80%; /* Allocate more space for certificate names */
+  }
+
+  .list-group-name {
+    text-align: right;
+    width: 20%; /* Keep the date column compact */
+    padding-left: 10px;
+  }
+
+  .certificate-issuer {
+    margin-bottom: 15px; /* Adds space between certificates */
+    display: block;
+    font-weight: normal; /* Make text non-bold */
+    font-size: 0.9em; /* Slightly smaller font size */
+    color: #000; /* Ensure good readability */
+  }
+</style>
+
 <div class="list-groups">
+
   {% assign certificates = data[1] | sort: 'date' | reverse %}
-  {% for content in certificates %}
-    <div class="list-group col-md-6">
+
+  <div class="list-group col-md-12">
+
+    {% for content in certificates %}
+
       <table class="table-cv list-group-table">
         <tbody>
           <tr>
@@ -12,24 +50,23 @@
             {% else %}
               <td class="list-group-category-icon"></td>
             {% endif %}
-            <!-- Calculate colspan number for category title -->
-            {% assign i = 1 %}
-            {% for item in content.items %}
-              {% assign i = i | plus: 1 %}
-            {% endfor %}
-            <td colspan="{{ i }}" class="list-group-category">
-              <a href="{{ content.url | default: # }}">{{ content.name }}</a>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="list-group-name">
-              <b>{{ content.issuer }}</b>
+
+            <td class="list-group-category">
+              <a href="{{ content.url | default: '#' }}">{{ content.name }}</a>
             </td>
             <td class="list-group-name">{{ content.date }}</td>
           </tr>
+          <tr>
+            <td></td>
+            <td colspan="2" class="certificate-issuer">
+              {{ content.issuer }}
+            </td>
+          </tr>
         </tbody>
       </table>
-    </div>
-  {% endfor %}
+
+    {% endfor %}
+
+  </div>
+
 </div>

@@ -157,46 +157,81 @@
     }
   ],
   "certificates": [
+    // {
+    //   "name": "Machine Learning",
+    //   "date": "2018-01-01",
+    //   "issuer": "Stanford University",
+    //   "url": "https://example.com",
+    //   "icon": "fa-solid fa-location-dot"
+    // },
+    // {
+    //   "name": "Quantum Computing",
+    //   "date": "2018-01-01",
+    //   "issuer": "Stanford University",
+    //   "url": "https://example.com",
+    //   "icon": "fa-solid fa-tag"
+    // },
+    // {
+    //   "name": "Quantum Information",
+    //   "date": "2018-01-01",
+    //   "issuer": "Stanford University",
+    //   "url": "https://example.com",
+    //   "icon": "fa-solid fa-envelope"
+    // },
+    // {
+    //   "name": "Quantum Cryptography",
+    //   "date": "2018-01-01",
+    //   "issuer": "Stanford University",
+    //   "url": "https://example.com",
+    //   "icon": "fa-solid fa-hashtag"
+    // },
+    // {
+    //   "name": "Quantum Communication",
+    //   "date": "2018-01-01",
+    //   "issuer": "Stanford University",
+    //   "url": "https://example.com",
+    //   "icon": "fa-solid fa-calendar"
+    // },
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Introduction to Cybersecurity Tools & Cyber Attacks by IBM",
+      "date": "2022-02",
+      "issuer": "Coursera",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/GU4XTWBBKP74",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "name": "ArcGIS Essential Training",
+      "date": "2020-05",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/b9e2316140db7b397b4bf20ca014069d48479d9f9f5a0a4cbd6acb2064235a71?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B4%2FTCrDHIQxO3jgcmpWGDWw%3D%3D",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "name": "Machine Learning by Stanford University",
+      "date": "2020-04",
+      "issuer": "Coursera",
+      // "url": "https://www.linkedin.com/learning/certificates/b9e2316140db7b397b4bf20ca014069d48479d9f9f5a0a4cbd6acb2064235a71?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B4%2FTCrDHIQxO3jgcmpWGDWw%3D%3D",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
+      "name": "SQL Essential Training",
+      "date": "2019-08",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/437b8edde19b97361dd8575a69d5903f7490d24c7ed2bcbcbd29d1f04efcc3f1?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BIrJ8xyJwQyiI0f0KDxPfxg%3D%3D",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
+      "name": "Learning GitHub",
+      "date": "2019-06",
+      "issuer": "Lynda.com",
+      "url": "https://www.linkedin.com/learning/certificates/590b9e68b764e052f4a7b32f71aeaf39519798140383a8796cccae28e9311ece?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BIrJ8xyJwQyiI0f0KDxPfxg%3D%3D&original_referer=",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Python for Data Science Essential Training",
+      "date": "2018-08",
+      "issuer": "Lynda.com",
+      "url": "https://www.linkedin.com/learning/certificates/4c376db7b4d96ea0a446378cac4634c84b395e97e758c2c4b288b5b794ffe93a?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BIrJ8xyJwQyiI0f0KDxPfxg%3D%3D",
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
