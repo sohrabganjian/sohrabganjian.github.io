@@ -27,15 +27,15 @@
       "name": "Natural Resources Canada",
       "location": "Ottawa, Canada",
       "url": "https://natural-resources.canada.ca/home",
-      "summary": "Conducted cutting-edge research in quantum computing to support national resource management.",
+      "summary": "Review existing literature and develop quantum machine learning methods aligned with the mandate and goals of Natural Resources Canada, addressing novel settings with limited or no prior research",
       "positions": [
         {
           "position": "Quantum Machine Learning Scientist",
           "startDate": "2024-11",
           "endDate": "present",
           "highlights": [
-            "Developed quantum-enhanced optimization models.",
-            "Collaborated with interdisciplinary teams on national projects."
+            "Developed a hybrid quantum-classical convulutional neural network pipeline",
+            "Performed binary satellite image classification using PennyLane, achieving high accuracy rates"
           ]
         },
         {
@@ -43,8 +43,6 @@
           "startDate": "2024-07",
           "endDate": "2024-10",
           "highlights": [
-            "Published research on quantum algorithms.",
-            "Presented findings at international conferences."
           ]
         }
       ]
@@ -53,15 +51,20 @@
       "name": "Simon Fraser University",
       "location": "Vancouver, Canada",
       "url": "https://www.sfu.ca/",
-      "summary": "Contributed to the development of next-generation AI solutions.",
+      "summary": "Collaborated on the code developlemt of Riemann theta functions using Sage, Cython and Python",
       "positions": [
         {
           "position": "Researcher – NSERC Fellowship",
           "startDate": "2021-04",
           "endDate": "2021-08",
           "highlights": [
-            "Designed scalable AI systems for predictive analytics.",
-            "Mentored junior developers on machine learning best practices."
+            { "text": "Wrote an efficient implementation for computing Riemann theta functions" },
+            { "text": "Utilized open-source mathematical libraries such as PARI and MPFR for numerical precision and efficiency" },
+            {
+              "text": "Published a SageMath package for computing Riemann Theta Functions ",
+              "linkText": "on GitHub",
+              "url": "https://github.com/nbruin/RiemannTheta/tree/main"
+            }
           ]
         }
       ]
@@ -70,15 +73,22 @@
       "name": "Simon Fraser University",
       "location": "Vancouver, Canada",
       "url": "https://www.sfu.ca/",
-      "summary": "Contributed to the development of next-generation AI solutions.",
+      "summary": "Simulated and applied existing mathematical models for crime prediction using Python",
       "positions": [
         {
           "position": "Researcher – NSERC Fellowship",
           "startDate": "2020-04",
           "endDate": "2020-08",
           "highlights": [
-            "Designed scalable AI systems for predictive analytics.",
-            "Mentored junior developers on machine learning best practices."
+            { 
+              "text": "Published a paper in ",
+              "linkText": "SIURO Journal",
+               "url": "https://www.siam.org/media/g21jrqjq/s142055pdf.pdf"
+            },
+            {"text": "Simulated a mathematical model to predict crimehot spots through network analysis, utilizing K-means algorithm"},
+            {"text": "Employed ArcGIS and Python to analyze geographical data"},
+            {"text": "Utilized open-source documentations such as scikit-learn and OSMnx"},
+            {"text": "Submitted and executed jobs on a cluster of supercomputers provided by the Digital Research Alliance of Canada (formely Compute Canada)"}
           ]
         }
       ]
@@ -87,15 +97,16 @@
       "name": "Trulioo",
       "location": "Vancouver, Canada",
       "url": "https://www.trulioo.com/",
-      "summary": "Contributed to the development of next-generation AI solutions.",
+      "summary": "Performed data analysis, compiled and shared relevant benchmarking statistics with internal stakeholders, and helped with onboarding new clients",
       "positions": [
         {
           "position": "Data Analyst - Co-op Student",
           "startDate": "2019-08",
           "endDate": "2020-04",
           "highlights": [
-            "Designed scalable AI systems for predictive analytics.",
-            "Mentored junior developers on machine learning best practices."
+            "Utilized Python and VBA to automate an 8-hour manual task, reducing processing time to just a minute while producing identical results",
+            "Extracted and queried data from database management software",
+            "Trained and onboarded 3 new employees"
           ]
         }
       ]
@@ -116,15 +127,15 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "University of Ottawa, Ottawa, Canada",
+      "location": "Ottawa, Canada",
+      "url": "https://www.uottawa.ca/en",
+      "area": "Quantum Cryptography",
+      "studyType": "Master of Science",
+      "startDate": "2022-09",
+      "endDate": "2024-11"
+      // "score": "10",
+      // "courses": ["Theory of Relativity"]
     }
   ],
   "awards": [

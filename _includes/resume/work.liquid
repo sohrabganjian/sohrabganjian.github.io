@@ -4,23 +4,28 @@
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
-          {% assign allStartDates = content.positions | map: "startDate" | sort | reverse %}
-          {% assign overallStartDate = allStartDates | first | split: '-' | slice: 0, 2 | join: '.' %}
+          {% assign allStartDates = content.positions | map: "startDate" %}
+          {% assign allEndDates = content.positions | map: "endDate" %}
 
-          {% assign latestEndDate = nil %}
-          {% for position in content.positions | sort: 'startDate' | reverse %}
-            {% if position.endDate == "present" %}
-              {% assign latestEndDate = "present" %}
+          {% assign overallStartDate = allStartDates | sort | first | split: '-' | slice: 0, 2 | join: '.' %}
+
+          {% assign hasPresent = false %}
+          {% assign formattedEndDates = "" %}
+          {% for endDate in allEndDates %}
+            {% if endDate == "present" %}
+              {% assign hasPresent = true %}
               {% break %}
-            {% elsif latestEndDate == nil or position.endDate > latestEndDate %}
-              {% assign latestEndDate = position.endDate %}
+            {% else %}
+              {% assign formattedEndDates = formattedEndDates | append: endDate | append: "|" %}
             {% endif %}
           {% endfor %}
 
-          {% if latestEndDate != "present" %}
-            {% assign overallEndDateFormatted = latestEndDate | split: '-' | slice: 0, 2 | join: '.' %}
-          {% else %}
+          {% if hasPresent %}
             {% assign overallEndDateFormatted = "present" %}
+          {% elsif formattedEndDates != "" %}
+            {% assign overallEndDateFormatted = formattedEndDates | split: "|" | reject: "" | sort | last | split: '-' | slice: 0, 2 | join: '.' %}
+          {% else %}
+            {% assign overallEndDateFormatted = "" %}
           {% endif %}
 
           <table class="table-cv">
@@ -28,7 +33,7 @@
               <tr>
                 <td>
                   <span class="badge font-weight-bold danger-color-dark align-middle" style="min-width: 75px;">
-                    {{ overallStartDate }} - {{ overallEndDateFormatted }}
+                    {{ overallStartDate }}{% if overallEndDateFormatted != "" %} - {{ overallEndDateFormatted }}{% endif %}
                   </span>
                 </td>
               </tr>
@@ -55,7 +60,7 @@
                   <h6 class="title font-weight-bold" style="margin: 0;">
                     <a href="{{ content.url }}" id="job-title-{{ forloop.index }}-{{ forloop.parentloop.index }}">{{ position.position }}</a>
                     <span style="font-weight: normal; font-size: 0.85rem;">
-                      ({{ position.startDate | split: '-' | slice: 0, 2 | join: '.' }} - {{ position.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'present' }}) {% comment %}Corrected closing tag here{% endcomment %}
+                      ({{ position.startDate | split: '-' | slice: 0, 2 | join: '.' }} - {{ position.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'present' }})
                     </span>
                   </h6>
                 </li>
@@ -65,21 +70,29 @@
             {% for position in content.positions %}
               <h6 class="title font-weight-bold ml-1 ml-md-4">
                 <a href="{{ content.url }}" id="job-title-{{ forloop.index }}-{{ forloop.parentloop.index }}">{{ position.position }}</a>
-                <span style="font-weight: normal; font-size: 0.85rem;">
-                  ({{ position.startDate | split: '-' | slice: 0, 2 | join: '.' }} - {{ position.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'present' }}) {% comment %}Corrected closing tag here{% endcomment %}
-                </span>
-              </h6>
+              </h6> {% comment %} Removed the span for single positions {% endcomment %}
             {% endfor %}
           {% endif %}
 
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">{{ content.name }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">{{ content.summary }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">{{ content.name }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">{{ content.summary }}</h6>
 
           <ul class="items">
             {% for position in content.positions %}
-              {% for item in position.highlights %}
+              {% for highlight in position.highlights %}
                 <li>
-                  <span class="item">{{ item }}</span>
+                  {% if highlight contains "text" %}
+                    {% if highlight.url %}
+                      <span>
+                        {{ highlight.text }}
+                        <a href="{{ highlight.url }}" target="_blank">{{ highlight.linkText }}</a>
+                      </span>
+                    {% else %}
+                      <span>{{ highlight.text }}</span>
+                    {% endif %}
+                  {% else %}
+                    <span>{{ highlight }}</span>
+                  {% endif %}
                 </li>
               {% endfor %}
             {% endfor %}
