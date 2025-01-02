@@ -22,6 +22,7 @@ layout: default
     </header>
 
     <article>
+    <pre>{{ site.data.resume | inspect }}</pre>
       <div class="cv">
         {% for entry in site.data.cv %}
           <a class="anchor" id="{{ entry.title }}"></a>
@@ -103,7 +104,7 @@ layout: default
                 {% when 'publications' %}
                   {% include resume/publications.liquid %}
                 {% when 'languages' %}
-                  {% include resume/languages.liquid %}
+                  {% include resume/softwareandtools.liquid %}
                 {% when 'interests' %}
                   {% include resume/interests.liquid %}
                 {% when 'certificates' %}

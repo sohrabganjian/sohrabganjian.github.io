@@ -38,8 +38,22 @@
           <h6 class="title font-weight-bold ml-1 ml-md-4">
             <a href="{{ content.url }}">{{ content.studyType }}</a>
           </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.institution }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.area }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.institution }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{% if content.area %}{{ content.area }}{% endif %}</h6>
+
+          {% if content.abstract %}
+            <p class="ml-1 ml-md-4">
+              <button id="abstract-btn-{{ forloop.index }}" 
+                      onclick="toggleAbstract('{{ forloop.index }}')" 
+                      style="width: 120px; font-size: 0.85rem; padding: 4px 8px;">
+                Show Abstract
+              </button>
+            </p>
+            <p id="abstract-{{ forloop.index }}" style="display: none;" class="ml-1 ml-md-4">
+              {{ content.abstract | newline_to_br }}
+            </p>
+          {% endif %}
+
           <ul class="items">
             {% for item in content.courses %}
               <li>
@@ -52,3 +66,18 @@
     </li>
   {% endfor %}
 </ul>
+
+<script>
+  function toggleAbstract(index) {
+    const abstract = document.getElementById(`abstract-${index}`);
+    const button = document.getElementById(`abstract-btn-${index}`);
+
+    if (abstract.style.display === "none") {
+      abstract.style.display = "block";
+      button.innerText = "Hide Abstract";
+    } else {
+      abstract.style.display = "none";
+      button.innerText = "Show Abstract";
+    }
+  }
+</script>

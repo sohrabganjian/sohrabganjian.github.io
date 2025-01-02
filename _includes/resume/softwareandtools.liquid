@@ -1,0 +1,129 @@
+<style>
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.three-column-table {
+  width: 100%;
+}
+
+.three-column-table th,
+.three-column-table td {
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row; /* Align icon and text horizontally */
+  align-items: center; /* Ensure proper vertical alignment */
+  justify-content: center; /* Center horizontally */
+}
+
+.list-group-category {
+  font-weight: bold;
+  text-align: left;
+  margin-left: 10px; /* Slight space between icon and text */
+  white-space: normal; /* Allow line breaks where necessary */
+}
+
+.list-group-category-icon {
+  font-size: 1.5em;
+  margin-right: 5px; /* Add space between icon and text */
+}
+
+.table thead th {
+  border-bottom: 3px solid #000;
+  padding: 10px;
+}
+
+.first-row {
+  padding-top: 1.5rem;
+}
+
+.description-text {
+  font-style: italic;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  color: #6c757d;
+}
+
+.bullet-list {
+  list-style: disc; /* Use bullet points */
+  padding-left: 20px; /* Indent the list */
+  margin: 0; /* Remove unnecessary margin */
+}
+
+.bullet-list li {
+  margin-bottom: 5px; /* Add spacing between items */
+}
+</style>
+
+<p class="description-text">
+  These are the software and tools I have used over the years, listed roughly in the order of my experience and familiarity.
+</p>
+
+<table class="table table-bordered three-column-table">
+  <thead>
+    <tr>
+      {% for content in data[1] %}
+        <th>
+          <div class="header-container">
+            {% if content.icon %}
+              <i class="{{ content.icon }} list-group-category-icon" id="icon-{{ forloop.index }}"></i>
+            {% endif %}
+            <div class="list-group-category" id="header-category-{{ forloop.index }}">
+              {{ content.category }}
+            </div>
+          </div>
+        </th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {% for content in data[1] %}
+        <td class="first-row">
+          <ul class="bullet-list">
+            {% for item in content.items %}
+              <li><b>{{ item }}</b></li>
+            {% endfor %}
+          </ul>
+        </td>
+      {% endfor %}
+    </tr>
+  </tbody>
+</table>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Query all header categories and icons
+  const headers = document.querySelectorAll('.list-group-category');
+  const icons = document.querySelectorAll('.list-group-category-icon');
+
+  // Sample an existing job title to extract the color
+  const sampleElement = document.querySelector('.title.font-weight-bold a');
+  if (sampleElement) {
+    const computedColor = window.getComputedStyle(sampleElement).color;
+
+    // Apply the extracted color to both the headers and their corresponding icons
+    headers.forEach((header, index) => {
+      header.style.color = computedColor;
+
+      if (icons[index]) {
+        icons[index].style.color = computedColor;
+      }
+    });
+  }
+});
+</script>
