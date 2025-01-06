@@ -638,3 +638,16 @@ jsonresume:
   - languages
   - interests
   - references
+
+  # section_titles:
+  #   work: "Work/Research"
+  #   education: "Education and Training"
+  #   publications: "Research Publications"
+  #   projects: "Projects and Development"
+  #   volunteer: "Volunteer Activities"
+  #   awards: "Honors and Awards"
+  #   certificates: "Certifications"
+  #   skills: "Skills and Expertise"
+  #   languages: "Languages Spoken"
+  #   interests: "Hobbies and Interests"
+  #   references: "References"

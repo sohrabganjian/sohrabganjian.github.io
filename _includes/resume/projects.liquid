@@ -1,32 +1,95 @@
-<ul class="card-text font-weight-light list-group list-group-flush">
-  {% for content in data[1] %}
-    <li class="list-group-item">
-      <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          {% if content.startDate %}
-            {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
-            {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' %}
-            {% assign date = date | append: endDate %}
-          {% else %}
-            {% assign date = '' %}
-          {% endif %}
-          <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>
-        </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-          <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="{{ content.url }}">{{ content.name }}</a>
-          </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
-          <ul class="items">
-            {% for item in content.highlights %}
-              <li>
-                <span class="item">{{ item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+<div class="list-groups">
+  {% for project in site.data.resume.projects %}
+    <div class="list-group">
+      <div class="project-subcategory" style="display: flex; align-items: center;">
+        <span style="font-size: 1.2rem; margin-right: 0.5rem;">&#9675;</span>
+        <strong>{{ project.name }}</strong>
       </div>
-    </li>
+      <ul style="list-style: none; padding-left: 0;">
+        {% for keyword in project.keywords %}
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+                <table class="table-cv">
+                  <tbody>
+                    <tr>
+                      <td>
+                        {% if keyword.date %}
+                          <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                            {{ keyword.date }}
+                          </span>
+                        {% endif %}
+                      </td>
+                    </tr>
+                    {% if keyword.location %}
+                      <tr>
+                        <td>
+                          <p class="location" style="margin: 4px 0 0; display: flex; align-items: center; text-align: left;">
+                            <i class="fa-solid fa-location-dot iconlocation" style="margin-right: 6px;"></i>
+                            <span style="white-space: normal; word-wrap: break-word; max-width: 150px;">
+                              {% assign words = keyword.location | split: ' ' %}
+                              {% for word in words %}
+                                {{ word }}{% unless forloop.last %}&nbsp;{% endunless %}
+                              {% endfor %}
+                            </span>
+                          </p>
+                        </td>
+                      </tr>
+                    {% endif %}
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+                <h6 class="title font-weight-bold ml-1 ml-md-4">
+                  {% if keyword.url %}
+                    <a href="{{ keyword.url }}" target="_blank">{{ keyword.name }}</a>
+                  {% else %}
+                    <strong>{{ keyword.name }}</strong>
+                  {% endif %}
+                  <!-- Expand/Collapse Button -->
+                  <button 
+                    class="toggle-summary-btn" 
+                    style="margin-left: 10px; font-size: 0.85rem; padding: 2px 8px; cursor: pointer; background-color: #f8f9fa; border: 1px solid #ccc; border-radius: 3px;" 
+                    onclick="toggleSummary('{{ forloop.index0 }}')">
+                    +
+                  </button>
+                </h6>
+                {% if keyword.invited == true %}
+                  <p class="ml-1 ml-md-4" style="font-style: italic;">Invited Presenter</p>
+                {% endif %}
+                <p class="ml-1 ml-md-4">{{ keyword.description }}</p>
+                <!-- Summary Dialog Box -->
+                {% if keyword.summary %}
+                  <div 
+                    id="summary-{{ forloop.index0 }}" 
+                    class="summary-box" 
+                    style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+                    <ul>
+                      {% for point in keyword.summary %}
+                        <li style="font-size: 0.85rem;">{{ point }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   {% endfor %}
-</ul>
+</div>
+
+<script>
+  function toggleSummary(index) {
+    const summaryBox = document.getElementById(`summary-${index}`);
+    const toggleButton = document.querySelector(`.toggle-summary-btn[onclick="toggleSummary('${index}')"]`);
+    if (summaryBox.style.display === "none") {
+      summaryBox.style.display = "block";
+      toggleButton.textContent = "-";
+    } else {
+      summaryBox.style.display = "none";
+      toggleButton.textContent = "+";
+    }
+  }
+</script>

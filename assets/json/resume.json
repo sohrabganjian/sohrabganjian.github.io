@@ -24,6 +24,7 @@
   },
   "work": [
     {
+      "title": "Test", 
       "name": "Natural Resources Canada",
       "location": "Ottawa, Canada",
       "url": "https://natural-resources.canada.ca/home",
@@ -158,12 +159,40 @@
     }
   ],
   "awards": [
+    // {
+    //   "title": "Nobel Prize in Physics",
+    //   "date": "1921-11-01",
+    //   "awarder": "Royal Swedish Academy of Sciences",
+    //   "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
+    //   "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+    // }
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "1st place award, QuSTEAM Quantum Hackathon Challenge  ",
+      "date": "2022-11",
+      "awarder": "qBraid",
+      "url": "https://github.com/eculf/HAQS-QUSTEAM-2022/blob/main/Quasar_notebook.ipynb"
+      // "summary": "Within a team of three, prepared an experiment to demonstrate the violation of Bell's inequality via the celebrated CHSH (Clauser, Horne, Shimony, and Holt) game. Submitted jobs on Amazon Braket quantum computers and prepared documentation to present the work using a Jupyter Notebook."
+    },
+    {
+      "title": "Undergraduate Research Prize Recepient",
+      "date": "2022-09",
+      "awarder": "Simon Fraser University",
+      "url": "https://www.sfu.ca/math/events-news/news/2022-news/2021MathUndergraduateResearchPrizes.html"
+     //  "summary": ""
+    },
+    {
+      "title": "1st Place in Data Science Competition: Analysis of BC Ferries Delay Data",
+      "date": "2019-04",
+      "awarder": "British Columbia Undergraduate Mathematics and Statistics Conference"
+      // "url": "https://www.sfu.ca/math/events-news/news/2022-news/2021MathUndergraduateResearchPrizes.html"
+     //  "summary": ""
+    },
+    {
+      "title": "Department of Mathematics Award",
+      "date": "Spring 2019",
+      "awarder": "Simon Fraser University"
+      // "url": "https://www.sfu.ca/math/events-news/news/2022-news/2021MathUndergraduateResearchPrizes.html"
+     //  "summary": ""
     }
   ],
   "certificates": [
@@ -340,38 +369,164 @@
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "title": "Test Title",
+      "url": "https://example.com"
     }
   ],
-  "references": [
+  // "references": [
+  //   {
+  //     "name": "Professor John Doe",
+  //     "icon": "fa-solid fa-laptop",
+  //     "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+  //   },
+  //   {
+  //     "name": "Professor John Doe",
+  //     "icon": "fa-solid fa-thumbtack",
+  //     "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+  //   }
+  // ],
+ "projects": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Conferences and Meetings",
+      "keywords": [
+        {
+          "name": "The Sixth IEEE International Conference on Trust, Privacy and Security (TPS) in Intelligent Systems, and Applications",
+          "date": "2024-10",
+          "url": "https://www.sis.pitt.edu/lersais/conference/tps/2024/",
+          "location": "Washington D.C., USA",
+          "invited": true,
+          "summary": 
+          [
+            "Presented work related to the paper <i>Simulation of Quantum Homomorphic Encryption: Demonstration and Analysis</i>",
+            "Confrence Co-located with IEEE CIC 2024 & IEEE CogMI 2024, offering rich networking opportunities, inlcuding a keynote by <a href='https://scholar.google.com/citations?user=VuWl-KUAAAAJ&hl=en' target='_blank'>Ed Chi from Google</a>",
+            "Featuerd panel dicsussions, technical sessions and workshops on quantum computing and AI integration, as well as AI governance and policy"
+          ]
+          // "description": "A conference exploring the latest advancements in quantum computing technologies."
+        },
+        {
+          "name": "IEEE International Conference on Quantum Computing and Engineering – QCE24",
+          "date": "2024-09",
+          "location": "Montréal, Canada",
+          "url": "https://qce.quantum.ieee.org/2024/",
+          "invited": true,
+          // "description": "A gathering of top quantum computing researchers."
+          "summary":
+          [
+            "Presented a poster on the extended abstract <i>Demonstrating Quantum Homomorphic Encryption Through Simulation </i>",
+            "Attended various talks, workshops, panels, and poster sessions on topics like quantum algorithms, cryptography, error correction, and emerging quantum technologies", 
+            "Participated in student mentorship events, networking sessions, and the career fair, building valuable connections with organizations like IonQ, Quantinuum, Qblox, and others across industry, government, and academia.",
+            "Over 1,600 registrants, including students, academics, and industry experts, fostering interdisciplinary collaboration",
+            "Notable speakers included Jay Gambetta (IBM Quantum) and Josh Izaac (Xanadu), among others, sharing insights on quantum computing and software development"
+          ]
+        },
+        {
+          "name": "2024 Québec Ontario Consortium on Quantum Protocols (QUORUM) Meeting",
+          "date": "2024-05",
+          "location": "Ottawa, Canada",
+          "url": "https://web.archive.org/web/20240831223434/https:/quorumuottawa.ca/quorummeeting/",
+          "summary": [
+            "Discussed recent advancements in quantum protocols and technologies.",
+            "Keynote presentation by Dr. John Doe on Quantum Communication Networks.",
+            "Collaboration opportunities between Ontario and Québec quantum researchers."
+          ]
+        },
+        {
+          "name": "Inside Quantum Technologies",
+          "date": "2023-06",
+          "location": "Montréal, Canada",
+          "url": "https://iqtevent.com/wp-content/uploads/2023/06/IQTCanada23_program_rev.pdf"
+        },
+        {
+          "name": "Quantum Days 2023",
+          "date": "2023-01",
+          "location": "Online",
+          "url": "https://2023.quantumdays.ca/"
+        },
+        {
+          "name": "Fall 2022 INTRIQ meeting",
+          "date": "2022-10",
+          "location": "Bromont, Québec, Canada",
+          "url": "https://www.intriq.org/events/rencontre-automnale-2022-de-lintriq"
+        },
+        {
+          "name": "British Columbia’s Undergraduate Mathematics & Statistics Conference",
+          "date": "2019-04",
+          "location": "Burnaby, British Columbia, Canada",
+          "url": "https://www.pims.math.ca/events/190426-2bcumasc"
+        }
+      ]
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
+      "name": "Summer Schools and Workshops",
+      "keywords": [
+        {
+          "name": "International Summer School in Quantum Technologies 2023",
+          "date": "2023-08",
+          "location": "Birmingham, UK",
+          "url": "https://www.gla.ac.uk/research/az/quantumtechnology/newsandevents/issqt2023/"
+        },
+        {
+          "name": "Quantum Key Distribution Summer School",
+          "date": "2022-08",
+          "location": "Waterloo, Canada",
+          "url": "https://uwaterloo.ca/institute-for-quantum-computing/events/workshops/quantum-key-distribution-summer-school"
+        },
+        {
+          "name": "IPAM Graduate Summer School on Post-quantum and Quantum Cryptography",
+          "date": "2022-07",
+          "location": "UCLA, LA, USA",
+          "url": "https://www.ipam.ucla.edu/programs/summer-schools/graduate-summer-school-on-post-quantum-and-quantum-cryptography/?tab=overview"
+        },
+        {
+          "name": "PIMS CRG Summer School: Deep Learning for Computational Mathematics",
+          "date": "2019-07",
+          "location": "Burnaby, British Columbia, Canada",
+          "url": "https://www.pims.math.ca/events/190722-pcssdlfcm"
+        },
+        {
+          "name": "Data Science Bootcamp",
+          "date": "2019-06",
+          "location": "Saskatoon, Canada",
+          "url": "https://artsandscience.usask.ca/news/articles/3525/Data_Science_Bootcamp"
+        },
+        {
+          "name": "2018 PIMS BC Data Science Workshop",
+          "date": "2018-06",
+          "location": "Vancouver, Canada",
+          "url": "https://workshop.bcdata.ca/2018/"
+        }
+      ]
+    },
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Hackathons and Data Science Competitions",
+      "keywords": [
+        {
+          "name": "QHack 2023 by Xanadu",
+          "location": "Online", 
+          "date": "2023-02",
+          "url": "https://pennylane.ai/blog/2023/02/welcome-to-qhack-2023"
+          // "description": "A 48-hour hackathon for building quantum-powered solutions."
+        },
+        {
+          "name": "iQuHACK by MIT",
+          "date": "2023-01",
+          "location": "Online",
+          "url": "https://www.iquise.mit.edu/iQuHACK/2023-01-27"
+        },
+        {
+          "name": "2022 qBraid’s HAQS - QuSTEAM Challenge",
+          "date": "Oct-Nov 2022",
+          "location": "Online",
+          "url": "https://www.qbraid.com/blog/haas-2022-review"
+        },
+        {
+          "name": "Data Science Competition as part of British Columbia’s Undergraduate Mathematics & Statistics Conference",
+          "location": "Burnaby, British Columbia, Canada",
+          "date": "2019-04",
+          "url": "https://www.pims.math.ca/events/190426-2bcumasc"
+        }
+      ]
     }
   ]
 }
+
