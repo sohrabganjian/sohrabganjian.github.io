@@ -50,10 +50,17 @@
                   <button 
                     class="toggle-summary-btn" 
                     style="margin-left: 10px; font-size: 0.85rem; padding: 2px 8px; cursor: pointer; background-color: #f8f9fa; border: 1px solid #ccc; border-radius: 3px;" 
-                    onclick="toggleSummary('{{ forloop.index0 }}')">
+                    onclick="toggleSummary('{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}')">
                     +
                   </button>
                 </h6>
+                {% if keyword.links %}
+                  <div class="additional-links ml-1 ml-md-4" style="font-size: 0.85rem;">
+                    {% for link in keyword.links %}
+                      [<a href="{{ link.url }}" target="_blank">{{ link.text }}</a>]
+                    {% endfor %}
+                  </div>
+                {% endif %}
                 {% if keyword.invited == true %}
                   <p class="ml-1 ml-md-4" style="font-style: italic;">Invited Presenter</p>
                 {% endif %}
@@ -61,12 +68,23 @@
                 <!-- Summary Dialog Box -->
                 {% if keyword.summary %}
                   <div 
-                    id="summary-{{ forloop.index0 }}" 
+                    id="summary-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" 
                     class="summary-box" 
                     style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
                     <ul>
                       {% for point in keyword.summary %}
-                        <li style="font-size: 0.85rem;">{{ point }}</li>
+                        {% if point.nested_header and point.nested_items %}
+                          <li>
+                            <span style="font-size: 0.85rem;">{{ point.nested_header }}</span>
+                            <ul>
+                              {% for item in point.nested_items %}
+                                <li style="margin-left: 20px; font-size: 0.85rem;">{{ item }}</li>
+                              {% endfor %}
+                            </ul>
+                          </li>
+                        {% else %}
+                          <li style="font-size: 0.85rem;">{{ point }}</li>
+                        {% endif %}
                       {% endfor %}
                     </ul>
                   </div>

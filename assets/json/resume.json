@@ -425,34 +425,51 @@
           "location": "Ottawa, Canada",
           "url": "https://web.archive.org/web/20240831223434/https:/quorumuottawa.ca/quorummeeting/",
           "summary": [
-            "Discussed recent advancements in quantum protocols and technologies.",
-            "Keynote presentation by Dr. John Doe on Quantum Communication Networks.",
-            "Collaboration opportunities between Ontario and Québec quantum researchers."
+            "A two-day event featuring discussions on recent advancements in quantum technologies, with a focus on QUORUM’s main themes: entanglement, cryptography, communications, and governance",
+            "Included a variety of talks by researchers from institutions such as the University of Waterloo, University of Ottawa, Université de Montréal, McGill University, Université de Sherbrooke, and internationally from Technische Universität München, along with industrial partners like Quantum Bridge Technologies, IonQ, and Ki3 Photonics"
           ]
         },
         {
           "name": "Inside Quantum Technologies",
           "date": "2023-06",
           "location": "Montréal, Canada",
-          "url": "https://iqtevent.com/wp-content/uploads/2023/06/IQTCanada23_program_rev.pdf"
+          "url": "https://iqtevent.com/wp-content/uploads/2023/06/IQTCanada23_program_rev.pdf",
+          "summary": [
+            "A three-day conference centered on the commercialization and business aspects of quantum technologies, featuring technical talks, panels, talent development sessions, and discussions on quantum tech adoption and Canada's vision for quantum technologies",
+            "Included celebrated speakers like Gilles Brassard, one of the two developers of the BB84 protocol, alongside industry leaders such as D-Wave, Xanadu, and Pasqal, providing excellent networking opportunities"
+          ]
         },
         {
           "name": "Quantum Days 2023",
           "date": "2023-01",
           "location": "Online",
-          "url": "https://2023.quantumdays.ca/"
+          "url": "https://2023.quantumdays.ca/",
+          "summary": [
+            "Brought together participants from across Canada’s quantum community, including students, researchers, industry professionals, policymakers, and investors",
+            "Featured poster sessions, a career fair, scientific talks, and panel discussions on a wide range of topics",
+            "Included representatives from cutting-edge institutions and companies like Xanadu and IBM, as well as renowned researchers such as Dr. Gilles Brassard, Dr. Anne Broadbent, and Dr. Elham Kashefi"
+          ]
         },
         {
           "name": "Fall 2022 INTRIQ meeting",
           "date": "2022-10",
           "location": "Bromont, Québec, Canada",
-          "url": "https://www.intriq.org/events/rencontre-automnale-2022-de-lintriq"
+          "url": "https://www.intriq.org/events/rencontre-automnale-2022-de-lintriq",
+          "summary":[
+            "A two-day gathering organized by INTRIQ (Institut Transdisciplinaire d'Information Quantique), bringing together members of the quantum information community for discussions, presentations, and networking",
+            "Featured primarily experimental subjects from notable speakers like Dr. Ebrahim Karimi (University of Ottawa) and Dr. Roger Melko (Perimeter Institute, Waterloo)"
+
+          ]
         },
         {
           "name": "British Columbia’s Undergraduate Mathematics & Statistics Conference",
           "date": "2019-04",
           "location": "Burnaby, British Columbia, Canada",
-          "url": "https://www.pims.math.ca/events/190426-2bcumasc"
+          "url": "https://www.pims.math.ca/events/190426-2bcumasc",
+          "summary": [
+            "A two-day event designed to support undergraduate students in mathematics and statistics across British Columbia, fostering research and collaborative opportunities",
+            "Included a variety of talks by students, alongside speakers from academia and industry, as well as networking opportunities, workshops, and panel discussions"
+          ]
         }
       ]
     },
@@ -463,37 +480,78 @@
           "name": "International Summer School in Quantum Technologies 2023",
           "date": "2023-08",
           "location": "Birmingham, UK",
-          "url": "https://www.gla.ac.uk/research/az/quantumtechnology/newsandevents/issqt2023/"
+          "url": "https://www.gla.ac.uk/research/az/quantumtechnology/newsandevents/issqt2023/",
+          "summary": [
+            "A 10-day summer school at the University of Birmingham, bringing together 60 researchers from the UK and Canada, aimed at fostering collaboration and nurturing talent development in quantum technologies among early-career researchers",
+            "Featured talks by leading experts in quantum technologies, covering areas such as communication, computing, imaging, and sensing, including Dr. Norbert Lütkenhaus (University of Waterloo, Canada), Dr. Elham Kashefi (University of Edinburgh, UK), Dr. Síle Nic Chormaic (Okinawa Institute of Science and Technology, Japan), and Dr. John Kitching (NIST, USA)",
+            "Included poster sessions, workshops, and discussion panels on topics like career development, responsible innovation, trusted research, commercialization, and equality, diversity, and inclusion (EDI), providing excellent opportunities for networking with early-career researchers from Canada and the UK"
+          ]
         },
         {
           "name": "Quantum Key Distribution Summer School",
           "date": "2022-08",
           "location": "Waterloo, Canada",
-          "url": "https://uwaterloo.ca/institute-for-quantum-computing/events/workshops/quantum-key-distribution-summer-school"
+          "url": "https://uwaterloo.ca/institute-for-quantum-computing/events/workshops/quantum-key-distribution-summer-school",
+          "summary":
+          [
+            "The five-day program, held at the state-of-the-art Quantum-Nano Centre at the University of Waterloo, focused on the theoretical and experimental aspects of quantum communication with a particular emphasis on quantum cryptography, featuring participants affiliated with institutions from Canada, Spain, Italy, Poland, and the USA",
+            "Delivered cutting-edge insights on topics such as information-theoretic security, post-quantum cryptography, and quantum hacking, with lectures by top researchers including Dr. Norbert Lütkenhaus, Dr. Michele Mosca, Dr. David Jao (University of Waterloo), Dr. Renato Renner, and Dr. Ramona Wolf (ETH Zürich)"
+          ]
         },
         {
           "name": "IPAM Graduate Summer School on Post-quantum and Quantum Cryptography",
           "date": "2022-07",
           "location": "UCLA, LA, USA",
-          "url": "https://www.ipam.ucla.edu/programs/summer-schools/graduate-summer-school-on-post-quantum-and-quantum-cryptography/?tab=overview"
+          "url": "https://www.ipam.ucla.edu/programs/summer-schools/graduate-summer-school-on-post-quantum-and-quantum-cryptography/?tab=overview",
+          "summary": [
+            "Hosted by the Institute for Pure and Applied Mathematics (IPAM) at the University of California, Los Angeles (UCLA), the event provided an in-depth introduction to post-quantum and quantum cryptography. Topics included the Deutsch-Jozsa algorithm, Simon's algorithm, the BB84 protocol, quantum key distribution, and Supersingular Isogeny Key Encapsulation (now broken). Featured speakers included top researchers such as Dr. Anne Broadbent, Dr. Craig Costello, and Dr. Jonathan Katz",
+            "Presented a poster titled <i>Inner Workings of SHA-512</i> during the interactive session"
+          ]
         },
         {
           "name": "PIMS CRG Summer School: Deep Learning for Computational Mathematics",
           "date": "2019-07",
           "location": "Burnaby, British Columbia, Canada",
-          "url": "https://www.pims.math.ca/events/190722-pcssdlfcm"
+          "url": "https://www.pims.math.ca/events/190722-pcssdlfcm",
+          "summary":
+          [
+            "A summer school hosted at Simon Fraser University, exploring the intersection of deep learning and computational mathematics. The program emphasized applying machine learning techniques and TensorFlow to solve complex mathematical problems, tailored for students",
+            "Featured three days of lectures and hands-on tutorials, followed by a one-day workshop"
+          ]
         },
         {
           "name": "Data Science Bootcamp",
           "date": "2019-06",
           "location": "Saskatoon, Canada",
-          "url": "https://artsandscience.usask.ca/news/articles/3525/Data_Science_Bootcamp"
+          "url": "https://artsandscience.usask.ca/news/articles/3525/Data_Science_Bootcamp",
+          "summary":
+          [
+            "A two-week Data Science Bootcamp held at the University of Saskatchewan, primarily designed for graduate and senior undergraduate students, covering foundational and advanced topics in data science",
+            "Explored in-depth topics such as an introduction to machine learning, data visualization, and varied case studies, with sessions led by researchers like Dr. Linglong Kong, Dr. Stephen Kobourov, and Dr. Nathaniel Osgood"
+          ]
         },
         {
           "name": "2018 PIMS BC Data Science Workshop",
           "date": "2018-06",
           "location": "Vancouver, Canada",
-          "url": "https://workshop.bcdata.ca/2018/"
+          "url": "https://workshop.bcdata.ca/2018/",
+          "links": [
+            {"text": "Jupyter Notebook", "url": "https://workshop.bcdata.ca/2018/post/1-ssr-project/"}
+          ],
+          "summary": [
+            "A one-week workshop held at the University of British Columbia, designed for students from PIMS institutions with strong mathematical backgrounds and an interest in data science, including both theoretical and practical components with data sets and problems from industry and government.",
+            "Using Jupyter Notebook, Pandas, and NumPy, I contributed to the <i>Predicting Heavy Equipment Failure</i> project for SSR Mining as part of a 9-person team. At the project's workshop presentation (<a href='https://workshop.bcdata.ca/2018/post/1-ssr-project/' target='_blank'>link</a>), I presented an analysis of six trucks, highlighting potential failure points for one in particular. This analysis generated interest from SSR stakeholders and initiated follow-up conversations.",
+            "Featured a career panel at the KPMG Vancouver office, offering insights into industry career options for mathematicians.",
+            {
+              "nested_header": "Other projects included:",
+              "nested_items": [
+                "Analyzing user opinion of call quality and network performance of a VoIP PBX with CloudPBX.",
+                "Connecting genetic mutations to cytokine levels at St. Paul’s Hospital.",
+                "Determining intent and automating knowledge base creation from live chat transcripts with Comm100.",
+                "Interpolating ship paths in the Port of Metro Vancouver with SNC-Lavalin Inc."
+              ]
+            }
+          ]
         }
       ]
     },
@@ -504,26 +562,87 @@
           "name": "QHack 2023 by Xanadu",
           "location": "Online", 
           "date": "2023-02",
-          "url": "https://pennylane.ai/blog/2023/02/welcome-to-qhack-2023"
+          "url": "https://pennylane.ai/blog/2023/02/welcome-to-qhack-2023",
           // "description": "A 48-hour hackathon for building quantum-powered solutions."
+          "links": [
+            { "text": "Jupyter Notebook in GitHub", "url": "https://github.com/eculf/CryptographyWithCertifiedDeletion_Quasar/blob/main/Cryptography%20with%20Certified%20Deletion.ipynb" },
+            { "text": "YouTube", "url": "https://youtu.be/zXekONQ6buA?si=Gt8UOxmZ8L6o5HNe" }
+          ],
+          "summary": [
+            "Collaborated in a team of three to implement <i><a href='https://arxiv.org/pdf/2207.01754'>Cryptography with Certified Deletion</a></i> by James Bartusek and Dakshita Khurana, building on the foundational work <i><a href='https://arxiv.org/pdf/1812.05725'>Quantum Encryption with Certified Deletion</a></i> by Anne Broadbent and Rabib Islam: <blockquote>These primitives enable a party in possession of a quantum ciphertext to generate a classical certificate that the encrypted plaintext has been information-theoretically deleted, and cannot be recovered even given unbounded computational resources.</blockquote>",
+            "The project also incorporated the post-quantum cryptosystem NTRU and utilized visualization techniques to effectively demonstrate the results",
+            {
+              "nested_header": "About QHack 2023:",
+              "nested_items": [
+                "A global quantum hackathon hosted by Xanadu’s Pennylane platform", 
+                "bringing together over 2000 participants from around the world to collaborate on quantum computing challenges", 
+                "with experts from leading quantum organizations such as IBM, Google, and AWS Braket, covering topics like quantum machine learning and quantum algorithms"
+              ]
+            }
+          ]
         },
         {
-          "name": "iQuHACK by MIT",
+          "name": "2023 iQuHACK by MIT - IonQ Challenge",
           "date": "2023-01",
           "location": "Online",
-          "url": "https://www.iquise.mit.edu/iQuHACK/2023-01-27"
+          "url": "https://www.iquise.mit.edu/iQuHACK/2023-01-27",
+          "links": [
+            {"text": "Jupyter Notebook in GitHub", "url": "https://github.com/sohrabganjian/2023_IonQ_Remote"}
+          ],
+          "summary": [
+            "Collaborated in a team of three to tackle the IonQ challenge (<a href='https://github.com/sohrabganjian/2023_IonQ_Remote/blob/main/MIT%20iQuHACK%20remote%20challenge%20.pdf' target='_blank'>link</a>), which involved encoding the Fashion MNIST dataset into quantum states and classifying them",
+            {
+              "nested_header": "About 2023 iQuHACK:",
+              "nested_items":[
+                "A global quantum hackathon hosted by MIT's Interdisciplinary Quantum Information Science and Engineering (iQuISE), bringing together participants from academia, industry, and startups to solve quantum computing challenges",
+                "Hackathon challenges spanned various topics such as quantum algorithms, error correction, quantum machine learning, and quantum hardware optimization."
+              ]
+            }
+          ]
         },
         {
-          "name": "2022 qBraid’s HAQS - QuSTEAM Challenge",
+          "name": "2022 qBraid HAQS: QuSTEAM Challenge",
           "date": "Oct-Nov 2022",
           "location": "Online",
-          "url": "https://www.qbraid.com/blog/haas-2022-review"
+          "url": "https://www.qbraid.com/blog/haas-2022-review",
+          "links": [
+            {"text": "Jupyter Notebook in GitHub", "url": "https://github.com/eculf/HAQS-QUSTEAM-2022/blob/main/Quasar_notebook.ipynb"},
+            {"text": "YouTube", "url": "https://www.youtube.com/watch?v=QYL2R5uGPXg&ab_channel=SohrabGanjian" }
+          ],
+          "summary":
+          [
+            "Winner of the Hackathon as part of <i>Quasar</i>, a team of three, as announced <a href='https://www.qbraid.com/blog/haas-2022-review' target='_blank'> here </a>",
+            "Collaborated to design and execute an experiment to demonstrate the violation of Bell’s inequality using the celebrated CHSH (Clauser, Horne, Shimony, and Holt) game",
+            "Submitted jobs on Amazon Braket quantum computers",
+            "Prepared detailed documentation and presented the project in a <a href='https://github.com/eculf/HAQS-QUSTEAM-2022/blob/main/Quasar_notebook.ipynb' target='_blank'> Jupyter notebook </a>",
+            {
+              "nested_header": "About 2022 qBraid HAQS:",
+              "nested_items":[
+                "A global quantum hackathon hosted by qBraid, featuring challenges from leading organizations such as QuSTEAM and Unitary Fund",
+                "QuSTEAM Challenge focused on quantum education, encouraging teams to create experiments and projects to engage students in learning quantum concepts"
+              ]
+            }
+
+          ]
         },
         {
-          "name": "Data Science Competition as part of British Columbia’s Undergraduate Mathematics & Statistics Conference",
+          "name": "Data Science Case Competition at the British Columbia’s Undergraduate Mathematics & Statistics Conference",
           "location": "Burnaby, British Columbia, Canada",
           "date": "2019-04",
-          "url": "https://www.pims.math.ca/events/190426-2bcumasc"
+          "url": "https://www.pims.math.ca/events/190426-2bcumasc",
+          "summary":
+          [
+            "Within team of two, analyzed delay trends for each of BC Ferries’ boats, taking into consideration each boat as well as features such as temperature, traffic, and wind",
+            "Created graphs in Python (matplotlib) to create data visualization, highlighting ferries with most delays",
+            "Rewarded first place $400 prize for excellent data visualization and presentation",
+            {
+              "nested_header": "About Data Science Case Competition at BCUMSC:",
+              "nested_items":[
+                "A data science case competition, organized as a distinct event within the broader British Columbia’s Undergraduate Mathematics & Statistics Conference.",
+                "The competition involved analyzing BC Ferries’ dataset to identify correlations between delays and various features such as traffic, weather conditions, vessel names, departure times, and arrival times"
+              ]
+            }
+          ]
         }
       ]
     }
