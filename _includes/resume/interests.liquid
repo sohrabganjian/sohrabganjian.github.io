@@ -1,14 +1,62 @@
-<div class="interests">
-  <h2>Interests</h2>
-  {% if interests %}
-    <ul class="interests-list">
-      {% for interest in interests %}
-        <li>
-          <a href="{{ interest.url }}" target="_blank">{{ interest.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    <p>No interests provided.</p>
-  {% endif %}
-</div>
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% assign talks = data[1] %}
+  {% for talk in talks %}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+          {% if talk.date and talk.date != '' %}
+            <span 
+              class="badge font-weight-bold danger-color-dark text-uppercase align-middle badge-color" 
+              style="min-width: 75px;"
+            >
+              {{ talk.date }}
+            </span>
+          {% endif %}
+          {% if talk.location %}
+            <p class="location mt-2">
+              <i class="fa-solid fa-location-dot iconlocation"></i>
+              {{ talk.location }}
+            </p>
+          {% endif %}
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+          <h6 class="title font-weight-bold ml-1 ml-md-4">
+            {% if talk.url and talk.url != '' %}
+              <a href="{{ talk.url }}" target="_blank">{{ talk.title }}</a>
+            {% else %}
+              <span class="dynamic-title-color">{{ talk.title }}</span>
+            {% endif %}
+          </h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+            {{ talk.event }}
+          </h6>
+          {% if talk.hosting_institute %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+              {{ talk.hosting_institute }}
+            </h6>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find all rows in the list group
+    const rows = document.querySelectorAll(".list-group-item");
+
+    rows.forEach(row => {
+      const badge = row.querySelector(".badge-color");
+      const title = row.querySelector(".dynamic-title-color");
+
+      if (badge && title) {
+        // Extract computed background color of the badge
+        const badgeColor = window.getComputedStyle(badge).backgroundColor;
+
+        // Apply the color to the title's text
+        title.style.color = badgeColor;
+      }
+    });
+  });
+</script>

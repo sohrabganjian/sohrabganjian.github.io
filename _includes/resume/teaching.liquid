@@ -1,0 +1,54 @@
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% assign teaching = data[1] %}
+  {% for content in teaching %}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-8 cl-sm-8 col-md-8 mt-2 mt-md-0">
+          <h6 class="title font-weight-bold">
+            {{ content.courseName }}
+            <button 
+              class="toggle-summary-btn" 
+              style="margin-left: 10px; font-size: 0.85rem; padding: 2px 8px; cursor: pointer; background-color: #f8f9fa; border: 1px solid #ccc; border-radius: 3px;" 
+              onclick="toggleBullets('{{ forloop.index0 }}')">
+              +
+            </button>
+          </h6>
+          <h6 style="font-size: 0.95rem; font-style: italic">
+            {{ content.role }}
+          </h6>
+          <ul id="bullets-{{ forloop.index0 }}" class="items" style="display: none; margin-top: 10px;">
+            {% for bullet in content.bullets %}
+              <li>
+                <span class="item">{{ bullet }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-xs-4 cl-sm-4 col-md-4 text-right">
+          <h6 class="institution font-weight-bold">
+            {{ content.institution }}
+          </h6>
+          <h6 style="font-size: 0.9rem; font-style: italic; line-height: 1.8;">
+            {% for date in content.dates %}
+              {{ date }}<br>
+            {% endfor %}
+          </h6>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+
+<script>
+  function toggleBullets(index) {
+    const bullets = document.getElementById(`bullets-${index}`);
+    const toggleButton = document.querySelector(`.toggle-summary-btn[onclick="toggleBullets('${index}')"]`);
+    if (bullets.style.display === "none") {
+      bullets.style.display = "block";
+      toggleButton.textContent = "-";
+    } else {
+      bullets.style.display = "none";
+      toggleButton.textContent = "+";
+    }
+  }
+</script>

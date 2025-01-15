@@ -232,6 +232,13 @@
     //   "icon": "fa-solid fa-calendar"
     // },
     {
+      "name": "Quantum Professional",
+      "date": "2023-08",
+      "issuer": "Q-CTRL",
+      "url": "https://black.q-ctrl.com/certificate/eedc8271-cbb3-4c70-b61f-8fe3ce5cb290",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
       "name": "Introduction to Cybersecurity Tools & Cyber Attacks by IBM",
       "date": "2022-02",
       "issuer": "Coursera",
@@ -276,40 +283,60 @@
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Simulation of Quantum Homomorphic Encryption: Demonstration and Analysis",
+      "releaseDate": "Oct 2024",
+      // "url": "",
+      "authors": "Sohrab Ganjian, Connor Paddock, Anne Broadbent",
+      "publisher": "In Proceedings of The Sixth IEEE International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications, 2024"
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
+      "releaseDate": "Sep 2024",
+      "url": "https://arxiv.org/abs/2406.16247",
+      "authors": "Sohrab Ganjian, Connor Paddock, Anne Broadbent",
+      "publisher": "In Proceedings of 2024 IEEE International Conference on Quantum Computing and Engineering (QCE)"
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Urban City: Crime Attractors and Offender Mobility",
+      "releaseDate": "Oct 2021",
+      "url": "https://www.siam.org/media/g21jrqjq/s142055pdf.pdf",
+      "authors": "Vincent Nguyen, Sohrab Ganjian",
+      "publisher": "SIAM Undergraduate Research Online"
     }
+    // {
+    //   "name": "Zur Elektrody/namik bewegter Körper",
+    //   "publisher": "Annalen der Physik",
+    //   "releaseDate": "1905-06-30",
+    //   "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
+    //   "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+    // },
+    // {
+    //   "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
+    //   "publisher": "Annalen der Physik",
+    //   "releaseDate": "1905-03-18",
+    //   "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
+    //   "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+    // },
+    // {
+    //   "name": "Die Grundlage der allgemeinen Relativitätstheorie",
+    //   "publisher": "Annalen der Physik",
+    //   "releaseDate": "1916-03-20",
+    //   "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
+    //   "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+    // }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "py-qhe-epr: A Python library for simulating quantum homomorphic encryption",
+      "releaseDate": "2024",
+      "url": "https://github.com/sohrabganjian/py-qhe-epr",
+      "authors": "Sohrab Ganjian"
+    },
+    {
+      "name": "RiemannTheta: A SageMath package for evaluating Riemann theta functions",
+      "releaseDate": "2021",
+      "url": "https://github.com/nbruin/RiemannTheta",
+      "authors": "Sohrab Ganjian, Nils Bruin"
     }
   ],
   // "languages": [
@@ -324,6 +351,61 @@
   //     "icon": ""
   //   }
   // ],
+  "training": [
+    {
+      "name": "Demonstrating quantum homomorphic encryption through simulation",
+      "releaseDate": "Sep 2024",
+      "authors": "Sohrab Ganjian, Connor Paddock, Anne Broadbent",
+      "event": "IEEE International Conference on Quantum Computing and Engineering – QCE24",
+      "location": "Montréal, CAN"
+      // "url": "https://example.com/poster/quantum-ml"
+    },
+    {
+      "name": "Inner workings of SHA-512",
+      "releaseDate": "Jul 2022",
+      "authors": "Sohrab Ganjian",
+      "event": "Graduate Summer School on Post-quantum and Quantum Cryptography",
+      "location": "UCLA, LA, USA"
+      // "url": "https://example.com/poster/quantum-circuits"
+    }
+  ],
+  "teaching": [
+    {
+      "courseName": "Calculus II (MAT 1322)",
+      "role": "Teaching Assistant",
+      "institution": "University of Ottawa",
+      "dates": [
+        "Sep - Dec 2022",
+        "Jan - Apr 2022",
+        "Sep - Dec 2023"
+      ],
+      "bullets": [
+        "First-year second-term Mathematics course covering improper integrals, differential equations, Euler's method for differential equations, sequences, series, Taylor's formula and series, and Functions of two and three variables",
+        "Graded students’ midterms",
+        "Led a weekly tutorial to review assigned problems and prepared my own solutions for better engagement.",
+        "Created visualizations using Maple and Desmos to enhance understanding and intuition",
+        "Responded to students’ questions via email"
+      ]
+    },
+    {
+      "courseName": "Calculus I (MAT 1320)",
+      "role": "Teaching Assistant",
+      "institution": "University of Ottawa",
+      "dates": [
+        "Sep - Dec 2022",
+        "May - Jul 2023",
+        "Sep - Dec 2023",
+        "Jan - Apr 2024"
+      ],
+      "bullets": [
+        "First-year first-term Mathematics course covering limits, continuity, derivative formulas, L'Hospital's rule, and intermediate value theorem",
+        "Graded students’ midterms",
+        "Led a weekly tutorial to review assigned problems and prepared my own solutions for better engagement.",
+        "Created visualizations using Maple and Desmos to enhance understanding and intuition",
+        "Responded to students’ questions via email"
+      ]
+    }
+  ],
   "languages": [
     {
       "category": "Programming Languages",
@@ -354,9 +436,11 @@
       "icon": "fas fa-chart-bar"
     },
     {
-      "category": "Collaboration & Workflow Management Tools",
+      "category": "Collaboration, Workflow & Document Preparation Tools",
       "items": [
         "GitHub",
+        "LaTeX",
+        "Overleaf",
         "MS Teams",
         "Slack",
         "Jira",
@@ -367,12 +451,87 @@
       "icon": "fas fa-tools"
     }
   ],
-  "interests": [
+  "extracurricular contributions": [
     {
-      "title": "Test Title",
-      "url": "https://example.com"
+      "title": "YouTube Content Creator",
+      "date": "Jan. 2022 - present",
+      "affiliation": "Channel: Cryptography Explained (+12K Views)",
+      "url": "https://www.youtube.com/channel/UCMj9NcOniLYExmiKgGVtcBg"
+    },
+    {
+      "title": "Event Audio and Visual Support Volunteer",
+      "date": "May 2024",
+      "affiliation": "Canada-France Quantum Alliance (CAFQA) Workshop",
+      "url": "https://www.uottawa.ca/research-innovation/events-all/CAFQA"
+    },
+    {
+      "title": "Contributor",
+      "date": "May 2023",
+      "affiliation": "Cybersecurity of Quantum Computing Algorithm Zoo, Pittsburgh Quantum Institute",
+      "url": "https://www.pqi.org/cybersecurity-quantum-computing-algorithm-zoo"
+    },
+    {
+      "title": "Observatory User Group",
+      "date": "Mar 2019 - Mar 2020",
+      "affiliation": "Trottier Observatory, Simon Fraser University",
+      "url": "https://x.com/sfutrottobs?lang=en"
     }
   ],
+  "scholarships & fundings": [
+    {
+      "name": "Special Merit Scholarship",
+      "releaseDate": "Sep 2022 - Aug 2023",
+      "event": "University of Ottawa"
+    },
+    {
+      "name": "NSERC Undergraduate Student Research Award",
+      "releaseDate": "Summer 2021",
+      "event": "Simon Fraser University"
+    },
+    {
+      "name": "NSERC Undergraduate Student Research Award",
+      "releaseDate": "Summer 2020",
+      "event": "Simon Fraser University"
+    },
+    {
+      "name": "Department of Mathematics Award",
+      "releaseDate": "Spring 2019",
+      "event": "Simon Fraser University"
+    }
+  ],
+  "interests": [
+      {
+        "title": "Satellite Image Classification: Hybrid Quantum-Classical Approach",
+        "event": "QUASAR End of Year Seminar",
+        "hosting_institute": "University of Ottawa",
+        "location": "Ottawa, ON, CAN",
+        "date": "December 13, 2024",
+        "url": "https://quasarlab.org/news/end-year-seminar-2024/"
+      },
+      {
+        "title": "Simulation of Quantum Homomorphic Encryption: Demonstration and Analysis",
+        "event": "The Sixth IEEE International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications",
+        "hosting_institute": "IEEE",
+        "location": "Washington D.C., US",
+        "date": "October 29, 2024",
+        "url": "https://www.sis.pitt.edu/lersais/conference/tps/2024/"
+      },
+      {
+        "title": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
+        "event": "QUASAR Seminar",
+        "hosting_institute": "University of Ottawa",
+        "location": "Ottawa, ON, CAN",
+        "date": "June 7, 2024"
+      },
+      {
+        "title": "An Analysis of the Security of BB84 Protocol",
+        "event": "QUASAR Seminar",
+        "hosting_institute": "University of Ottawa",
+        "location": "Ottawa, ON, CAN",
+        "date": "April 6, 2023"
+        // "url": ""
+      }
+    ],
   // "references": [
   //   {
   //     "name": "Professor John Doe",

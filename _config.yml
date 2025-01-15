@@ -638,6 +638,10 @@ jsonresume:
   - languages
   - interests
   - references
+  - training
+  - teaching
+  - extracurricular contributions
+  - scholarships & fundings
 
   # section_titles:
   #   work: "Work/Research"

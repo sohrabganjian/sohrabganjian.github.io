@@ -92,8 +92,16 @@ layout: default
               {% case data[0] %}
                 {% when 'basics' %}
                   {% include resume/basics.liquid %}
+                {% when 'extracurricular contributions' %}
+                  {% include resume/ExtracurricularContributions.liquid %}
+                {% when 'scholarships & fundings' %}
+                  {% include resume/ScholarshipsFundings.liquid %}
                 {% when 'education' %}
                   {% include resume/education.liquid %}
+                {% when 'training' %}
+                  {% include resume/training.liquid %}
+                {% when 'teaching' %}
+                  {% include resume/teaching.liquid %}
                 {% when 'work' %}
                   {% include resume/work.liquid %}
                 {% when 'volunteer' %}
