@@ -8,6 +8,7 @@ categories: sample-posts
 giscus_comments: true
 related_posts: false
 related_publications: true
+published: false
 ---
 
 This post shows how to add bibliography to simple blog posts. We support every citation style that [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) does. That means simple citation like {% cite GPB24 %}, multiple citations like {% cite GPB24 %}, long references like {% reference GPB24 %} or also quotes:

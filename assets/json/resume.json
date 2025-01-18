@@ -518,6 +518,14 @@
       },
       {
         "title": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
+        "event": "AI-Quantum Workshop",
+        "hosting_institute": "Natural Resources Canada",
+        "location": "Ottawa, ON, CAN",
+        "date": "September 25, 2024"
+       // "url": "https://www.sis.pitt.edu/lersais/conference/tps/2024/"
+      },
+      {
+        "title": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
         "event": "QUASAR Seminar",
         "hosting_institute": "University of Ottawa",
         "location": "Ottawa, ON, CAN",

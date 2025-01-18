@@ -52,3 +52,7 @@ $back-to-top-right: 30px;
 $back-to-top-diameter: 40px;
 $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
+
+:root {
+  --global-colour: #{$global-colour}; // Make it available for CSS
+}

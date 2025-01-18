@@ -57,10 +57,35 @@ div.publication-item::before {
   content: "•";
   color: #{$global-colour}; /* Use the global SCSS variable */
   position: absolute;
-  left: 3px; /* Adjust horizontal position */
+  left: 1px; /* Adjust horizontal position */
   top: -0.47em; /* Adjust vertical position */
   font-size: 3rem; /* Increase size for better visibility */
 }
+
+
+div.talks-item ul {
+  list-style: none; /* Remove default bullets */
+  padding: 0; /* Remove padding for the list */
+  margin: 0; /* Remove margin for the list */
+}
+
+div.talks-item ul li {
+  position: relative; /* Establish a relative position for the custom bullet */
+  padding-left: 10px; /* Adjust space for the custom bullet and text */
+  margin-bottom: 0.5rem; /* Add vertical spacing between items */
+}
+
+div.talks-item ul li::before {
+  content: "•"; /* Add a custom bullet */
+  color: var(--global-colour); /* Use the global color */
+  position: absolute; /* Position the custom bullet */
+  left: -8px; /* Align the bullet closer to the text */
+  font-size: 2rem; /* Set the size of the bullet */
+  line-height: 1; /* Ensure proper alignment */
+  top: -0.25rem; /* Slightly adjust vertical alignment */
+}
+
+
 
 
 
