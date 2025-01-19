@@ -133,7 +133,8 @@ document.addEventListener('DOMContentLoaded', function () {
   dynamicBullets.forEach((bullet) => {
     const listItem = bullet.closest('li');
     if (listItem) {
-      const jobIdMatch = listItem.querySelector('.title a')?.id?.match(/job-title-(\d+)-(\d+)/);
+      const titleAnchor = listItem.querySelector('.title a');
+      const jobIdMatch = titleAnchor && titleAnchor.id && titleAnchor.id.match(/job-title-(\d+)-(\d+)/);
       if (jobIdMatch) {
         const index = jobIdMatch[1];
         const parentIndex = jobIdMatch[2];
