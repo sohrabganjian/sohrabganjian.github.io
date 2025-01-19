@@ -57,7 +57,13 @@
                 {% if keyword.links %}
                   <div class="additional-links ml-1 ml-md-4" style="font-size: 0.85rem;">
                     {% for link in keyword.links %}
-                      [<a href="{{ link.url }}" target="_blank">{{ link.text }}</a>]
+                      {% if link.GitHub == true %}
+                        <a href="{{ link.url }}" target="_blank" title="{{ link.url }}">
+                          <img src="/assets/img/GitHub-Mark.png" alt="GitHub Logo" style="width: 20px; height: 20px;">
+                        </a>
+                      {% else %}
+                        [<a href="{{ link.url }}" target="_blank">{{ link.text }}</a>]
+                      {% endif %}
                     {% endfor %}
                   </div>
                 {% endif %}

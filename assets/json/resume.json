@@ -660,7 +660,8 @@
           "name": "Quantum Key Distribution Summer School",
           "date": "2022-08",
           "location": "Waterloo, Canada",
-          "url": "https://uwaterloo.ca/institute-for-quantum-computing/events/workshops/quantum-key-distribution-summer-school",
+          "url": "https://web.archive.org/web/20250119190149/https://uwaterloo.ca/institute-for-quantum-computing/events/workshops/quantum-key-distribution-summer-school",
+          // archived: https://web.archive.org/web/20250119190149/https://uwaterloo.ca/institute-for-quantum-computing/events/workshops/quantum-key-distribution-summer-school
           "summary":
           [
             "The five-day program, held at the state-of-the-art Quantum-Nano Centre at the University of Waterloo, focused on the theoretical and experimental aspects of quantum communication with a particular emphasis on quantum cryptography, featuring participants affiliated with institutions from Canada, Spain, Italy, Poland, and the USA",
@@ -704,6 +705,7 @@
           "date": "2018-06",
           "location": "Vancouver, Canada",
           "url": "https://workshop.bcdata.ca/2018/",
+          // archived link: https://web.archive.org/web/20250119190144/https://workshop.bcdata.ca/2018/
           "links": [
             {"text": "Jupyter Notebook", "url": "https://workshop.bcdata.ca/2018/post/1-ssr-project/"}
           ],
@@ -734,7 +736,7 @@
           "url": "https://pennylane.ai/blog/2023/02/welcome-to-qhack-2023",
           // "description": "A 48-hour hackathon for building quantum-powered solutions."
           "links": [
-            { "text": "Jupyter Notebook in GitHub", "url": "https://github.com/eculf/CryptographyWithCertifiedDeletion_Quasar/blob/main/Cryptography%20with%20Certified%20Deletion.ipynb" },
+            { "GitHub": true, "text": "Jupyter Notebook in GitHub", "url": "https://github.com/eculf/CryptographyWithCertifiedDeletion_Quasar/blob/main/Cryptography%20with%20Certified%20Deletion.ipynb" },
             { "text": "YouTube", "url": "https://youtu.be/zXekONQ6buA?si=Gt8UOxmZ8L6o5HNe" }
           ],
           "summary": [
@@ -756,7 +758,7 @@
           "location": "Online",
           "url": "https://www.iquise.mit.edu/iQuHACK/2023-01-27",
           "links": [
-            {"text": "Jupyter Notebook in GitHub", "url": "https://github.com/sohrabganjian/2023_IonQ_Remote"}
+            {"GitHub": true, "text": "Jupyter Notebook in GitHub", "url": "https://github.com/sohrabganjian/2023_IonQ_Remote"}
           ],
           "summary": [
             "Collaborated in a team of three to tackle the IonQ challenge (<a href='https://github.com/sohrabganjian/2023_IonQ_Remote/blob/main/MIT%20iQuHACK%20remote%20challenge%20.pdf' target='_blank'>link</a>), which involved encoding the Fashion MNIST dataset into quantum states and classifying them",
@@ -774,8 +776,9 @@
           "date": "Oct-Nov 2022",
           "location": "Online",
           "url": "https://www.qbraid.com/blog/haas-2022-review",
+          // archived link: https://web.archive.org/web/20250119180111/https://www.qbraid.com/blog/haas-2022-review
           "links": [
-            {"text": "Jupyter Notebook in GitHub", "url": "https://github.com/eculf/HAQS-QUSTEAM-2022/blob/main/Quasar_notebook.ipynb"},
+            {"GitHub": true, "text": "Jupyter Notebook in GitHub", "url": "https://github.com/eculf/HAQS-QUSTEAM-2022/blob/main/Quasar_notebook.ipynb"},
             {"text": "YouTube", "url": "https://www.youtube.com/watch?v=QYL2R5uGPXg&ab_channel=SohrabGanjian" }
           ],
           "summary":
@@ -827,7 +830,8 @@
       "title": "Event Audio and Visual Support Volunteer",
       "date": "May 2024",
       "affiliation": "Canada-France Quantum Alliance (CAFQA) Workshop",
-      "url": "https://www.uottawa.ca/research-innovation/events-all/CAFQA"
+      "url": "https://web.archive.org/web/20250119175511/https://www.uottawa.ca/research-innovation/events-all/CAFQA"
+      // link to article: https://ottawa.office.cnrs.fr/en/first-cafqa-workshop-in-canada/
     },
     {
       "title": "Contributor",
