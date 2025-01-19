@@ -70,23 +70,27 @@
             {% for position in content.positions %}
               <h6 class="title font-weight-bold ml-1 ml-md-4">
                 <a href="{{ content.url }}" id="job-title-{{ forloop.index }}-{{ forloop.parentloop.index }}">{{ position.position }}</a>
-              </h6> {% comment %} Removed the span for single positions {% endcomment %}
+              </h6>
             {% endfor %}
           {% endif %}
 
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">{{ content.name }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">{{ content.summary }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 1rem; display: inline-block; position: relative;">
+            <span id="summary-text-{{ forloop.index0 }}" style="display: inline;">{{ content.summary }}</span>
+            <button
+              class="toggle-highlights-btn"
+              style="margin-left: 5px; font-size: 0.85rem; padding: 2px 6px; cursor: pointer; background-color: #f8f9fa; border: 1px solid #ccc; border-radius: 3px; vertical-align: baseline;"
+              data-target="highlights-{{ forloop.index0 }}">
+              +
+            </button>
+          </h6>
 
-          <ul class="items">
+          <ul class="items" id="highlights-{{ forloop.index0 }}" style="display: none; margin-top: 10px; list-style-type: circle; padding-left: 20px; font-size: 0.95rem;">
             {% for position in content.positions %}
               {% for highlight in position.highlights %}
-                <li>
+                <li style="margin-left: 20px;">
                   {% if highlight contains "text" %}
                     {% if highlight.url %}
-                      <span>
-                        {{ highlight.text }}
-                        <a href="{{ highlight.url }}" target="_blank">{{ highlight.linkText }}</a>
-                      </span>
+                      <span>{{ highlight.text }}<a href="{{ highlight.url }}" target="_blank">{{ highlight.linkText }}</a></span>
                     {% else %}
                       <span>{{ highlight.text }}</span>
                     {% endif %}
@@ -104,24 +108,42 @@
 </ul>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const bulletPoints = document.querySelectorAll('.dynamic-bullet');
+document.addEventListener('DOMContentLoaded', function () {
+  // Toggle button logic for highlights
+  const toggleButtons = document.querySelectorAll('.toggle-highlights-btn');
 
-  bulletPoints.forEach(bullet => {
+  toggleButtons.forEach((button) => {
+    button.addEventListener('click', function () {
+      const targetId = button.getAttribute('data-target');
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        const isCurrentlyHidden =
+          targetElement.style.display === 'none' || !targetElement.style.display;
+
+        button.textContent = isCurrentlyHidden ? '-' : '+';
+        targetElement.style.display = isCurrentlyHidden ? 'block' : 'none';
+      }
+    });
+  });
+
+  // Dynamic coloring for bullets in multiple positions
+  const dynamicBullets = document.querySelectorAll('.dynamic-bullet');
+
+  dynamicBullets.forEach((bullet) => {
     const listItem = bullet.closest('li');
     if (listItem) {
-        const jobIdMatch = listItem.querySelector('.title a').id.match(/job-title-(\d+)-(\d+)/);
-        if (jobIdMatch) {
-            const index = jobIdMatch[1];
-            const parentIndex = jobIdMatch[2];
-            const jobTitleLink = document.getElementById(`job-title-${index}-${parentIndex}`);
-
-            if (jobTitleLink) {
-                const jobTitleColor = window.getComputedStyle(jobTitleLink).color;
-                bullet.style.borderColor = jobTitleColor;
-                bullet.style.backgroundColor = 'transparent';
-            }
+      const jobIdMatch = listItem.querySelector('.title a')?.id?.match(/job-title-(\d+)-(\d+)/);
+      if (jobIdMatch) {
+        const index = jobIdMatch[1];
+        const parentIndex = jobIdMatch[2];
+        const jobTitleLink = document.getElementById(`job-title-${index}-${parentIndex}`);
+        if (jobTitleLink) {
+          const jobTitleColor = window.getComputedStyle(jobTitleLink).color;
+          bullet.style.borderColor = jobTitleColor;
+          bullet.style.backgroundColor = 'transparent';
         }
+      }
     }
   });
 });

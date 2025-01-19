@@ -1,12 +1,15 @@
 <div class="list-groups">
-  {% for project in site.data.resume.projects %}
+  {% assign section_key = data[0] %}
+  {% assign section_items = site.data.resume[section_key] %}
+  
+  {% for item in section_items %}
     <div class="list-group">
-      <div class="project-subcategory" style="display: flex; align-items: center;">
+      <div class="event-subcategory" style="display: flex; align-items: center;">
         <span style="font-size: 1.2rem; margin-right: 0.5rem;">&#9675;</span>
-        <strong>{{ project.name }}</strong>
+        <strong>{{ item.name }}</strong>
       </div>
       <ul style="list-style: none; padding-left: 0;">
-        {% for keyword in project.keywords %}
+        {% for keyword in item.keywords %}
           <li class="list-group-item">
             <div class="row">
               <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
@@ -27,10 +30,7 @@
                           <p class="location" style="margin: 4px 0 0; display: flex; align-items: center; text-align: left;">
                             <i class="fa-solid fa-location-dot iconlocation" style="margin-right: 6px;"></i>
                             <span style="white-space: normal; word-wrap: break-word; max-width: 150px;">
-                              {% assign words = keyword.location | split: ' ' %}
-                              {% for word in words %}
-                                {{ word }}{% unless forloop.last %}&nbsp;{% endunless %}
-                              {% endfor %}
+                              {{ keyword.location }}
                             </span>
                           </p>
                         </td>

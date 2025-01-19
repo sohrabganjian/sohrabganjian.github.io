@@ -26,9 +26,9 @@ layout: default
         {% for entry in site.data.cv %}
           <a class="anchor" id="{{ entry.title }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              {{ site.section_titles[entry.title] | default: entry.title }}
-            </h3>
+          <h3 class="card-title font-weight-medium">
+            {{ site.section_titles[data[0]] | default: data[0] }}
+          </h3>
             <div>
               {% if entry.type == 'list' %}
                 {% include cv/list.liquid %}
@@ -85,40 +85,40 @@ layout: default
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              {{ site.section_titles[data[0]] | default: data[0] | capitalize }}
-            </h3>
+          <h3 class="card-title font-weight-medium">
+            {{ site.section_titles[data[0]] | default: data[0] }}
+          </h3>
             <div>
               {% case data[0] %}
-                {% when 'basics' %}
+                {% when 'Basics' %}
                   {% include resume/basics.liquid %}
-                {% when 'extracurricular contributions' %}
+                {% when 'Extracurricular Contributions' %}
                   {% include resume/ExtracurricularContributions.liquid %}
-                {% when 'scholarships & fundings' %}
+                {% when 'Scholarships and Fundings' %}
                   {% include resume/ScholarshipsFundings.liquid %}
-                {% when 'education' %}
+                {% when 'Education' %}
                   {% include resume/education.liquid %}
-                {% when 'training' %}
-                  {% include resume/training.liquid %}
-                {% when 'teaching' %}
+                {% when 'Poster Presentations' %}
+                  {% include resume/posters.liquid %}
+                {% when 'Teaching' %}
                   {% include resume/teaching.liquid %}
-                {% when 'work' %}
+                {% when 'Work and Research Experience' %}
                   {% include resume/work.liquid %}
                 {% when 'volunteer' %}
                   {% include resume/volunteer.liquid %}
-                {% when 'projects' %}
-                  {% include resume/projects.liquid %}
-                {% when 'awards' %}
+                {% when 'Professional and Academic Events' %}
+                  {% include resume/ProfessionalAndAcademicEvents.liquid %}
+                {% when 'Awards' %}
                   {% include resume/awards.liquid %}
-                {% when 'skills' %}
-                  {% include resume/skills.liquid %}
-                {% when 'publications' %}
+                {% when 'Open Source Contributions' %}
+                  {% include resume/OpenSourceContributions.liquid %}
+                {% when 'Publications and Manuscripts' %}
                   {% include resume/publications.liquid %}
-                {% when 'languages' %}
-                  {% include resume/softwareandtools.liquid %}
-                {% when 'interests' %}
-                  {% include resume/interests.liquid %}
-                {% when 'certificates' %}
+                {% when 'Software and Technical Tools' %}
+                  {% include resume/SoftwareAndTechnicalTools.liquid %}
+                {% when 'Talks' %}
+                  {% include resume/talks.liquid %}
+                {% when 'Certificates' %}
                   {% include resume/certificates.liquid %}
                 {% when 'references' %}
                   {% include resume/references.liquid %}

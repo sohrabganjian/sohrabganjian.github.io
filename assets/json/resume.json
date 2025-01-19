@@ -1,5 +1,5 @@
 {
-  "basics": {
+  "Basics": {
     "name": "Sohrab Ganjian",
     "label": "Scientist",
     "image": "",
@@ -22,7 +22,7 @@
       }
     ]
   },
-  "work": [
+  "Work and Research Experience": [
     {
       "title": "Test", 
       "name": "Natural Resources Canada",
@@ -126,7 +126,7 @@
   //     "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
   //   }
   // ],
-  "education": [
+  "Education": [
     {
       "institution": "University of Ottawa, Ottawa, Canada",
       "location": "Ottawa, Canada",
@@ -158,7 +158,73 @@
       "endDate": "2021-12"
     }
   ],
-  "awards": [
+"Publications and Manuscripts": [
+    {
+      "name": "Simulation of Quantum Homomorphic Encryption: Demonstration and Analysis",
+      "releaseDate": "Oct 2024",
+      "url": "https://doi.org/10.1109/TPS-ISA62245.2024.00066",
+      "authors": "Sohrab Ganjian, Connor Paddock, Anne Broadbent",
+      "publisher": "In Proceedings of The Sixth IEEE International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications",
+      "year": "2024",
+      "pages": "491-498",
+      "doi": "10.1109/TPS-ISA62245.2024.00066"
+    },
+    {
+      "name": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
+      "releaseDate": "Sep 2024",
+      "url": "https://arxiv.org/abs/2406.16247",
+      "authors": "Sohrab Ganjian, Connor Paddock, Anne Broadbent",
+      "publisher": "In Proceedings of 2024 IEEE International Conference on Quantum Computing and Engineering (QCE)",
+      "year": "2024",
+      "pages": "593-594",
+      "doi": "10.1109/QCE60285.2024.10421"
+    },
+    {
+      "name": "Urban City: Crime Attractors and Offender Mobility",
+      "releaseDate": "Oct 2021",
+      "url": "https://www.siam.org/media/g21jrqjq/s142055pdf.pdf",
+      "authors": "Vincent Nguyen, Sohrab Ganjian",
+      "publisher": "SIAM Undergraduate Research Online",
+      "year": "2021",
+      "doi": "10.1137/21S1420551"
+    }
+    // {
+    //   "name": "Zur Elektrody/namik bewegter Körper",
+    //   "publisher": "Annalen der Physik",
+    //   "releaseDate": "1905-06-30",
+    //   "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
+    //   "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+    // },
+    // {
+    //   "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
+    //   "publisher": "Annalen der Physik",
+    //   "releaseDate": "1905-03-18",
+    //   "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
+    //   "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+    // },
+    // {
+    //   "name": "Die Grundlage der allgemeinen Relativitätstheorie",
+    //   "publisher": "Annalen der Physik",
+    //   "releaseDate": "1916-03-20",
+    //   "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
+    //   "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+    // }
+  ],
+  "Open Source Contributions": [
+    {
+      "name": "py-qhe-epr: A Python library for simulating quantum homomorphic encryption",
+      "releaseDate": "2024",
+      "url": "https://github.com/sohrabganjian/py-qhe-epr",
+      "authors": "Sohrab Ganjian"
+    },
+    {
+      "name": "RiemannTheta: A SageMath package for evaluating Riemann theta functions",
+      "releaseDate": "2021",
+      "url": "https://github.com/nbruin/RiemannTheta",
+      "authors": "Sohrab Ganjian, Nils Bruin"
+    }
+  ],
+  "Awards": [
     // {
     //   "title": "Nobel Prize in Physics",
     //   "date": "1921-11-01",
@@ -195,7 +261,7 @@
      //  "summary": ""
     }
   ],
-  "certificates": [
+  "Certificates": [
     // {
     //   "name": "Machine Learning",
     //   "date": "2018-01-01",
@@ -281,64 +347,6 @@
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
-  "publications": [
-    {
-      "name": "Simulation of Quantum Homomorphic Encryption: Demonstration and Analysis",
-      "releaseDate": "Oct 2024",
-      // "url": "",
-      "authors": "Sohrab Ganjian, Connor Paddock, Anne Broadbent",
-      "publisher": "In Proceedings of The Sixth IEEE International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications, 2024"
-    },
-    {
-      "name": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
-      "releaseDate": "Sep 2024",
-      "url": "https://arxiv.org/abs/2406.16247",
-      "authors": "Sohrab Ganjian, Connor Paddock, Anne Broadbent",
-      "publisher": "In Proceedings of 2024 IEEE International Conference on Quantum Computing and Engineering (QCE)"
-    },
-    {
-      "name": "Urban City: Crime Attractors and Offender Mobility",
-      "releaseDate": "Oct 2021",
-      "url": "https://www.siam.org/media/g21jrqjq/s142055pdf.pdf",
-      "authors": "Vincent Nguyen, Sohrab Ganjian",
-      "publisher": "SIAM Undergraduate Research Online"
-    }
-    // {
-    //   "name": "Zur Elektrody/namik bewegter Körper",
-    //   "publisher": "Annalen der Physik",
-    //   "releaseDate": "1905-06-30",
-    //   "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-    //   "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    // },
-    // {
-    //   "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-    //   "publisher": "Annalen der Physik",
-    //   "releaseDate": "1905-03-18",
-    //   "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-    //   "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    // },
-    // {
-    //   "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-    //   "publisher": "Annalen der Physik",
-    //   "releaseDate": "1916-03-20",
-    //   "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-    //   "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    // }
-  ],
-  "skills": [
-    {
-      "name": "py-qhe-epr: A Python library for simulating quantum homomorphic encryption",
-      "releaseDate": "2024",
-      "url": "https://github.com/sohrabganjian/py-qhe-epr",
-      "authors": "Sohrab Ganjian"
-    },
-    {
-      "name": "RiemannTheta: A SageMath package for evaluating Riemann theta functions",
-      "releaseDate": "2021",
-      "url": "https://github.com/nbruin/RiemannTheta",
-      "authors": "Sohrab Ganjian, Nils Bruin"
-    }
-  ],
   // "languages": [
   //   {
   //     "language": "German",
@@ -351,7 +359,7 @@
   //     "icon": ""
   //   }
   // ],
-  "training": [
+  "Poster Presentations": [
     {
       "name": "Demonstrating quantum homomorphic encryption through simulation",
       "releaseDate": "Sep 2024",
@@ -369,7 +377,7 @@
       // "url": "https://example.com/poster/quantum-circuits"
     }
   ],
-  "teaching": [
+  "Teaching": [
     {
       "courseName": "Calculus II (MAT 1322)",
       "role": "Teaching Assistant",
@@ -406,7 +414,7 @@
       ]
     }
   ],
-  "languages": [
+  "Software and Technical Tools": [
     {
       "category": "Programming Languages",
       "items": [
@@ -451,33 +459,7 @@
       "icon": "fas fa-tools"
     }
   ],
-  "extracurricular contributions": [
-    {
-      "title": "YouTube Content Creator",
-      "date": "Jan. 2022 - present",
-      "affiliation": "Channel: Cryptography Explained (+12K Views)",
-      "url": "https://www.youtube.com/channel/UCMj9NcOniLYExmiKgGVtcBg"
-    },
-    {
-      "title": "Event Audio and Visual Support Volunteer",
-      "date": "May 2024",
-      "affiliation": "Canada-France Quantum Alliance (CAFQA) Workshop",
-      "url": "https://www.uottawa.ca/research-innovation/events-all/CAFQA"
-    },
-    {
-      "title": "Contributor",
-      "date": "May 2023",
-      "affiliation": "Cybersecurity of Quantum Computing Algorithm Zoo, Pittsburgh Quantum Institute",
-      "url": "https://www.pqi.org/cybersecurity-quantum-computing-algorithm-zoo"
-    },
-    {
-      "title": "Observatory User Group",
-      "date": "Mar 2019 - Mar 2020",
-      "affiliation": "Trottier Observatory, Simon Fraser University",
-      "url": "https://x.com/sfutrottobs?lang=en"
-    }
-  ],
-  "scholarships & fundings": [
+  "Scholarships and Fundings": [
     {
       "name": "Special Merit Scholarship",
       "releaseDate": "Sep 2022 - Aug 2023",
@@ -499,7 +481,7 @@
       "event": "Simon Fraser University"
     }
   ],
-  "interests": [
+  "Talks": [
       {
         "title": "Satellite Image Classification: Hybrid Quantum-Classical Approach",
         "event": "QUASAR End of Year Seminar",
@@ -552,7 +534,7 @@
   //     "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
   //   }
   // ],
- "projects": [
+ "Professional and Academic Events": [
     {
       "name": "Conferences and Meetings",
       "keywords": [
@@ -597,6 +579,16 @@
           ]
         },
         {
+          "name": "2024 Quantum BC Research Day",
+          "date": "2024-04",
+          "location": "Vancouver, Canada",
+          "url": "https://quantum-bc.ca/event/quantum-bc-research-day/",
+          "summary": [
+            "A full-day event held at the University of British Columbia, bringing together faculty, industry professionals, and students engaged in quantum technologies",
+            "Featuring a keynote by Dr. Pooya Ronagh of 1QBit, research talks by leading scientists such as Dr. Daochen Wang (UBC) and Dr. Matt Amy (SFU), panel discussions with experts from Rigetti and D-Wave, engaging poster sessions, and valuable networking opportunities"
+          ]
+        },
+        {
           "name": "Inside Quantum Technologies",
           "date": "2023-06",
           "location": "Montréal, Canada",
@@ -605,6 +597,16 @@
             "A three-day conference centered on the commercialization and business aspects of quantum technologies, featuring technical talks, panels, talent development sessions, and discussions on quantum tech adoption and Canada's vision for quantum technologies",
             "Included celebrated speakers like Gilles Brassard, one of the two developers of the BB84 protocol, alongside industry leaders such as D-Wave, Xanadu, and Pasqal, providing excellent networking opportunities"
           ]
+        },
+        {
+          "name": "2023 The Canadian Mathematical Society (CMS) Summer Meeting",
+          "date": "2023-06",
+          "location": "Ottawa, Canada",
+          "url": "https://cmssmc.wixsite.com/summer23/",
+          "summary": [
+            "A three-day meeting featuring a variety of sessions, including topics such as quantum information theory, C*-algebras and their applications, advances in AI/ML, and more",
+            "The meeting brought together renowned speakers from government institutions like the Bank of Canada and the Tutte Institute, as well as academic institutions such as the University of Waterloo, through diverse formats including talks and poster presentations"
+         ]
         },
         {
           "name": "Quantum Days 2023",
@@ -812,6 +814,32 @@
           ]
         }
       ]
+    }
+  ],
+  "Extracurricular Contributions": [
+    {
+      "title": "YouTube Content Creator",
+      "date": "Jan. 2022 - present",
+      "affiliation": "Channel: Cryptography Explained (+12K Views)",
+      "url": "https://www.youtube.com/channel/UCMj9NcOniLYExmiKgGVtcBg"
+    },
+    {
+      "title": "Event Audio and Visual Support Volunteer",
+      "date": "May 2024",
+      "affiliation": "Canada-France Quantum Alliance (CAFQA) Workshop",
+      "url": "https://www.uottawa.ca/research-innovation/events-all/CAFQA"
+    },
+    {
+      "title": "Contributor",
+      "date": "May 2023",
+      "affiliation": "Cybersecurity of Quantum Computing Algorithm Zoo, Pittsburgh Quantum Institute",
+      "url": "https://www.pqi.org/cybersecurity-quantum-computing-algorithm-zoo"
+    },
+    {
+      "title": "Observatory User Group",
+      "date": "Mar 2019 - Mar 2020",
+      "affiliation": "Trottier Observatory, Simon Fraser University",
+      "url": "https://x.com/sfutrottobs?lang=en"
     }
   ]
 }

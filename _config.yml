@@ -630,22 +630,26 @@ jekyll_get_json:
   - data: resume
     json: assets/json/resume.json # it can also be an url
 jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
+  - Basics
+  - Work and Research Experience
+  - Education
+  - Publications and Manuscripts
+  - Professional and Academic Events
   - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
+  - Awards
+  - Certificates
+  - Open Source Contributions
+  - Software and Technical Tools
+  - Talks
   - references
-  - training
-  - teaching
-  - extracurricular contributions
-  - scholarships & fundings
+  - Poster Presentations
+  - Teaching
+  - Extracurricular Contributions
+  - Scholarships and Fundings
+
+# section_titles:
+#   extracurricular_contributions: "Extracurricular Contributions"
+#   scholarships_fundings: "Scholarships & Fundings"
 
   # section_titles:
   #   work: "Work/Research"
