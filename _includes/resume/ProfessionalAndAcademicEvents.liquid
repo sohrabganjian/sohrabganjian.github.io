@@ -46,6 +46,9 @@
                   {% else %}
                     <strong>{{ keyword.name }}</strong>
                   {% endif %}
+                  {% if keyword.prize %}
+                    <i class="fas fa-trophy trophy-icon" title="Prize Winner" style="font-size: 24px;"></i>
+                  {% endif %}
                   <!-- Expand/Collapse Button -->
                   <button 
                     class="toggle-summary-btn" 

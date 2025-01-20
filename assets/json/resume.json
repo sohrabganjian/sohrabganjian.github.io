@@ -224,43 +224,43 @@
       "authors": "Sohrab Ganjian, Nils Bruin"
     }
   ],
-  "Awards": [
-    // {
-    //   "title": "Nobel Prize in Physics",
-    //   "date": "1921-11-01",
-    //   "awarder": "Royal Swedish Academy of Sciences",
-    //   "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-    //   "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    // }
-    {
-      "title": "1st place award, QuSTEAM Quantum Hackathon Challenge  ",
-      "date": "2022-11",
-      "awarder": "qBraid",
-      "url": "https://github.com/eculf/HAQS-QUSTEAM-2022/blob/main/Quasar_notebook.ipynb"
-      // "summary": "Within a team of three, prepared an experiment to demonstrate the violation of Bell's inequality via the celebrated CHSH (Clauser, Horne, Shimony, and Holt) game. Submitted jobs on Amazon Braket quantum computers and prepared documentation to present the work using a Jupyter Notebook."
-    },
-    {
-      "title": "Undergraduate Research Prize Recepient",
-      "date": "2022-09",
-      "awarder": "Simon Fraser University",
-      "url": "https://www.sfu.ca/math/events-news/news/2022-news/2021MathUndergraduateResearchPrizes.html"
-     //  "summary": ""
-    },
-    {
-      "title": "1st Place in Data Science Competition: Analysis of BC Ferries Delay Data",
-      "date": "2019-04",
-      "awarder": "British Columbia Undergraduate Mathematics and Statistics Conference"
-      // "url": "https://www.sfu.ca/math/events-news/news/2022-news/2021MathUndergraduateResearchPrizes.html"
-     //  "summary": ""
-    },
-    {
-      "title": "Department of Mathematics Award",
-      "date": "Spring 2019",
-      "awarder": "Simon Fraser University"
-      // "url": "https://www.sfu.ca/math/events-news/news/2022-news/2021MathUndergraduateResearchPrizes.html"
-     //  "summary": ""
-    }
-  ],
+  // "Awards": [
+  //   // {
+  //   //   "title": "Nobel Prize in Physics",
+  //   //   "date": "1921-11-01",
+  //   //   "awarder": "Royal Swedish Academy of Sciences",
+  //   //   "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
+  //   //   "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+  //   // }
+  //   {
+  //     "title": "1st place award, QuSTEAM Quantum Hackathon Challenge  ",
+  //     "date": "2022-11",
+  //     "awarder": "qBraid",
+  //     "url": "https://github.com/eculf/HAQS-QUSTEAM-2022/blob/main/Quasar_notebook.ipynb"
+  //     // "summary": "Within a team of three, prepared an experiment to demonstrate the violation of Bell's inequality via the celebrated CHSH (Clauser, Horne, Shimony, and Holt) game. Submitted jobs on Amazon Braket quantum computers and prepared documentation to present the work using a Jupyter Notebook."
+  //   },
+  //   {
+  //     "title": "Undergraduate Research Prize Recepient",
+  //     "date": "2022-09",
+  //     "awarder": "Simon Fraser University",
+  //     "url": "https://www.sfu.ca/math/events-news/news/2022-news/2021MathUndergraduateResearchPrizes.html"
+  //    //  "summary": ""
+  //   },
+  //   {
+  //     "title": "1st Place in Data Science Competition: Analysis of BC Ferries Delay Data",
+  //     "date": "2019-04",
+  //     "awarder": "British Columbia Undergraduate Mathematics and Statistics Conference"
+  //     // "url": "https://www.sfu.ca/math/events-news/news/2022-news/2021MathUndergraduateResearchPrizes.html"
+  //    //  "summary": ""
+  //   },
+  //   {
+  //     "title": "Department of Mathematics Award",
+  //     "date": "Spring 2019",
+  //     "awarder": "Simon Fraser University"
+  //     // "url": "https://www.sfu.ca/math/events-news/news/2022-news/2021MathUndergraduateResearchPrizes.html"
+  //    //  "summary": ""
+  //   }
+  // ],
   "Certificates": [
     // {
     //   "name": "Machine Learning",
@@ -459,11 +459,18 @@
       "icon": "fas fa-tools"
     }
   ],
-  "Scholarships and Fundings": [
+  "Awards, Scholarships and Fundings": [
     {
       "name": "Special Merit Scholarship",
       "releaseDate": "Sep 2022 - Aug 2023",
       "event": "University of Ottawa"
+    },
+    {
+      "name": "Undergraduate Research Prize Recepient",
+      "releaseDate": "Sep 2022",
+      "event": "Simon Fraser University",
+      "url": "https://www.sfu.ca/math/events-news/news/2022-news/2021MathUndergraduateResearchPrizes.html",
+      "urlText": "Announcement"
     },
     {
       "name": "NSERC Undergraduate Student Research Award",
@@ -777,6 +784,7 @@
           "location": "Online",
           "url": "https://www.qbraid.com/blog/haas-2022-review",
           // archived link: https://web.archive.org/web/20250119180111/https://www.qbraid.com/blog/haas-2022-review
+          "prize": true,
           "links": [
             {"GitHub": true, "text": "Jupyter Notebook in GitHub", "url": "https://github.com/eculf/HAQS-QUSTEAM-2022/blob/main/Quasar_notebook.ipynb"},
             {"text": "YouTube", "url": "https://www.youtube.com/watch?v=QYL2R5uGPXg&ab_channel=SohrabGanjian" }
@@ -802,6 +810,7 @@
           "location": "Burnaby, British Columbia, Canada",
           "date": "2019-04",
           "url": "https://www.pims.math.ca/events/190426-2bcumasc",
+          "prize": true,
           "summary":
           [
             "Within team of two, analyzed delay trends for each of BC Ferries’ boats, taking into consideration each boat as well as features such as temperature, traffic, and wind",

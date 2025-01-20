@@ -6,6 +6,7 @@ nav: true
 nav_order: 3
 ---
 
+# Talks
 
 <div class="talks-item">
   <ul>
