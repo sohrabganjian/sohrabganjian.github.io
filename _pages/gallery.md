@@ -52,7 +52,7 @@ figcaption small {
 <figure class="row mt-3">
   <div class="col-12 text-center">
     <img src="/assets/img/Gallery/2024IEEE-TPS.jpg" alt="Placeholder Image" class="img-fluid" style="max-width: 50%; height: auto;">
-    <figcaption>2024 IEEE TPS Conference, Washington D.C., October 2024</figcaption>
+    <figcaption>2024 IEEE TPS Conference, Washington, D.C., October 2024</figcaption>
   </div>
 </figure>
 
@@ -66,7 +66,7 @@ figcaption small {
       <img src="/assets/img/Gallery/2024IEEE-QCE-Poster(2).jpg" alt="Placeholder Image" class="img-fluid" style="height: 400px; object-fit: cover;">
     </div>
   </div>
-  <figcaption>2024 IEEE Quantum Week - Poster Session, Montreal, September 2024</figcaption>
+  <figcaption>2024 IEEE Quantum Week - Poster Session, Montréal, September 2024</figcaption>
 </figure>
 
 <!-- One figure with multiple images *and multiple captions* inside -->
@@ -120,7 +120,7 @@ figcaption small {
 <figure class="row text-center">
   <div class="col-12">
     <img src="/assets/img/Gallery/IPAMPosterSession.jpg" alt="Placeholder Image" class="img-fluid d-block mx-auto" style="max-width: 40%; height: auto;">
-    <figcaption>Graduate Summer School on Post-quantum and Quantum Cryptography, IPAM, UCLA, July 2022</figcaption>
+    <figcaption>Graduate Summer School on Post-quantum and Quantum Cryptography, UCLA, July 2022</figcaption>
   </div>
 </figure>
 
@@ -137,7 +137,7 @@ figcaption small {
 <figure class="row mt-3 text-center">
   <div class="col-12">
     <img src="/assets/img/Gallery/SFU-Intramurals.jpeg" alt="Placeholder Image" class="img-fluid" style="max-width: 50%; height: auto;">
-    <figcaption>SFU Friday Intramural Futsal Champions, Simon Fraser University, 2018</figcaption>
+    <figcaption>SFU Intramural Futsal - Friday Champions, Simon Fraser University, 2018</figcaption>
   </div>
 </figure>
 

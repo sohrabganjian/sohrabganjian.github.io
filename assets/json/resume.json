@@ -1,12 +1,15 @@
 {
   "Basics": {
     "name": "Sohrab Ganjian",
-    "label": "Scientist",
+    "Title": "Quantum Research Scientist",
     "image": "",
-    "email": "sohrab.ganjian@nrcan-rncan.gc.ca",
+    "email": {
+      "email_display": "sohrab dot ganjian at nrcan-rncan dot gc dot ca",
+      "email_actual": "sohrab.ganjian@nrcan-rncan.gc.ca"
+    },
     // "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "url": "https://sohrabganjian.github.io/",
+    // "summary": "Quantum Research Scientist",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -26,7 +29,7 @@
     {
       "title": "Test", 
       "name": "Natural Resources Canada",
-      "location": "Ottawa, Canada",
+      "location": "Ottawa, ON, Canada",
       "url": "https://natural-resources.canada.ca/home",
       "summary": "Review existing literature and develop quantum machine learning methods aligned with the mandate and goals of Natural Resources Canada, addressing novel settings with limited or no prior research",
       "positions": [
@@ -50,7 +53,7 @@
     },
     {
       "name": "Simon Fraser University",
-      "location": "Vancouver, Canada",
+      "location": "Burnaby, BC, Canada",
       "url": "https://www.sfu.ca/",
       "summary": "Collaborated on the code developlemt of Riemann theta functions using Sage, Cython and Python",
       "positions": [
@@ -72,7 +75,7 @@
     },
     {
       "name": "Simon Fraser University",
-      "location": "Vancouver, Canada",
+      "location": "Burnaby, BC, Canada",
       "url": "https://www.sfu.ca/",
       "summary": "Simulated and applied existing mathematical models for crime prediction using Python",
       "positions": [
@@ -96,7 +99,7 @@
     },
     {
       "name": "Trulioo",
-      "location": "Vancouver, Canada",
+      "location": "Vancouver, BC, Canada",
       "url": "https://www.trulioo.com/",
       "summary": "Performed data analysis, compiled and shared relevant benchmarking statistics with internal stakeholders, and helped with onboarding new clients",
       "positions": [
@@ -129,7 +132,7 @@
   "Education": [
     {
       "institution": "University of Ottawa, Ottawa, Canada",
-      "location": "Ottawa, Canada",
+      "location": "Ottawa, ON, Canada",
       "url": "https://www.uottawa.ca/en",
       "area": "Thesis: <a href='https://ruor.uottawa.ca/items/24673939-ac64-426f-9b09-42ff23716f0d' target='_blank'>Simulation of Quantum Homomorphic Encryption</a>",
       "abstract": "When interacting with a cloud server, two ideals we could aim for, among others, are performing computation and ensuring the privacy of the data. Quantum homomorphic encryption is a cryptographic primitive that seeks to address these two objectives in the quantum setting, allowing for quantum computation on encrypted quantum data. In this work, we provide a software simulation of a quantum homomorphic encryption scheme, known as the \"EPR scheme\", for universal quantum circuits, developed by Broadbent and Jeffery.<br>We demonstrate the near-term viability of this scheme and provide evidence that the computational cost of classical subroutines in the simulation is negligible compared to the cost of simulating the quantum operations. The simulation package is an open-source Python implementation, called \"py-qhe-epr\", with a focus on extensive documentation and ease of use for educational, verification and adaptability purposes, supporting future research and development. Furthermore, this implementation serves as a step towards further hardware applications of quantum homomorphic encryption between networked quantum devices.",
@@ -144,8 +147,8 @@
       // "courses": ["Theory of Relativity"]
     },
     {
-      "institution": "Simon Fraser University, Vancouver, Canada",
-      "location": "Vancouver, Canada",
+      "institution": "Simon Fraser University, Burnaby, Canada",
+      "location": "Burnaby, BC, Canada",
       "url": "https://www.sfu.ca/",
       // "area": "Bachelor of Science in Mathematics",
       "courses": [
@@ -161,7 +164,7 @@
 "Publications and Manuscripts": [
     {
       "name": "Simulation of Quantum Homomorphic Encryption: Demonstration and Analysis",
-      "releaseDate": "Oct 2024",
+      "releaseDate": "2024-10",
       "url": "https://doi.org/10.1109/TPS-ISA62245.2024.00066",
       "authors": "Sohrab Ganjian, Connor Paddock, Anne Broadbent",
       "publisher": "In Proceedings of The Sixth IEEE International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications",
@@ -171,7 +174,7 @@
     },
     {
       "name": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
-      "releaseDate": "Sep 2024",
+      "releaseDate": "2024-09",
       "url": "https://arxiv.org/abs/2406.16247",
       "authors": "Sohrab Ganjian, Connor Paddock, Anne Broadbent",
       "publisher": "In Proceedings of 2024 IEEE International Conference on Quantum Computing and Engineering (QCE)",
@@ -181,7 +184,7 @@
     },
     {
       "name": "Urban City: Crime Attractors and Offender Mobility",
-      "releaseDate": "Oct 2021",
+      "releaseDate": "2021-10",
       "url": "https://www.siam.org/media/g21jrqjq/s142055pdf.pdf",
       "authors": "Vincent Nguyen, Sohrab Ganjian",
       "publisher": "SIAM Undergraduate Research Online",
@@ -362,18 +365,18 @@
   "Poster Presentations": [
     {
       "name": "Demonstrating quantum homomorphic encryption through simulation",
-      "releaseDate": "Sep 2024",
+      "releaseDate": "2024-09",
       "authors": "Sohrab Ganjian, Connor Paddock, Anne Broadbent",
       "event": "IEEE International Conference on Quantum Computing and Engineering – QCE24",
-      "location": "Montréal, CAN"
+      "location": "Montréal, QC, Canada"
       // "url": "https://example.com/poster/quantum-ml"
     },
     {
       "name": "Inner workings of SHA-512",
-      "releaseDate": "Jul 2022",
+      "releaseDate": "2022-07",
       "authors": "Sohrab Ganjian",
       "event": "Graduate Summer School on Post-quantum and Quantum Cryptography",
-      "location": "UCLA, LA, USA"
+      "location": "LA, CA, USA"
       // "url": "https://example.com/poster/quantum-circuits"
     }
   ],
@@ -462,12 +465,12 @@
   "Awards, Scholarships and Fundings": [
     {
       "name": "Special Merit Scholarship",
-      "releaseDate": "Sep 2022 - Aug 2023",
+      "releaseDate": "2022.09 - 2023.08",
       "event": "University of Ottawa"
     },
     {
       "name": "Undergraduate Research Prize Recepient",
-      "releaseDate": "Sep 2022",
+      "releaseDate": "2022.09",
       "event": "Simon Fraser University",
       "url": "https://www.sfu.ca/math/events-news/news/2022-news/2021MathUndergraduateResearchPrizes.html",
       "urlText": "Announcement"
@@ -493,7 +496,7 @@
         "title": "Satellite Image Classification: Hybrid Quantum-Classical Approach",
         "event": "QUASAR End of Year Seminar",
         "hosting_institute": "University of Ottawa",
-        "location": "Ottawa, ON, CAN",
+        "location": "Ottawa, ON, Canada",
         "date": "December 13, 2024",
         "url": "https://quasarlab.org/news/end-year-seminar-2024/"
       },
@@ -501,7 +504,7 @@
         "title": "Simulation of Quantum Homomorphic Encryption: Demonstration and Analysis",
         "event": "The Sixth IEEE International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications",
         "hosting_institute": "IEEE",
-        "location": "Washington D.C., US",
+        "location": "Washington, D.C., USA",
         "date": "October 29, 2024",
         "url": "https://www.sis.pitt.edu/lersais/conference/tps/2024/"
       },
@@ -509,7 +512,7 @@
         "title": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
         "event": "AI-Quantum Workshop",
         "hosting_institute": "Natural Resources Canada",
-        "location": "Ottawa, ON, CAN",
+        "location": "Ottawa, ON, Canada",
         "date": "September 25, 2024"
        // "url": "https://www.sis.pitt.edu/lersais/conference/tps/2024/"
       },
@@ -517,14 +520,14 @@
         "title": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
         "event": "QUASAR Seminar",
         "hosting_institute": "University of Ottawa",
-        "location": "Ottawa, ON, CAN",
+        "location": "Ottawa, ON, Canada",
         "date": "June 7, 2024"
       },
       {
         "title": "An Analysis of the Security of BB84 Protocol",
         "event": "QUASAR Seminar",
         "hosting_institute": "University of Ottawa",
-        "location": "Ottawa, ON, CAN",
+        "location": "Ottawa, ON, Canada",
         "date": "April 6, 2023"
         // "url": ""
       }
@@ -549,7 +552,7 @@
           "name": "The Sixth IEEE International Conference on Trust, Privacy and Security (TPS) in Intelligent Systems, and Applications",
           "date": "2024-10",
           "url": "https://www.sis.pitt.edu/lersais/conference/tps/2024/",
-          "location": "Washington D.C., USA",
+          "location": "Washington, D.C., USA",
           "invited": true,
           "summary": 
           [
@@ -562,7 +565,7 @@
         {
           "name": "IEEE International Conference on Quantum Computing and Engineering – QCE24",
           "date": "2024-09",
-          "location": "Montréal, Canada",
+          "location": "Montréal, QC, Canada",
           "url": "https://qce.quantum.ieee.org/2024/",
           "invited": true,
           // "description": "A gathering of top quantum computing researchers."
@@ -578,7 +581,7 @@
         {
           "name": "2024 Québec Ontario Consortium on Quantum Protocols (QUORUM) Meeting",
           "date": "2024-05",
-          "location": "Ottawa, Canada",
+          "location": "Ottawa, ON, Canada",
           "url": "https://web.archive.org/web/20240831223434/https:/quorumuottawa.ca/quorummeeting/",
           "summary": [
             "A two-day event featuring discussions on recent advancements in quantum technologies, with a focus on QUORUM’s main themes: entanglement, cryptography, communications, and governance",
@@ -588,7 +591,7 @@
         {
           "name": "2024 Quantum BC Research Day",
           "date": "2024-04",
-          "location": "Vancouver, Canada",
+          "location": "Vancouver, BC, Canada",
           "url": "https://quantum-bc.ca/event/quantum-bc-research-day/",
           "summary": [
             "A full-day event held at the University of British Columbia, bringing together faculty, industry professionals, and students engaged in quantum technologies",
@@ -598,7 +601,7 @@
         {
           "name": "Inside Quantum Technologies",
           "date": "2023-06",
-          "location": "Montréal, Canada",
+          "location": "Montréal, QC, Canada",
           "url": "https://iqtevent.com/wp-content/uploads/2023/06/IQTCanada23_program_rev.pdf",
           "summary": [
             "A three-day conference centered on the commercialization and business aspects of quantum technologies, featuring technical talks, panels, talent development sessions, and discussions on quantum tech adoption and Canada's vision for quantum technologies",
@@ -608,7 +611,7 @@
         {
           "name": "2023 The Canadian Mathematical Society (CMS) Summer Meeting",
           "date": "2023-06",
-          "location": "Ottawa, Canada",
+          "location": "Ottawa, ON, Canada",
           "url": "https://cmssmc.wixsite.com/summer23/",
           "summary": [
             "A three-day meeting featuring a variety of sessions, including topics such as quantum information theory, C*-algebras and their applications, advances in AI/ML, and more",
@@ -629,7 +632,7 @@
         {
           "name": "Fall 2022 INTRIQ meeting",
           "date": "2022-10",
-          "location": "Bromont, Québec, Canada",
+          "location": "Bromont, QC, Canada",
           "url": "https://www.intriq.org/events/rencontre-automnale-2022-de-lintriq",
           "summary":[
             "A two-day gathering organized by INTRIQ (Institut Transdisciplinaire d'Information Quantique), bringing together members of the quantum information community for discussions, presentations, and networking",
@@ -640,7 +643,7 @@
         {
           "name": "British Columbia’s Undergraduate Mathematics & Statistics Conference",
           "date": "2019-04",
-          "location": "Burnaby, British Columbia, Canada",
+          "location": "Burnaby, BC, Canada",
           "url": "https://www.pims.math.ca/events/190426-2bcumasc",
           "summary": [
             "A two-day event designed to support undergraduate students in mathematics and statistics across British Columbia, fostering research and collaborative opportunities",
@@ -666,7 +669,7 @@
         {
           "name": "Quantum Key Distribution Summer School",
           "date": "2022-08",
-          "location": "Waterloo, Canada",
+          "location": "Waterloo, ON, Canada",
           "url": "https://web.archive.org/web/20250119190149/https://uwaterloo.ca/institute-for-quantum-computing/events/workshops/quantum-key-distribution-summer-school",
           // archived: https://web.archive.org/web/20250119190149/https://uwaterloo.ca/institute-for-quantum-computing/events/workshops/quantum-key-distribution-summer-school
           "summary":
@@ -678,7 +681,7 @@
         {
           "name": "IPAM Graduate Summer School on Post-quantum and Quantum Cryptography",
           "date": "2022-07",
-          "location": "UCLA, LA, USA",
+          "location": "LA, CA, USA",
           "url": "https://www.ipam.ucla.edu/programs/summer-schools/graduate-summer-school-on-post-quantum-and-quantum-cryptography/?tab=overview",
           "summary": [
             "Hosted by the Institute for Pure and Applied Mathematics (IPAM) at the University of California, Los Angeles (UCLA), the event provided an in-depth introduction to post-quantum and quantum cryptography. Topics included the Deutsch-Jozsa algorithm, Simon's algorithm, the BB84 protocol, quantum key distribution, and Supersingular Isogeny Key Encapsulation (now broken). Featured speakers included top researchers such as Dr. Anne Broadbent, Dr. Craig Costello, and Dr. Jonathan Katz",
@@ -688,7 +691,7 @@
         {
           "name": "PIMS CRG Summer School: Deep Learning for Computational Mathematics",
           "date": "2019-07",
-          "location": "Burnaby, British Columbia, Canada",
+          "location": "Burnaby, BC, Canada",
           "url": "https://www.pims.math.ca/events/190722-pcssdlfcm",
           "summary":
           [
@@ -699,7 +702,7 @@
         {
           "name": "Data Science Bootcamp",
           "date": "2019-06",
-          "location": "Saskatoon, Canada",
+          "location": "Saskatoon, SK, Canada",
           "url": "https://artsandscience.usask.ca/news/articles/3525/Data_Science_Bootcamp",
           "summary":
           [
@@ -710,7 +713,7 @@
         {
           "name": "2018 PIMS BC Data Science Workshop",
           "date": "2018-06",
-          "location": "Vancouver, Canada",
+          "location": "Vancouver, BC, Canada",
           "url": "https://workshop.bcdata.ca/2018/",
           // archived link: https://web.archive.org/web/20250119190144/https://workshop.bcdata.ca/2018/
           "links": [
@@ -780,7 +783,7 @@
         },
         {
           "name": "2022 qBraid HAQS: QuSTEAM Challenge",
-          "date": "Oct-Nov 2022",
+          "date": "2022.10 - 2022-11",
           "location": "Online",
           "url": "https://www.qbraid.com/blog/haas-2022-review",
           // archived link: https://web.archive.org/web/20250119180111/https://www.qbraid.com/blog/haas-2022-review
@@ -807,7 +810,7 @@
         },
         {
           "name": "Data Science Case Competition at the British Columbia’s Undergraduate Mathematics & Statistics Conference",
-          "location": "Burnaby, British Columbia, Canada",
+          "location": "Burnaby, BC, Canada",
           "date": "2019-04",
           "url": "https://www.pims.math.ca/events/190426-2bcumasc",
           "prize": true,
@@ -831,26 +834,30 @@
   "Extracurricular Contributions": [
     {
       "title": "YouTube Content Creator",
-      "date": "Jan. 2022 - present",
+      "date": "2022.01 - present",
       "affiliation": "Channel: Cryptography Explained (+12K Views)",
+      "location": "Online",
       "url": "https://www.youtube.com/channel/UCMj9NcOniLYExmiKgGVtcBg"
     },
     {
       "title": "Event Audio and Visual Support Volunteer",
-      "date": "May 2024",
+      "date": "2024-05",
+      "location": "Ottawa, ON, Canada",
       "affiliation": "Canada-France Quantum Alliance (CAFQA) Workshop",
       "url": "https://web.archive.org/web/20250119175511/https://www.uottawa.ca/research-innovation/events-all/CAFQA"
       // link to article: https://ottawa.office.cnrs.fr/en/first-cafqa-workshop-in-canada/
     },
     {
       "title": "Contributor",
-      "date": "May 2023",
+      "date": "2023.05",
+      "location": "Online",
       "affiliation": "Cybersecurity of Quantum Computing Algorithm Zoo, Pittsburgh Quantum Institute",
       "url": "https://www.pqi.org/cybersecurity-quantum-computing-algorithm-zoo"
     },
     {
       "title": "Observatory User Group",
-      "date": "Mar 2019 - Mar 2020",
+      "location": "Burnaby, BC, Canada",
+      "date": "2019.03 - 2020.03",
       "affiliation": "Trottier Observatory, Simon Fraser University",
       "url": "https://x.com/sfutrottobs?lang=en"
     }
