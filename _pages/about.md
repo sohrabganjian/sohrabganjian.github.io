@@ -6,7 +6,7 @@ subtitle: <a href='https://natural-resources.canada.ca/home'>NRCan</a>. Quantum 
 
 profile:
   align: right
-  image: SG-Headshot.jpg
+  image: SG-Headshot2.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Ottawa, Ontario</p>
@@ -16,7 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am quantum research scientist at Natural Resources Canada, focused  on bringing the potential of quantum computing to life. I hold a Master of Science in Mathematics from the University of Ottawa, where I specialized in quantum cryptography. My thesis, titled. <a href='https://ruor.uottawa.ca/items/24673939-ac64-426f-9b09-42ff23716f0d'><i>Simulation of Quantum Homomorphic Encryption</i></a> was completed under the guidance of [Dr. Anne Broadbent](https://mysite.science.uottawa.ca/abroadbe/). Before that, I earned a Bachelor of Science in Mathematics with a minor in Philosophy at Simon Fraser University (SFU). During my time at SFU, I gained valuable experience through two USRA NSERC-funded research semesters and an 8-month co-op placement as a data analyst at Trulioo. Having experiences in academia, industry, and government has given me a broader perspective on the importance of contextualizing problems to provide them with meaning and societal value. Through these experiences, I have learnt to break down complex problems into smaller and manageable sub-problems and to ask the right questions  (a skill I am still honing)! 
+I am quantum research scientist at Natural Resources Canada, focused  on bringing the potential of quantum computing to life. I hold a Master of Science in Mathematics from the University of Ottawa, where I specialized in quantum cryptography. My thesis, titled <a href='https://ruor.uottawa.ca/items/24673939-ac64-426f-9b09-42ff23716f0d'><i>Simulation of Quantum Homomorphic Encryption</i></a> was completed under the guidance of [Dr. Anne Broadbent](https://mysite.science.uottawa.ca/abroadbe/). Before that, I earnt a Bachelor of Science in Mathematics with a minor in Philosophy at Simon Fraser University (SFU). During my time at SFU, I gained valuable experience through two USRA NSERC-funded research semesters and an 8-month co-op placement as a data analyst at Trulioo. Having experiences in academia, industry, and government has given me a broader perspective on the importance of contextualizing problems to provide them with meaning and societal value. Through these experiences, I have learnt to break down complex problems into smaller and manageable sub-problems and to ask the right questions  (a skill I am still honing)! 
 
 
 My primary research interests include quantum machine learning, quantum algorithms, quantum cryptography, and the development of NISQ friendly algorithms. Beyond these, I am always eager to explore other areas within the vast field of quantum information science, such as quantum error correction, quantum hardware, quantum simulation, and quantum complexity theory, and by extension the philosophical implications of quantum mechanics. 
