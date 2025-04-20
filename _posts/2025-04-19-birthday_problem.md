@@ -4,7 +4,7 @@ title: "Birthday Paradox"
 date: 2025-04-19
 categories: [probability]
 tags: [jupyter-notebook, collision-probability]
-description: "Description: A study of the Birthday Paradox and its implications for collision probabilities"
+description: "A study of the Birthday Paradox and its implications for collision probabilities"
 giscus_comments: true
 related_posts: false
 ---
