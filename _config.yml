@@ -265,8 +265,8 @@ jekyll-archives:
     category: "/blog/category/:name/"
 
 
-display_tags: ["quantum-algorithms", "jupyter-notebook"]
-display_categories: ["quantum"]
+display_tags: ["quantum-algorithms", "jupyter-notebook", "collision-probability"]
+display_categories: ["quantum", "probability"]
 
 
 # -----------------------------------------------------------------------------
