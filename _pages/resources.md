@@ -109,8 +109,10 @@ A plethora of quantum algorithms can be found in [Quantum Algorithm Zoo](https:/
 - [Grover’s Algorithm](https://en.wikipedia.org/wiki/Grover%27s_algorithm)
 - [Quantum Fourier Transform](https://en.wikipedia.org/wiki/Quantum_Fourier_transform)
 - [Quantum Phase Estimation](https://en.wikipedia.org/wiki/Quantum_phase_estimation_algorithm)
+- [Hadamard Test](https://en.wikipedia.org/wiki/Hadamard_test)
 - [Variational quantum eigensolver](https://en.wikipedia.org/wiki/Variational_quantum_eigensolver)
 - [Quantum Approximate Optimization Algorithm (QAOA)](https://en.wikipedia.org/wiki/Quantum_optimization_algorithms)
+- [Quadratic unconstrained binary optimization](https://en.wikipedia.org/wiki/Quadratic_unconstrained_binary_optimization)
 - [HHL Algorithm](https://en.wikipedia.org/wiki/HHL_algorithm)
 - [Shor’s Algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm)
 - ...
