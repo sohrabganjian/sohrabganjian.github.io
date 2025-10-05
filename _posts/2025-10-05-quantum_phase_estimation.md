@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quantum Phase Transform"
+title: "Quantum Phase Estimation"
 date: 2025-10-05
 categories: [quantum]
 tags: [jupyter-notebook, quantum-algorithms]
