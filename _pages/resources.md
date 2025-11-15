@@ -110,6 +110,8 @@ A plethora of quantum algorithms can be found in [Quantum Algorithm Zoo](https:/
 - [Quantum Fourier Transform](https://en.wikipedia.org/wiki/Quantum_Fourier_transform)
 - [Quantum Phase Estimation](https://en.wikipedia.org/wiki/Quantum_phase_estimation_algorithm)
 - [Hadamard Test](https://en.wikipedia.org/wiki/Hadamard_test)
+- [Quantum Counting](https://en.wikipedia.org/wiki/Quantum_counting_algorithm)
+- [Quantum Amplitude Estimation](https://qiskit-community.github.io/qiskit-finance/tutorials/00_amplitude_estimation.html)
 - [Variational quantum eigensolver](https://en.wikipedia.org/wiki/Variational_quantum_eigensolver)
 - [Quantum Approximate Optimization Algorithm (QAOA)](https://en.wikipedia.org/wiki/Quantum_optimization_algorithms)
 - [Quadratic Unconstrained Binary Optimization (QUBO)](https://en.wikipedia.org/wiki/Quadratic_unconstrained_binary_optimization)
@@ -133,6 +135,8 @@ A plethora of quantum algorithms can be found in [Quantum Algorithm Zoo](https:/
 - [Entanglement Swapping](https://en.wikipedia.org/wiki/Entanglement_swapping)
 - [Magic State Distillation](https://en.wikipedia.org/wiki/Magic_state_distillation)
 - [Physical and Logical Qubits](https://en.wikipedia.org/wiki/Physical_and_logical_qubits)
+- [Maximum Likelihood Amplitude Estimation](https://qiskit-community.github.io/qiskit-algorithms/stubs/qiskit_algorithms.MaximumLikelihoodAmplitudeEstimation.html)
+- [Grover Adaptive Search](https://qiskit-community.github.io/qiskit-optimization/tutorials/04_grover_optimizer.html)
 - ...
 
 
