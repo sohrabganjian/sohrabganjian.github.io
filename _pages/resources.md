@@ -112,7 +112,7 @@ A plethora of quantum algorithms can be found in [Quantum Algorithm Zoo](https:/
 - [Hadamard Test](https://en.wikipedia.org/wiki/Hadamard_test)
 - [Quantum Counting](https://en.wikipedia.org/wiki/Quantum_counting_algorithm)
 - [Quantum Amplitude Estimation](https://qiskit-community.github.io/qiskit-finance/tutorials/00_amplitude_estimation.html)
-- [Variational quantum eigensolver](https://en.wikipedia.org/wiki/Variational_quantum_eigensolver)
+- [Variational Quantum Eigensolver](https://en.wikipedia.org/wiki/Variational_quantum_eigensolver)
 - [Quantum Approximate Optimization Algorithm (QAOA)](https://en.wikipedia.org/wiki/Quantum_optimization_algorithms)
 - [Quadratic Unconstrained Binary Optimization (QUBO)](https://en.wikipedia.org/wiki/Quadratic_unconstrained_binary_optimization)
 - [HHL Algorithm](https://en.wikipedia.org/wiki/HHL_algorithm)
