@@ -115,7 +115,7 @@ A plethora of quantum algorithms can be found in [Quantum Algorithm Zoo](https:/
 - [Variational Quantum Eigensolver](https://en.wikipedia.org/wiki/Variational_quantum_eigensolver)
 - [Quadratic Unconstrained Binary Optimization (QUBO)](https://en.wikipedia.org/wiki/Quadratic_unconstrained_binary_optimization)
 - [Quantum Approximate Optimization Algorithm (QAOA)](https://en.wikipedia.org/wiki/Quantum_optimization_algorithms)
-- [Quantum singular value transformation(QSVT)](https://en.wikipedia.org/wiki/Quantum_singular_value_transformation)
+- [Quantum Singular Value Transformation (QSVT)](https://en.wikipedia.org/wiki/Quantum_singular_value_transformation)
 - [HHL Algorithm](https://en.wikipedia.org/wiki/HHL_algorithm)
 - [Shor’s Algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm)
 - ...
