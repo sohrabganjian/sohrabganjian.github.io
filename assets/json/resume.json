@@ -301,6 +301,13 @@
     //   "icon": "fa-solid fa-calendar"
     // },
     {
+      "name": "Foundaitions for Quantum Programming",
+      "date": "2026-02",
+      "issuer": "D-Wave",
+      "url": "/assets/certificates/DWave-FoundationsForQuantumProgrammingFoundations_Certificate.pdf",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
       "name": "Quantum Professional",
       "date": "2023-08",
       "issuer": "Q-CTRL",

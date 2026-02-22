@@ -127,6 +127,19 @@ figcaption small {
 <!-- Life Beyond Work -->
 <h1>Life Beyond Work</h1>
 
+<!-- Single figure with multiple images but one caption -->
+<figure class="text-center">
+  <div class="row">
+    <div class="col-6">
+      <img src="/assets/img/Gallery/BMOMarathon2025(1).jpg" alt="Placeholder Image" class="img-fluid" style="height: 400px; object-fit: cover;">
+    </div>
+    <div class="col-6">
+      <img src="/assets/img/Gallery/BMOMarathon2025(2).jpg" alt="Placeholder Image" class="img-fluid" style="height: 400px; object-fit: cover;">
+    </div>
+  </div>
+  <figcaption>2025 BMO Marathon, Vancouver, May 2025</figcaption>
+</figure>
+
 <figure class="row mt-3 text-center">
   <div class="col-12">
     <img src="/assets/img/Gallery/BMOMarathon2024.jpeg" alt="Placeholder Image" class="img-fluid" style="max-width: 50%; height: auto;">
