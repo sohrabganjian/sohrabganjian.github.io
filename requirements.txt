@@ -1,1 +1,4 @@
-nbconvert
+# Python deps for jekyll-jupyter-notebook (`jupyter nbconvert`).
+# Local: use your conda packages when already satisfied — only run pip if you need to add/refresh nbconvert.
+# Do not pin jupyter_core here; let conda keep your chosen version (avoids accidental downgrades).
+nbconvert>=7.16.4

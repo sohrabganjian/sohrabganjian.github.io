@@ -1,0 +1,46 @@
+{#-
+  JupyterLab TeX stack + explicit inline/display delimiters (required: partial tex{}
+  can prevent MathJax from applying defaults, breaking $...$ inline math).
+  operator_macros must match _data/mathjax_jupyterlab.yml operator_macros.
+-#}
+{%- macro mathjax(url="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js") -%}
+    <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams',
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        packages: {'[+]': [
+          'mathtools', 'textcomp', 'textmacros', 'ams', 'newcommand', 'noerrors', 'noundefined',
+          'action', 'amscd', 'bbox', 'boldsymbol', 'braket', 'bussproofs',
+          'cancel', 'cases', 'centernot', 'color', 'colorv2', 'colortbl', 'empheq',
+          'enclose', 'extpfeil', 'gensymb', 'html', 'mhchem', 'physics', 'upgreek',
+          'unicode', 'verb', 'configmacros', 'tagformat', 'setoptions'
+        ]},
+        macros: {
+          QFT: '\\operatorname{QFT}'
+        },
+      },
+      loader: {
+        load: [
+          '[tex]/mathtools', '[tex]/textcomp', '[tex]/textmacros', '[tex]/ams',
+          '[tex]/newcommand', '[tex]/noerrors', '[tex]/noundefined',
+          '[tex]/action', '[tex]/amscd', '[tex]/bbox', '[tex]/boldsymbol',
+          '[tex]/braket', '[tex]/bussproofs', '[tex]/cancel', '[tex]/cases', '[tex]/centernot',
+          '[tex]/color', '[tex]/colorv2', '[tex]/colortbl', '[tex]/empheq', '[tex]/enclose',
+          '[tex]/extpfeil', '[tex]/gensymb', '[tex]/html', '[tex]/mhchem',
+          '[tex]/physics', '[tex]/upgreek', '[tex]/unicode', '[tex]/verb',
+          '[tex]/configmacros', '[tex]/tagformat', '[tex]/setoptions'
+        ],
+      },
+    };
+    </script>
+    <script
+      defer
+      type="text/javascript"
+      id="MathJax-script"
+      src="{{ url }}"
+    ></script>
+{%- endmacro %}
