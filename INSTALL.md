@@ -93,6 +93,30 @@ $ pip install jupyter
 $ bundle exec jekyll serve
 ```
 
+**Jupyter notebooks in posts:** the [jekyll-jupyter-notebook](https://github.com/red-data-tools/jekyll-jupyter-notebook) plugin runs `jupyter nbconvert`. Jupyter reads global config from `~/.jupyter/jupyter_nbconvert_config.json`. If that file enables optional preprocessors (for example from `jupyter_contrib_nbextensions`) that are missing or incompatible with your environment, conversion can fail and the notebook area appears blank. To avoid that, point Jupyter at the repo’s empty config directory (used by the Windows helpers below) or remove stale preprocessor entries from your global `jupyter_nbconvert_config.json`. The repo’s `tools/jupyter-jekyll-config/` pins MathJax 3 for nbconvert and loads the **same TeX extension set as JupyterLab 4** (see `_data/mathjax_jupyterlab.yml`). Jupyter does **not** run pdfLaTeX in the browser — it runs **MathJax** with a fixed list of TeX extensions (similar in spirit to a TeX Live “package set”). Default **nbconvert** used to ship a **different** MathJax major version and bundle; aligning that stack is the root fix, not redefining individual commands. A small Jekyll plugin (`_plugins/jupyter_config.rb`) sets `JUPYTER_CONFIG_DIR` on every build so nbconvert always picks up this project’s template even if your shell never exports that variable.
+
+On **Windows** (PowerShell), after `bundle install`:
+
+1. Activate the same conda env you use for Jupyter (so `jupyter` / `nbconvert` match the notebook), e.g. `conda activate py312_env`.
+2. From the **repository root**, run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\jekyll-serve.ps1 -Clean
+```
+
+`-Clean` deletes `_site` and `.jekyll-cache` so notebook HTML is regenerated (otherwise old iframe content can stick). Omit `-Clean` for faster iteration when you are not changing notebooks or MathJax config.
+
+The script prints `JUPYTER_CONFIG_DIR` and sets it to `tools/jupyter-jekyll-config` (required for nbconvert + JupyterLab–parity MathJax). Then open `http://127.0.0.1:4000` and do a **hard refresh** on a notebook post (`Ctrl+Shift+R` or `Ctrl+F5`) so the browser does not use a cached `.ipynb.html`.
+
+Use `.\scripts\jekyll-build.ps1` for a one-off build; add `-Clean` the same way before deploy checks.
+
+On **macOS/Linux** (bash), from the repository root:
+
+```bash
+export JUPYTER_CONFIG_DIR="$(pwd)/tools/jupyter-jekyll-config"
+bundle exec jekyll serve --livereload
+```
+
 To see the template running, open your browser and go to `http://localhost:4000`. You should see a copy of the theme's [demo website](https://alshedivat.github.io/al-folio/). Now, feel free to customize the theme however you like. After you are done, remember to **commit** your final changes.
 
 ## Deployment

@@ -3,6 +3,9 @@
   <script type="text/javascript">
     window.MathJax = {
       tex: {
+        tags: 'ams',
+        packages: { '[+]': {{ site.data.mathjax_jupyterlab.packages | jsonify }} },
+        macros: {{ site.data.mathjax_jupyterlab.operator_macros | jsonify }},
         inlineMath: [
           ['$', '$'],
           ['\\(', '\\)'],
@@ -13,6 +16,9 @@
         ],
         processEscapes: true,
         processEnvironments: true,
+      },
+      loader: {
+        load: {{ site.data.mathjax_jupyterlab.loader | jsonify }},
       },
     };
   </script>

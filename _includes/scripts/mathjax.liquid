@@ -1,10 +1,25 @@
 {% if site.enable_math %}
   {% unless page.pseudocode %}
-    <!-- MathJax -->
+    <!-- MathJax: JupyterLab TeX extensions + explicit $ inline / $$ display delimiters -->
     <script type="text/javascript">
       window.MathJax = {
         tex: {
           tags: 'ams',
+          inlineMath: [
+            ['$', '$'],
+            ['\\(', '\\)'],
+          ],
+          displayMath: [
+            ['$$', '$$'],
+            ['\\[', '\\]'],
+          ],
+          processEscapes: true,
+          processEnvironments: true,
+          packages: { '[+]': {{ site.data.mathjax_jupyterlab.packages | jsonify }} },
+          macros: {{ site.data.mathjax_jupyterlab.operator_macros | jsonify }},
+        },
+        loader: {
+          load: {{ site.data.mathjax_jupyterlab.loader | jsonify }},
         },
       };
     </script>
