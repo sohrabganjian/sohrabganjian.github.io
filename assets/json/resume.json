@@ -27,7 +27,7 @@
   },
   "Work and Research Experience": [
     {
-      "title": "Test", 
+      "title": "Test",
       "name": "Natural Resources Canada",
       "location": "Ottawa, ON, Canada",
       "url": "https://natural-resources.canada.ca/home",
@@ -46,8 +46,7 @@
           "position": "Quantum Machine Learning Scientist Intern",
           "startDate": "2024-07",
           "endDate": "2024-10",
-          "highlights": [
-          ]
+          "highlights": []
         }
       ]
     },
@@ -84,15 +83,17 @@
           "startDate": "2020-04",
           "endDate": "2020-08",
           "highlights": [
-            { 
+            {
               "text": "Published a paper in ",
               "linkText": "SIURO Journal",
-               "url": "https://www.siam.org/media/g21jrqjq/s142055pdf.pdf"
+              "url": "https://www.siam.org/media/g21jrqjq/s142055pdf.pdf"
             },
-            {"text": "Simulated a mathematical model to predict crimehot spots through network analysis, utilizing K-means algorithm"},
-            {"text": "Employed ArcGIS and Python to analyze geographical data"},
-            {"text": "Utilized open-source documentations such as scikit-learn and OSMnx"},
-            {"text": "Submitted and executed jobs on a cluster of supercomputers provided by the Digital Research Alliance of Canada (formely Compute Canada)"}
+            { "text": "Simulated a mathematical model to predict crimehot spots through network analysis, utilizing K-means algorithm" },
+            { "text": "Employed ArcGIS and Python to analyze geographical data" },
+            { "text": "Utilized open-source documentations such as scikit-learn and OSMnx" },
+            {
+              "text": "Submitted and executed jobs on a cluster of supercomputers provided by the Digital Research Alliance of Canada (formely Compute Canada)"
+            }
           ]
         }
       ]
@@ -115,8 +116,7 @@
         }
       ]
     }
-  ]
-,
+  ],
   // "volunteer": [
   //   {
   //     "organization": "People's Climate March",
@@ -136,10 +136,7 @@
       "url": "https://www.uottawa.ca/en",
       "area": "Thesis: <a href='https://ruor.uottawa.ca/items/24673939-ac64-426f-9b09-42ff23716f0d' target='_blank'>Simulation of Quantum Homomorphic Encryption</a>",
       "abstract": "When interacting with a cloud server, two ideals we could aim for, among others, are performing computation and ensuring the privacy of the data. Quantum homomorphic encryption is a cryptographic primitive that seeks to address these two objectives in the quantum setting, allowing for quantum computation on encrypted quantum data. In this work, we provide a software simulation of a quantum homomorphic encryption scheme, known as the \"EPR scheme\", for universal quantum circuits, developed by Broadbent and Jeffery.<br>We demonstrate the near-term viability of this scheme and provide evidence that the computational cost of classical subroutines in the simulation is negligible compared to the cost of simulating the quantum operations. The simulation package is an open-source Python implementation, called \"py-qhe-epr\", with a focus on extensive documentation and ease of use for educational, verification and adaptability purposes, supporting future research and development. Furthermore, this implementation serves as a step towards further hardware applications of quantum homomorphic encryption between networked quantum devices.",
-      "courses": [
-        "Mathematics and Statistics",
-        "Concentration in Mathematics"
-      ],
+      "courses": ["Mathematics and Statistics", "Concentration in Mathematics"],
       "studyType": "Master of Science in Quantum Cryptography",
       "startDate": "2022-09",
       "endDate": "2024-10"
@@ -151,17 +148,13 @@
       "location": "Burnaby, BC, Canada",
       "url": "https://www.sfu.ca/",
       // "area": "Bachelor of Science in Mathematics",
-      "courses": [
-        "Distinction in Mathematics",
-        "Minor in Philosophy",
-        "Co-operative Education"
-      ],     
+      "courses": ["Distinction in Mathematics", "Minor in Philosophy", "Co-operative Education"],
       "studyType": "Bachelor of Science in Mathematics",
       "startDate": "2016-09",
       "endDate": "2021-12"
     }
   ],
-"Publications and Manuscripts": [
+  "Publications and Manuscripts": [
     {
       "name": "Simulation of Quantum Homomorphic Encryption: Demonstration and Analysis",
       "releaseDate": "2024-10",
@@ -392,11 +385,7 @@
       "courseName": "Calculus II (MAT 1322)",
       "role": "Teaching Assistant",
       "institution": "University of Ottawa",
-      "dates": [
-        "Sep - Dec 2022",
-        "Jan - Apr 2022",
-        "Sep - Dec 2023"
-      ],
+      "dates": ["Sep - Dec 2022", "Jan - Apr 2022", "Sep - Dec 2023"],
       "bullets": [
         "First-year second-term Mathematics course covering improper integrals, differential equations, Euler's method for differential equations, sequences, series, Taylor's formula and series, and Functions of two and three variables",
         "Graded students’ midterms",
@@ -409,12 +398,7 @@
       "courseName": "Calculus I (MAT 1320)",
       "role": "Teaching Assistant",
       "institution": "University of Ottawa",
-      "dates": [
-        "Sep - Dec 2022",
-        "May - Jul 2023",
-        "Sep - Dec 2023",
-        "Jan - Apr 2024"
-      ],
+      "dates": ["Sep - Dec 2022", "May - Jul 2023", "Sep - Dec 2023", "Jan - Apr 2024"],
       "bullets": [
         "First-year first-term Mathematics course covering limits, continuity, derivative formulas, L'Hospital's rule, and intermediate value theorem",
         "Graded students’ midterms",
@@ -427,17 +411,7 @@
   "Software and Technical Tools": [
     {
       "category": "Programming Languages",
-      "items": [
-        "Python",
-        "SageMath",
-        "Maple",
-        "MATLAB",
-        "R",
-        "Octave",
-        "Julia",
-        "Cython",
-        "C/C++"
-      ],
+      "items": ["Python", "SageMath", "Maple", "MATLAB", "R", "Octave", "Julia", "Cython", "C/C++"],
       "icon": "fas fa-code"
     },
     {
@@ -455,17 +429,7 @@
     },
     {
       "category": "Collaboration, Workflow & Document Preparation Tools",
-      "items": [
-        "GitHub",
-        "LaTeX",
-        "Overleaf",
-        "MS Teams",
-        "Slack",
-        "Jira",
-        "Confluence",
-        "Bitbucket",
-        "MobaXterm"
-      ],
+      "items": ["GitHub", "LaTeX", "Overleaf", "MS Teams", "Slack", "Jira", "Confluence", "Bitbucket", "MobaXterm"],
       "icon": "fas fa-tools"
     }
   ],
@@ -499,46 +463,46 @@
     }
   ],
   "Talks": [
-      {
-        "title": "Satellite Image Classification: Hybrid Quantum-Classical Approach",
-        "event": "QUASAR End of Year Seminar",
-        "hosting_institute": "University of Ottawa",
-        "location": "Ottawa, ON, Canada",
-        "date": "December 13, 2024",
-        "url": "https://quasarlab.org/news/end-year-seminar-2024/"
-      },
-      {
-        "title": "Simulation of Quantum Homomorphic Encryption: Demonstration and Analysis",
-        "event": "The Sixth IEEE International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications",
-        "hosting_institute": "IEEE",
-        "location": "Washington, D.C., USA",
-        "date": "October 29, 2024",
-        "url": "https://www.sis.pitt.edu/lersais/conference/tps/2024/"
-      },
-      {
-        "title": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
-        "event": "AI-Quantum Workshop",
-        "hosting_institute": "Natural Resources Canada",
-        "location": "Ottawa, ON, Canada",
-        "date": "September 25, 2024"
-       // "url": "https://www.sis.pitt.edu/lersais/conference/tps/2024/"
-      },
-      {
-        "title": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
-        "event": "QUASAR Seminar",
-        "hosting_institute": "University of Ottawa",
-        "location": "Ottawa, ON, Canada",
-        "date": "June 7, 2024"
-      },
-      {
-        "title": "An Analysis of the Security of BB84 Protocol",
-        "event": "QUASAR Seminar",
-        "hosting_institute": "University of Ottawa",
-        "location": "Ottawa, ON, Canada",
-        "date": "April 6, 2023"
-        // "url": ""
-      }
-    ],
+    {
+      "title": "Satellite Image Classification: Hybrid Quantum-Classical Approach",
+      "event": "QUASAR End of Year Seminar",
+      "hosting_institute": "University of Ottawa",
+      "location": "Ottawa, ON, Canada",
+      "date": "December 13, 2024",
+      "url": "https://quasarlab.org/news/end-year-seminar-2024/"
+    },
+    {
+      "title": "Simulation of Quantum Homomorphic Encryption: Demonstration and Analysis",
+      "event": "The Sixth IEEE International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications",
+      "hosting_institute": "IEEE",
+      "location": "Washington, D.C., USA",
+      "date": "October 29, 2024",
+      "url": "https://www.sis.pitt.edu/lersais/conference/tps/2024/"
+    },
+    {
+      "title": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
+      "event": "AI-Quantum Workshop",
+      "hosting_institute": "Natural Resources Canada",
+      "location": "Ottawa, ON, Canada",
+      "date": "September 25, 2024"
+      // "url": "https://www.sis.pitt.edu/lersais/conference/tps/2024/"
+    },
+    {
+      "title": "Demonstrating Quantum Homomorphic Encryption Through Simulation",
+      "event": "QUASAR Seminar",
+      "hosting_institute": "University of Ottawa",
+      "location": "Ottawa, ON, Canada",
+      "date": "June 7, 2024"
+    },
+    {
+      "title": "An Analysis of the Security of BB84 Protocol",
+      "event": "QUASAR Seminar",
+      "hosting_institute": "University of Ottawa",
+      "location": "Ottawa, ON, Canada",
+      "date": "April 6, 2023"
+      // "url": ""
+    }
+  ],
   // "references": [
   //   {
   //     "name": "Professor John Doe",
@@ -551,7 +515,7 @@
   //     "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
   //   }
   // ],
- "Professional and Academic Events": [
+  "Professional and Academic Events": [
     {
       "name": "Conferences and Meetings",
       "keywords": [
@@ -561,8 +525,7 @@
           "url": "https://www.sis.pitt.edu/lersais/conference/tps/2024/",
           "location": "Washington, D.C., USA",
           "invited": true,
-          "summary": 
-          [
+          "summary": [
             "Presented work related to the paper <i>Simulation of Quantum Homomorphic Encryption: Demonstration and Analysis</i>",
             "Confrence Co-located with IEEE CIC 2024 & IEEE CogMI 2024, offering rich networking opportunities, inlcuding a keynote by <a href='https://scholar.google.com/citations?user=VuWl-KUAAAAJ&hl=en' target='_blank'>Ed Chi from Google</a>",
             "Featuerd panel dicsussions, technical sessions and workshops on quantum computing and AI integration, as well as AI governance and policy"
@@ -576,10 +539,9 @@
           "url": "https://qce.quantum.ieee.org/2024/",
           "invited": true,
           // "description": "A gathering of top quantum computing researchers."
-          "summary":
-          [
+          "summary": [
             "Presented a poster on the extended abstract <i>Demonstrating Quantum Homomorphic Encryption Through Simulation </i>",
-            "Attended various talks, workshops, panels, and poster sessions on topics like quantum algorithms, cryptography, error correction, and emerging quantum technologies", 
+            "Attended various talks, workshops, panels, and poster sessions on topics like quantum algorithms, cryptography, error correction, and emerging quantum technologies",
             "Participated in student mentorship events, networking sessions, and the career fair, building valuable connections with organizations like IonQ, Quantinuum, Qblox, and others across industry, government, and academia.",
             "Over 1,600 registrants, including students, academics, and industry experts, fostering interdisciplinary collaboration",
             "Notable speakers included Jay Gambetta (IBM Quantum) and Josh Izaac (Xanadu), among others, sharing insights on quantum computing and software development"
@@ -623,7 +585,7 @@
           "summary": [
             "A three-day meeting featuring a variety of sessions, including topics such as quantum information theory, C*-algebras and their applications, advances in AI/ML, and more",
             "The meeting brought together renowned speakers from government institutions like the Bank of Canada and the Tutte Institute, as well as academic institutions such as the University of Waterloo, through diverse formats including talks and poster presentations"
-         ]
+          ]
         },
         {
           "name": "Quantum Days 2023",
@@ -641,10 +603,9 @@
           "date": "2022-10",
           "location": "Bromont, QC, Canada",
           "url": "https://www.intriq.org/events/rencontre-automnale-2022-de-lintriq",
-          "summary":[
+          "summary": [
             "A two-day gathering organized by INTRIQ (Institut Transdisciplinaire d'Information Quantique), bringing together members of the quantum information community for discussions, presentations, and networking",
             "Featured primarily experimental subjects from notable speakers like Dr. Ebrahim Karimi (University of Ottawa) and Dr. Roger Melko (Perimeter Institute, Waterloo)"
-
           ]
         },
         {
@@ -679,8 +640,7 @@
           "location": "Waterloo, ON, Canada",
           "url": "https://web.archive.org/web/20250119190149/https://uwaterloo.ca/institute-for-quantum-computing/events/workshops/quantum-key-distribution-summer-school",
           // archived: https://web.archive.org/web/20250119190149/https://uwaterloo.ca/institute-for-quantum-computing/events/workshops/quantum-key-distribution-summer-school
-          "summary":
-          [
+          "summary": [
             "The five-day program, held at the state-of-the-art Quantum-Nano Centre at the University of Waterloo, focused on the theoretical and experimental aspects of quantum communication with a particular emphasis on quantum cryptography, featuring participants affiliated with institutions from Canada, Spain, Italy, Poland, and the USA",
             "Delivered cutting-edge insights on topics such as information-theoretic security, post-quantum cryptography, and quantum hacking, with lectures by top researchers including Dr. Norbert Lütkenhaus, Dr. Michele Mosca, Dr. David Jao (University of Waterloo), Dr. Renato Renner, and Dr. Ramona Wolf (ETH Zürich)"
           ]
@@ -700,8 +660,7 @@
           "date": "2019-07",
           "location": "Burnaby, BC, Canada",
           "url": "https://www.pims.math.ca/events/190722-pcssdlfcm",
-          "summary":
-          [
+          "summary": [
             "A summer school hosted at Simon Fraser University, exploring the intersection of deep learning and computational mathematics. The program emphasized applying machine learning techniques and TensorFlow to solve complex mathematical problems, tailored for students",
             "Featured three days of lectures and hands-on tutorials, followed by a one-day workshop"
           ]
@@ -711,8 +670,7 @@
           "date": "2019-06",
           "location": "Saskatoon, SK, Canada",
           "url": "https://artsandscience.usask.ca/news/articles/3525/Data_Science_Bootcamp",
-          "summary":
-          [
+          "summary": [
             "A two-week Data Science Bootcamp held at the University of Saskatchewan, primarily designed for graduate and senior undergraduate students, covering foundational and advanced topics in data science",
             "Explored in-depth topics such as an introduction to machine learning, data visualization, and varied case studies, with sessions led by researchers like Dr. Linglong Kong, Dr. Stephen Kobourov, and Dr. Nathaniel Osgood"
           ]
@@ -723,9 +681,7 @@
           "location": "Vancouver, BC, Canada",
           "url": "https://workshop.bcdata.ca/2018/",
           // archived link: https://web.archive.org/web/20250119190144/https://workshop.bcdata.ca/2018/
-          "links": [
-            {"text": "Jupyter Notebook", "url": "https://workshop.bcdata.ca/2018/post/1-ssr-project/"}
-          ],
+          "links": [{ "text": "Jupyter Notebook", "url": "https://workshop.bcdata.ca/2018/post/1-ssr-project/" }],
           "summary": [
             "A one-week workshop held at the University of British Columbia, designed for students from PIMS institutions with strong mathematical backgrounds and an interest in data science, including both theoretical and practical components with data sets and problems from industry and government.",
             "Using Jupyter Notebook, Pandas, and NumPy, I contributed to the <i>Predicting Heavy Equipment Failure</i> project for SSR Mining as part of a 9-person team. At the project's workshop presentation (<a href='https://workshop.bcdata.ca/2018/post/1-ssr-project/' target='_blank'>link</a>), I presented an analysis of six trucks, highlighting potential failure points for one in particular. This analysis generated interest from SSR stakeholders and initiated follow-up conversations.",
@@ -748,12 +704,16 @@
       "keywords": [
         {
           "name": "QHack 2023 by Xanadu",
-          "location": "Online", 
+          "location": "Online",
           "date": "2023-02",
           "url": "https://pennylane.ai/blog/2023/02/welcome-to-qhack-2023",
           // "description": "A 48-hour hackathon for building quantum-powered solutions."
           "links": [
-            { "GitHub": true, "text": "Jupyter Notebook in GitHub", "url": "https://github.com/eculf/CryptographyWithCertifiedDeletion_Quasar/blob/main/Cryptography%20with%20Certified%20Deletion.ipynb" },
+            {
+              "GitHub": true,
+              "text": "Jupyter Notebook in GitHub",
+              "url": "https://github.com/eculf/CryptographyWithCertifiedDeletion_Quasar/blob/main/Cryptography%20with%20Certified%20Deletion.ipynb"
+            },
             { "text": "YouTube", "url": "https://youtu.be/zXekONQ6buA?si=Gt8UOxmZ8L6o5HNe" }
           ],
           "summary": [
@@ -762,8 +722,8 @@
             {
               "nested_header": "About QHack 2023:",
               "nested_items": [
-                "A global quantum hackathon hosted by Xanadu’s Pennylane platform", 
-                "bringing together over 2000 participants from around the world to collaborate on quantum computing challenges", 
+                "A global quantum hackathon hosted by Xanadu’s Pennylane platform",
+                "bringing together over 2000 participants from around the world to collaborate on quantum computing challenges",
                 "with experts from leading quantum organizations such as IBM, Google, and AWS Braket, covering topics like quantum machine learning and quantum algorithms"
               ]
             }
@@ -774,14 +734,12 @@
           "date": "2023-01",
           "location": "Online",
           "url": "https://www.iquise.mit.edu/iQuHACK/2023-01-27",
-          "links": [
-            {"GitHub": true, "text": "Jupyter Notebook in GitHub", "url": "https://github.com/sohrabganjian/2023_IonQ_Remote"}
-          ],
+          "links": [{ "GitHub": true, "text": "Jupyter Notebook in GitHub", "url": "https://github.com/sohrabganjian/2023_IonQ_Remote" }],
           "summary": [
             "Collaborated in a team of three to tackle the IonQ challenge (<a href='https://github.com/sohrabganjian/2023_IonQ_Remote/blob/main/MIT%20iQuHACK%20remote%20challenge%20.pdf' target='_blank'>link</a>), which involved encoding the Fashion MNIST dataset into quantum states and classifying them",
             {
               "nested_header": "About 2023 iQuHACK:",
-              "nested_items":[
+              "nested_items": [
                 "A global quantum hackathon hosted by MIT's Interdisciplinary Quantum Information Science and Engineering (iQuISE), bringing together participants from academia, industry, and startups to solve quantum computing challenges",
                 "Hackathon challenges spanned various topics such as quantum algorithms, error correction, quantum machine learning, and quantum hardware optimization."
               ]
@@ -796,23 +754,25 @@
           // archived link: https://web.archive.org/web/20250119180111/https://www.qbraid.com/blog/haas-2022-review
           "prize": true,
           "links": [
-            {"GitHub": true, "text": "Jupyter Notebook in GitHub", "url": "https://github.com/eculf/HAQS-QUSTEAM-2022/blob/main/Quasar_notebook.ipynb"},
-            {"text": "YouTube", "url": "https://www.youtube.com/watch?v=QYL2R5uGPXg&ab_channel=SohrabGanjian" }
+            {
+              "GitHub": true,
+              "text": "Jupyter Notebook in GitHub",
+              "url": "https://github.com/eculf/HAQS-QUSTEAM-2022/blob/main/Quasar_notebook.ipynb"
+            },
+            { "text": "YouTube", "url": "https://www.youtube.com/watch?v=QYL2R5uGPXg&ab_channel=SohrabGanjian" }
           ],
-          "summary":
-          [
+          "summary": [
             "Winner of the Hackathon as part of <i>Quasar</i>, a team of three, as announced <a href='https://www.qbraid.com/blog/haas-2022-review' target='_blank'> here </a>",
             "Collaborated to design and execute an experiment to demonstrate the violation of Bell’s inequality using the celebrated CHSH (Clauser, Horne, Shimony, and Holt) game",
             "Submitted jobs on Amazon Braket quantum computers",
             "Prepared detailed documentation and presented the project in a <a href='https://github.com/eculf/HAQS-QUSTEAM-2022/blob/main/Quasar_notebook.ipynb' target='_blank'> Jupyter notebook </a>",
             {
               "nested_header": "About 2022 qBraid HAQS:",
-              "nested_items":[
+              "nested_items": [
                 "A global quantum hackathon hosted by qBraid, featuring challenges from leading organizations such as QuSTEAM and Unitary Fund",
                 "QuSTEAM Challenge focused on quantum education, encouraging teams to create experiments and projects to engage students in learning quantum concepts"
               ]
             }
-
           ]
         },
         {
@@ -821,14 +781,13 @@
           "date": "2019-04",
           "url": "https://www.pims.math.ca/events/190426-2bcumasc",
           "prize": true,
-          "summary":
-          [
+          "summary": [
             "Within team of two, analyzed delay trends for each of BC Ferries’ boats, taking into consideration each boat as well as features such as temperature, traffic, and wind",
             "Created graphs in Python (matplotlib) to create data visualization, highlighting ferries with most delays",
             "Rewarded first place $400 prize for excellent data visualization and presentation",
             {
               "nested_header": "About Data Science Case Competition at BCUMSC:",
-              "nested_items":[
+              "nested_items": [
                 "A data science case competition, organized as a distinct event within the broader British Columbia’s Undergraduate Mathematics & Statistics Conference.",
                 "The competition involved analyzing BC Ferries’ dataset to identify correlations between delays and various features such as traffic, weather conditions, vessel names, departure times, and arrival times"
               ]
@@ -870,4 +829,3 @@
     }
   ]
 }
-

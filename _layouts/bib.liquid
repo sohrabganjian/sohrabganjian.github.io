@@ -45,7 +45,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div class="publication-item" >
+  <div class="publication-item">
     <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
       <!-- Title -->
       <div class="title">{{ entry.title }}</div>
@@ -202,12 +202,12 @@
         {% if entry.doi %}
           <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
         {% endif %}
-       {% assign arxiv_id = entry.arxiv | default: entry.eprint | default: null %}
-      {% if arxiv_id %}
-        <a href="http://arxiv.org/abs/{{ arxiv_id }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
-      {% elsif entry.url contains 'arxiv.org' %}
-        <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
-      {% endif %}
+        {% assign arxiv_id = entry.arxiv | default: entry.eprint | default: null %}
+        {% if arxiv_id %}
+          <a href="http://arxiv.org/abs/{{ arxiv_id }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+        {% elsif entry.url contains 'arxiv.org' %}
+          <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+        {% endif %}
         {% if entry.bibtex_show %}
           <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
         {% endif %}

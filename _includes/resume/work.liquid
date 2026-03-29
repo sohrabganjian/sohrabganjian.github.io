@@ -4,28 +4,28 @@
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
-          {% assign allStartDates = content.positions | map: "startDate" %}
-          {% assign allEndDates = content.positions | map: "endDate" %}
+          {% assign allStartDates = content.positions | map: 'startDate' %}
+          {% assign allEndDates = content.positions | map: 'endDate' %}
 
           {% assign overallStartDate = allStartDates | sort | first | split: '-' | slice: 0, 2 | join: '.' %}
 
           {% assign hasPresent = false %}
-          {% assign formattedEndDates = "" %}
+          {% assign formattedEndDates = '' %}
           {% for endDate in allEndDates %}
-            {% if endDate == "present" %}
+            {% if endDate == 'present' %}
               {% assign hasPresent = true %}
               {% break %}
             {% else %}
-              {% assign formattedEndDates = formattedEndDates | append: endDate | append: "|" %}
+              {% assign formattedEndDates = formattedEndDates | append: endDate | append: '|' %}
             {% endif %}
           {% endfor %}
 
           {% if hasPresent %}
-            {% assign overallEndDateFormatted = "present" %}
-          {% elsif formattedEndDates != "" %}
-            {% assign overallEndDateFormatted = formattedEndDates | split: "|" | reject: "" | sort | last | split: '-' | slice: 0, 2 | join: '.' %}
+            {% assign overallEndDateFormatted = 'present' %}
+          {% elsif formattedEndDates != '' %}
+            {% assign overallEndDateFormatted = formattedEndDates | split: '|' | reject: '' | sort | last | split: '-' | slice: 0, 2 | join: '.' %}
           {% else %}
-            {% assign overallEndDateFormatted = "" %}
+            {% assign overallEndDateFormatted = '' %}
           {% endif %}
 
           <table class="table-cv">
@@ -33,7 +33,8 @@
               <tr>
                 <td>
                   <span class="badge font-weight-bold danger-color-dark align-middle" style="min-width: 75px;">
-                    {{ overallStartDate }}{% if overallEndDateFormatted != "" %} - {{ overallEndDateFormatted }}{% endif %}
+                    {{ overallStartDate -}}
+                    {%- if overallEndDateFormatted != '' %} - {{ overallEndDateFormatted }}{% endif %}
                   </span>
                 </td>
               </tr>
@@ -56,11 +57,15 @@
             <ul class="items" style="list-style-type: none; padding-left: 20px;">
               {% for position in content.positions | sort: 'startDate' | reverse %}
                 <li style="display: flex; align-items: center; margin-bottom: 10px;">
-                  <span class="font-weight-bold dynamic-bullet" style="margin-right: 10px; display: inline-flex; align-items: center; justify-content: center; width: 8px; height: 8px; border-radius: 50%; border: 2px solid;"></span>
+                  <span
+                    class="font-weight-bold dynamic-bullet"
+                    style="margin-right: 10px; display: inline-flex; align-items: center; justify-content: center; width: 8px; height: 8px; border-radius: 50%; border: 2px solid;"
+                  ></span>
                   <h6 class="title font-weight-bold" style="margin: 0;">
                     <a href="{{ content.url }}" id="job-title-{{ forloop.index }}-{{ forloop.parentloop.index }}">{{ position.position }}</a>
                     <span style="font-weight: normal; font-size: 0.85rem;">
-                      ({{ position.startDate | split: '-' | slice: 0, 2 | join: '.' }} - {{ position.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'present' }})
+                      ({{ position.startDate | split: '-' | slice: 0, 2 | join: '.' }} -
+                      {{ position.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'present' }})
                     </span>
                   </h6>
                 </li>
@@ -79,18 +84,26 @@
             <button
               class="toggle-highlights-btn"
               style="margin-left: 5px; font-size: 0.85rem; padding: 2px 6px; cursor: pointer; background-color: #f8f9fa; border: 1px solid #ccc; border-radius: 3px; vertical-align: baseline;"
-              data-target="highlights-{{ forloop.index0 }}">
+              data-target="highlights-{{ forloop.index0 }}"
+            >
               +
             </button>
           </h6>
 
-          <ul class="items" id="highlights-{{ forloop.index0 }}" style="display: none; margin-top: 10px; list-style-type: circle; padding-left: 20px; font-size: 0.95rem;">
+          <ul
+            class="items"
+            id="highlights-{{ forloop.index0 }}"
+            style="display: none; margin-top: 10px; list-style-type: circle; padding-left: 20px; font-size: 0.95rem;"
+          >
             {% for position in content.positions %}
               {% for highlight in position.highlights %}
                 <li style="margin-left: 20px;">
-                  {% if highlight contains "text" %}
+                  {% if highlight contains 'text' %}
                     {% if highlight.url %}
-                      <span>{{ highlight.text }}<a href="{{ highlight.url }}" target="_blank">{{ highlight.linkText }}</a></span>
+                      <span>
+                        {{- highlight.text -}}
+                        <a href="{{ highlight.url }}" target="_blank">{{ highlight.linkText }}</a></span
+                      >
                     {% else %}
                       <span>{{ highlight.text }}</span>
                     {% endif %}
@@ -108,44 +121,43 @@
 </ul>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  // Toggle button logic for highlights
-  const toggleButtons = document.querySelectorAll('.toggle-highlights-btn');
+  document.addEventListener('DOMContentLoaded', function () {
+    // Toggle button logic for highlights
+    const toggleButtons = document.querySelectorAll('.toggle-highlights-btn');
 
-  toggleButtons.forEach((button) => {
-    button.addEventListener('click', function () {
-      const targetId = button.getAttribute('data-target');
-      const targetElement = document.getElementById(targetId);
+    toggleButtons.forEach((button) => {
+      button.addEventListener('click', function () {
+        const targetId = button.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId);
 
-      if (targetElement) {
-        const isCurrentlyHidden =
-          targetElement.style.display === 'none' || !targetElement.style.display;
+        if (targetElement) {
+          const isCurrentlyHidden = targetElement.style.display === 'none' || !targetElement.style.display;
 
-        button.textContent = isCurrentlyHidden ? '-' : '+';
-        targetElement.style.display = isCurrentlyHidden ? 'block' : 'none';
+          button.textContent = isCurrentlyHidden ? '-' : '+';
+          targetElement.style.display = isCurrentlyHidden ? 'block' : 'none';
+        }
+      });
+    });
+
+    // Dynamic coloring for bullets in multiple positions
+    const dynamicBullets = document.querySelectorAll('.dynamic-bullet');
+
+    dynamicBullets.forEach((bullet) => {
+      const listItem = bullet.closest('li');
+      if (listItem) {
+        const titleAnchor = listItem.querySelector('.title a');
+        const jobIdMatch = titleAnchor && titleAnchor.id && titleAnchor.id.match(/job-title-(\d+)-(\d+)/);
+        if (jobIdMatch) {
+          const index = jobIdMatch[1];
+          const parentIndex = jobIdMatch[2];
+          const jobTitleLink = document.getElementById(`job-title-${index}-${parentIndex}`);
+          if (jobTitleLink) {
+            const jobTitleColor = window.getComputedStyle(jobTitleLink).color;
+            bullet.style.borderColor = jobTitleColor;
+            bullet.style.backgroundColor = 'transparent';
+          }
+        }
       }
     });
   });
-
-  // Dynamic coloring for bullets in multiple positions
-  const dynamicBullets = document.querySelectorAll('.dynamic-bullet');
-
-  dynamicBullets.forEach((bullet) => {
-    const listItem = bullet.closest('li');
-    if (listItem) {
-      const titleAnchor = listItem.querySelector('.title a');
-      const jobIdMatch = titleAnchor && titleAnchor.id && titleAnchor.id.match(/job-title-(\d+)-(\d+)/);
-      if (jobIdMatch) {
-        const index = jobIdMatch[1];
-        const parentIndex = jobIdMatch[2];
-        const jobTitleLink = document.getElementById(`job-title-${index}-${parentIndex}`);
-        if (jobTitleLink) {
-          const jobTitleColor = window.getComputedStyle(jobTitleLink).color;
-          bullet.style.borderColor = jobTitleColor;
-          bullet.style.backgroundColor = 'transparent';
-        }
-      }
-    }
-  });
-});
 </script>

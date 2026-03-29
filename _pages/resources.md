@@ -6,11 +6,11 @@ permalink: /resources/
 
 A quick directory of quantum resources, including the quantum ecosystem, influential scientists, algorithms, key results, companies, and more. This page serves as a hub for quick references, which readers can further explore and delve into. Happy exploring!
 
-
 ---
+
 ## 🗺️ Quantum Map: Key Areas in Quantum Information Science
 
-Quantum information science is an interdisciplinary field that, depending on one’s approach, may require expertise in one or more disciplines, including mathematics, physics, computer science, chemistry, electrical engineering, material science, optics and photonics, and nanotechnology, among others. To gain mastery as a scientist in quantum information science, it is crucial to understand the broader quantum ecosystem, recognize the connections among its various subfields, and develop at least a surface-level understanding of each. At the same time, it is important to identify your primary area of focus and specialize deeply within it. However, as the field evolves, advancements in science will likely necessitate acquiring a more in-depth understanding of other subfields to address challenges and opportunities that are directly relevant to your work. 
+Quantum information science is an interdisciplinary field that, depending on one’s approach, may require expertise in one or more disciplines, including mathematics, physics, computer science, chemistry, electrical engineering, material science, optics and photonics, and nanotechnology, among others. To gain mastery as a scientist in quantum information science, it is crucial to understand the broader quantum ecosystem, recognize the connections among its various subfields, and develop at least a surface-level understanding of each. At the same time, it is important to identify your primary area of focus and specialize deeply within it. However, as the field evolves, advancements in science will likely necessitate acquiring a more in-depth understanding of other subfields to address challenges and opportunities that are directly relevant to your work.
 
 Of course, knowing all of this and identifying where you fit within the field is not always obvious at the beginning. Take your time to explore, try new things, and continuously reevaluate your approach. Go again and stay persistent!
 
@@ -18,40 +18,38 @@ Of course, knowing all of this and identifying where you fit within the field is
 
 Below is a list of the various subfields within quantum information science:
 
-- 🔐 Quantum Cryptography  
-- 🖥️ Quantum Computing  
-- 🔢 Quantum Algorithms  
-- 🎛️ Quantum Sensing  
-- 🌐 Quantum Networking  
-- 🧠 Quantum Machine Learning  
-- 💡 Quantum Optics  
-- ⚛️ Quantum Dots  
-- 📏 Quantum Tomography  
-- 🔄 Quantum Error Correction  
-- 🧪 Quantum Simulation  
-- 🕰️ Quantum Metrology  
-- 🧱 Quantum Materials  
-- 🎲 Quantum Chaos  
-- ✉️ Quantum Communication  
-- 🔨 Quantum Annealing  
+- 🔐 Quantum Cryptography
+- 🖥️ Quantum Computing
+- 🔢 Quantum Algorithms
+- 🎛️ Quantum Sensing
+- 🌐 Quantum Networking
+- 🧠 Quantum Machine Learning
+- 💡 Quantum Optics
+- ⚛️ Quantum Dots
+- 📏 Quantum Tomography
+- 🔄 Quantum Error Correction
+- 🧪 Quantum Simulation
+- 🕰️ Quantum Metrology
+- 🧱 Quantum Materials
+- 🎲 Quantum Chaos
+- ✉️ Quantum Communication
+- 🔨 Quantum Annealing
 - 🌌 Quantum Many-Body Physics
 - ...
 
-
 ### 🎥 Explore More:
-- [The Map of Quantum Computing (Domain of Science)](https://www.youtube.com/watch?v=-UlxHPIEVqA&ab_channel=DomainofScience)  
-- [The Map of Quantum Physics (Domain of Science)](https://www.youtube.com/watch?v=gAFAj3pzvAA&ab_channel=DomainofScience)  
 
-
-
-
+- [The Map of Quantum Computing (Domain of Science)](https://www.youtube.com/watch?v=-UlxHPIEVqA&ab_channel=DomainofScience)
+- [The Map of Quantum Physics (Domain of Science)](https://www.youtube.com/watch?v=gAFAj3pzvAA&ab_channel=DomainofScience)
 
 ---
 
 ## 📚 Educational Resources
+
 A selection of books, open-access lecture notes, online tutorials and resources, and open-source quantum software:
 
 ### Books
+
 - [Quantum Computation and Quantum Information](https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE#overview) by Nielsen and Chuang
 - [An Introduction to Quantum Computing](https://global.oup.com/academic/product/an-introduction-to-quantum-computing-9780198570493?cc=us&lang=en&) by Phillip Kaye, Raymond Laflamme, and Michele Mosca
 - [Picturing Quantum Processes](https://www.cambridge.org/core/books/picturing-quantum-processes/1119568B3101F3A685BE832FEEC53E52) by Bob Coecke and Aleks Kissinger
@@ -62,6 +60,7 @@ A selection of books, open-access lecture notes, online tutorials and resources,
 - ...
 
 ### Open Access Lecture Notes
+
 - [Lecture Notes on Quantum Algorithms](https://www.cs.umd.edu/~amchilds/qa/qa.pdf) by Andrew Childs
 - [Introduction to Classical and Quantum Computing](https://www.thomaswong.net/introduction-to-classical-and-quantum-computing-1e4p.pdf) by Thomas G. Wong
 - [Introduction to the theory of computing](https://johnwatrous.com/wp-content/uploads/2023/08/ToC-notes.pdf) by John Watrous
@@ -71,36 +70,37 @@ A selection of books, open-access lecture notes, online tutorials and resources,
 - ...
 
 ### Online Courses, Tutorials and Resources
+
 - [Qiskit Textbook](https://qiskit.org/textbook/)
 - [Pennylane's Codebook](https://pennylane.ai/codebook#modules)
 - [qBraid's qBook](https://qbook.qbraid.com/)
-- [Q-CTRL's Black Opal](https://q-ctrl.com/black-opal) 
+- [Q-CTRL's Black Opal](https://q-ctrl.com/black-opal)
 - [Unitary Fund](https://unitary.foundation/)
 - ...
 
 ### Open-Source Quantum Software
 
-- [PennyLane](https://github.com/PennyLaneAI/pennylane) 
-- [Qiskit](https://github.com/Qiskit/qiskit) 
-- [Cirq](https://github.com/quantumlib/Cirq) 
-- [TensorFlow Quantum (TFQ)](https://github.com/tensorflow/quantum) 
-- [Amazon Braket](https://github.com/aws/amazon-braket-sdk-python) 
+- [PennyLane](https://github.com/PennyLaneAI/pennylane)
+- [Qiskit](https://github.com/Qiskit/qiskit)
+- [Cirq](https://github.com/quantumlib/Cirq)
+- [TensorFlow Quantum (TFQ)](https://github.com/tensorflow/quantum)
+- [Amazon Braket](https://github.com/aws/amazon-braket-sdk-python)
 - [PyQuil](https://github.com/rigetti/pyquil)
 - [Strawberry Fields](https://github.com/XanaduAI/strawberryfields)
-- [OpenFermion](https://github.com/quantumlib/OpenFermion) 
+- [OpenFermion](https://github.com/quantumlib/OpenFermion)
 - [QuTiP](https://github.com/qutip/qutip)
 - [D-Wave Ocean](https://github.com/dwavesystems/dwave-ocean-sdk)
 - [TKET](https://github.com/CQCL/tket)
 - ...
 
-
 ---
 
 ## 🤖 Key Algorithms, Concepts, and Protocols
+
 Foundational quantum algorithms, thought experiments, cryptographic protocols, and results:
 
-
 ### Algorithms
+
 A plethora of quantum algorithms can be found in [Quantum Algorithm Zoo](https://quantumalgorithmzoo.org/).
 
 - [Deutsch-Josza Algorithm](https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm)
@@ -121,6 +121,7 @@ A plethora of quantum algorithms can be found in [Quantum Algorithm Zoo](https:/
 - ...
 
 ### Foundational Concepts and Protocols
+
 - [Bell's Inequality](https://en.wikipedia.org/wiki/Bell%27s_theorem)
 - [List of Quantum Logic Gates](https://en.wikipedia.org/wiki/List_of_quantum_logic_gates)
 - [BB84 Protocol](https://en.wikipedia.org/wiki/BB84)
@@ -140,13 +141,11 @@ A plethora of quantum algorithms can be found in [Quantum Algorithm Zoo](https:/
 - [Grover Adaptive Search](https://qiskit-community.github.io/qiskit-optimization/tutorials/04_grover_optimizer.html)
 - ...
 
-
-
-
 ---
 
 ## 🏢 Companies in Quantum Computing
-A list of compaines leading various fields in quantum technologies: 
+
+A list of compaines leading various fields in quantum technologies:
 
 - [IBM Quantum](https://www.ibm.com/quantum)
 - [Google Quantum AI](https://quantumai.google)
@@ -180,14 +179,14 @@ A list of compaines leading various fields in quantum technologies:
 - [Alice & Bob](https://alice-bob.com/)
 - ...
 
-
 ---
 
 ## 🧠 Quantum Scientists
+
 Influential researchers who have made significant contributions to the field (this is by no means an exhaustive list, as many other influential scientists are not included here):
 
 - [Peter Shor](https://en.wikipedia.org/wiki/Peter_Shor)
-- [John Watrous](https://en.wikipedia.org/wiki/John_Watrous_(computer_scientist))
+- [John Watrous](<https://en.wikipedia.org/wiki/John_Watrous_(computer_scientist)>)
 - [John Preskill](https://en.wikipedia.org/wiki/John_Preskill)
 - [Umesh Vazirani](https://en.wikipedia.org/wiki/Umesh_Vazirani)
 - [Edward Farhi](https://en.wikipedia.org/wiki/Edward_Farhi)
@@ -208,11 +207,10 @@ Influential researchers who have made significant contributions to the field (th
 ---
 
 ## ➕ More
+
 Additional resources for new papers, quantum GitHub repositories, and news from the quantum industry:
 
 - [arXiv Quantum Physics Section](https://arxiv.org/list/quant-ph/new)
 - [Awesome Quantum Computing GitHub Repository](https://github.com/desireevl/awesome-quantum-computing)
 - [The Quantum Insider](https://thequantuminsider.com/category/daily/)
 - ...
-
-

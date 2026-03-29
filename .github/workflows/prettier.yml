@@ -23,12 +23,47 @@ jobs:
         run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
       - name: Prettier Check 🔎
         id: prettier
-        run: npx prettier . --check
+        run: |
+          npx prettier --check \
+            "_config.yml" \
+            "_pages/**/*.md" \
+            "_posts/**/*.md" \
+            "_projects/**/*.md" \
+            "_includes/resume/**/*.liquid" \
+            "_includes/header.liquid" \
+            "_includes/news.liquid" \
+            "_includes/selected_papers.liquid" \
+            "_layouts/bib.liquid" \
+            "_layouts/cv.liquid" \
+            "_layouts/talks.liquid" \
+            "_sass/_layout.scss" \
+            "_sass/_themes.scss" \
+            "_sass/_variables.scss" \
+            "_sass/talks.scss" \
+            "assets/json/resume.json" \
+            "google*.html"
       - name: Create diff 📝
         # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
         if: ${{ failure() }}
         run: |
-          npx prettier . --write
+          npx prettier --write \
+            "_config.yml" \
+            "_pages/**/*.md" \
+            "_posts/**/*.md" \
+            "_projects/**/*.md" \
+            "_includes/resume/**/*.liquid" \
+            "_includes/header.liquid" \
+            "_includes/news.liquid" \
+            "_includes/selected_papers.liquid" \
+            "_layouts/bib.liquid" \
+            "_layouts/cv.liquid" \
+            "_layouts/talks.liquid" \
+            "_sass/_layout.scss" \
+            "_sass/_themes.scss" \
+            "_sass/_variables.scss" \
+            "_sass/talks.scss" \
+            "assets/json/resume.json" \
+            "google*.html"
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt

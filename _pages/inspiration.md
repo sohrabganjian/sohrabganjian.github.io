@@ -5,11 +5,9 @@ permalink: /inspiration/
 nav_exclude: true
 ---
 
-Ever since life began on Earth, the ultimate goal of every species has been survival: a constant tale of struggles, challenges, and overcoming arduous siutations, all for the chance to live another day and continue the cycle of life through procreation. We, as humans, are no exception either. However, coupled with itelligence, the ability to **DREAM**, and innate **CURIOUSITY**, humans have consistently overcome incredible odds. 
-
+Ever since life began on Earth, the ultimate goal of every species has been survival: a constant tale of struggles, challenges, and overcoming arduous siutations, all for the chance to live another day and continue the cycle of life through procreation. We, as humans, are no exception either. However, coupled with itelligence, the ability to **DREAM**, and innate **CURIOUSITY**, humans have consistently overcome incredible odds.
 
 What is the meaning life? For a distant observer, far away in the Universe, our 80+ years of life (if we even reach that much) is merely a blip compared to the 13 billion years of the Univere's age and the vastness of the space. On this tiny speck of a planet, we are born one day and gone the next. From the external observer's perspective it might seem as if we never existed at all. But that does not render our lives void of meaning. While I will forever be a student of life, I believe we, as individuals, ought to give meaning and purpose to our existence from within.
-
 
 <div style="text-align: center">
     <img src="/assets/img/pale-blue-dot-revised.webp" alt="The Pale Blue Dot" style="max-width: 80%; height: auto; border-radius: 8px;">
@@ -19,16 +17,13 @@ What is the meaning life? For a distant observer, far away in the Universe, our 
     </p>
 </div>
 
+I dedicate this page to inspiring feats of overcoming the odds as an inspiration that we have come a long way. These stories serve as a reminder, including for myself, that resilience, perseverance, determination, and the will to win dictate our outcomes, not the enviroments around us, even under the most difficult circumstances.
 
-I dedicate this page to inspiring feats of overcoming the odds as an inspiration that we have come a long way. These stories serve as a reminder, including for myself, that resilience, perseverance, determination, and the will to win dictate our outcomes, not the enviroments around us, even under the most difficult circumstances.  
+It is my sincere hope that we all tap into our unrealized potentials. I beleive there is so much more within each and every one of us.
 
+Life is fragile. Life is precious. You won't always be on top. You won't always be at the bottom. Life has a cyclic nature. You can't live forever, but your legacy might!
 
-It is my sincere hope that we all tap into our unrealized potentials. I beleive there is so much more within each and every one of us. 
-
-Life is fragile. Life is precious. You won't always be on top. You won't always be at the bottom. Life has a cyclic nature. You can't live forever, but your legacy might! 
-
-**Be humble. Be kind. Be bold. Take risks. Live life.** 
-
+**Be humble. Be kind. Be bold. Take risks. Live life.**
 
 ---
 
@@ -45,12 +40,14 @@ Life is fragile. Life is precious. You won't always be on top. You won't always 
 			</p>
 		</div>
 
-   The next time you're going through a difficult situation, remember the resilience of our ancestors and the challenges they overcame. Their resiliency and the will to survive reminds us that we, too, can endure and prevail 😉
-    </li>
-    <br>
-	<li> 
-		Stonehenge, located in the UK and approximately a two-hour drive from London, is estimated to be around 5,000 years old. It is one of the oldest monuments built by humans. Think about all the different rulers, kingdoms, wars, natural disasters, and everything else that has occurred over this vast span of time, and yet this structure still stands. Think about the legacy of this monument!
+The next time you're going through a difficult situation, remember the resilience of our ancestors and the challenges they overcame. Their resiliency and the will to survive reminds us that we, too, can endure and prevail 😉
+
+</li>
 <br>
+<li>
+Stonehenge, located in the UK and approximately a two-hour drive from London, is estimated to be around 5,000 years old. It is one of the oldest monuments built by humans. Think about all the different rulers, kingdoms, wars, natural disasters, and everything else that has occurred over this vast span of time, and yet this structure still stands. Think about the legacy of this monument!
+<br>
+
 <div style="text-align: center">
 			<img src="/assets/img/stonehenge.jpg" alt="Stonehenge" style="max-width: 60%; height: auto; border-radius: 8px;">
 			<p style="margin-top: 10px; font-size: 0.8em">
@@ -101,4 +98,4 @@ Leicester City defied all odds and logic to become the champions of the 2015/16 
 
 ---
 
-What inspires you? What legacy would you like to leave behind? 
+What inspires you? What legacy would you like to leave behind?

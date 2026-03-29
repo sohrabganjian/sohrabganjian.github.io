@@ -5,8 +5,8 @@
       <div class="row">
         <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
           {% if talk.date and talk.date != '' %}
-            <span 
-              class="badge font-weight-bold danger-color-dark text-uppercase align-middle badge-color" 
+            <span
+              class="badge font-weight-bold danger-color-dark text-uppercase align-middle badge-color"
               style="min-width: 75px;"
             >
               {{ talk.date }}
@@ -42,13 +42,13 @@
 </ul>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener('DOMContentLoaded', function () {
     // Find all rows in the list group
-    const rows = document.querySelectorAll(".list-group-item");
+    const rows = document.querySelectorAll('.list-group-item');
 
-    rows.forEach(row => {
-      const badge = row.querySelector(".badge-color");
-      const title = row.querySelector(".dynamic-title-color");
+    rows.forEach((row) => {
+      const badge = row.querySelector('.badge-color');
+      const title = row.querySelector('.dynamic-title-color');
 
       if (badge && title) {
         // Extract computed background color of the badge

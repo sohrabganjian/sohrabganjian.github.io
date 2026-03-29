@@ -1,7 +1,7 @@
 <div class="list-groups">
   {% assign section_key = data[0] %}
   {% assign section_items = site.data.resume[section_key] %}
-  
+
   {% for item in section_items %}
     <div class="list-group">
       <div class="event-subcategory" style="display: flex; align-items: center;">
@@ -50,10 +50,11 @@
                     <i class="fas fa-trophy trophy-icon" title="Prize Winner" style="font-size: 24px;"></i>
                   {% endif %}
                   <!-- Expand/Collapse Button -->
-                  <button 
-                    class="toggle-summary-btn" 
-                    style="margin-left: 10px; font-size: 0.85rem; padding: 2px 8px; cursor: pointer; background-color: #f8f9fa; border: 1px solid #ccc; border-radius: 3px;" 
-                    onclick="toggleSummary('{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}')">
+                  <button
+                    class="toggle-summary-btn"
+                    style="margin-left: 10px; font-size: 0.85rem; padding: 2px 8px; cursor: pointer; background-color: #f8f9fa; border: 1px solid #ccc; border-radius: 3px;"
+                    onclick="toggleSummary('{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}')"
+                  >
                     +
                   </button>
                 </h6>
@@ -76,10 +77,11 @@
                 <p class="ml-1 ml-md-4">{{ keyword.description }}</p>
                 <!-- Summary Dialog Box -->
                 {% if keyword.summary %}
-                  <div 
-                    id="summary-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" 
-                    class="summary-box" 
-                    style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+                  <div
+                    id="summary-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
+                    class="summary-box"
+                    style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: #f9f9f9;"
+                  >
                     <ul>
                       {% for point in keyword.summary %}
                         {% if point.nested_header and point.nested_items %}
@@ -111,12 +113,12 @@
   function toggleSummary(index) {
     const summaryBox = document.getElementById(`summary-${index}`);
     const toggleButton = document.querySelector(`.toggle-summary-btn[onclick="toggleSummary('${index}')"]`);
-    if (summaryBox.style.display === "none") {
-      summaryBox.style.display = "block";
-      toggleButton.textContent = "-";
+    if (summaryBox.style.display === 'none') {
+      summaryBox.style.display = 'block';
+      toggleButton.textContent = '-';
     } else {
-      summaryBox.style.display = "none";
-      toggleButton.textContent = "+";
+      summaryBox.style.display = 'none';
+      toggleButton.textContent = '+';
     }
   }
 </script>

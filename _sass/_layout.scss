@@ -44,9 +44,7 @@ body.sticky-bottom-footer {
  * Publications
  ******************************************************************************/
 
-
 // TODO: redefine publications layout.
-
 
 div.publication-item {
   position: relative;
@@ -61,7 +59,6 @@ div.publication-item::before {
   top: -0.47em; /* Adjust vertical position */
   font-size: 3rem; /* Increase size for better visibility */
 }
-
 
 div.talks-item ul {
   list-style: none; /* Remove default bullets */
@@ -84,10 +81,6 @@ div.talks-item ul li::before {
   line-height: 1; /* Ensure proper alignment */
   top: -0.25rem; /* Slightly adjust vertical alignment */
 }
-
-
-
-
 
 /*****************************************************************************
 * Projects
