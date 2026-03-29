@@ -1,18 +1,51 @@
 $(document).ready(function () {
-  // Let external links in jupyter notebooks open in new tab
-  let jupyterNotebooks = $(".jupyter-notebook-iframe-container");
-  jupyterNotebooks.each(function () {
-    let iframeBody = $(this).find("iframe").get(0).contentWindow.document.body;
-    // Get all <a> elements in the bodyElement
-    let links = $(iframeBody).find("a");
+  /**
+   * Notebook HTML is shown inside an <iframe>. Links without target="_blank"
+   * navigate *the iframe* to the URL. Many sites (arXiv, journals, etc.) forbid
+   * embedding via X-Frame-Options / CSP, so the iframe goes blank/gray with no
+   * in-frame "back". Opening externals in a new tab avoids that.
+   *
+   * Patches must run after the iframe loads — document.ready is often too early
+   * (previous code ran before body/links existed, so many <a> stayed default).
+   */
+  function patchNotebookLinks(doc) {
+    if (!doc || !doc.body) {
+      return;
+    }
+    $(doc.body)
+      .find("a[href]")
+      .each(function () {
+        const href = ($(this).attr("href") || "").trim();
+        if (!href || href.startsWith("#") || href.toLowerCase().startsWith("javascript:")) {
+          return;
+        }
+        $(this).attr({
+          target: "_blank",
+          rel: "noopener noreferrer",
+        });
+      });
+  }
 
-    // Loop through each <a> element
-    links.each(function () {
-      // Check if the <a> element has an 'href' attribute
-      if ($(this).attr("href")) {
-        // Set the 'target' attribute to '_blank' to open the link in a new tab/window
-        $(this).attr("target", "_blank");
+  $(".jupyter-notebook-iframe-container").each(function () {
+    const iframe = $(this).find("iframe").get(0);
+    if (!iframe) {
+      return;
+    }
+
+    const run = function () {
+      try {
+        const doc = iframe.contentDocument || iframe.contentWindow.document;
+        patchNotebookLinks(doc);
+      } catch (e) {
+        /* cross-origin iframe — cannot patch */
       }
-    });
+    };
+
+    // Iframe may already be loaded (bfcache / fast load)
+    if (iframe.contentDocument && iframe.contentDocument.readyState === "complete") {
+      run();
+    } else {
+      $(iframe).on("load", run);
+    }
   });
 });
