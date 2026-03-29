@@ -240,6 +240,12 @@ defaults:
 
 sass:
   style: compressed
+  quiet_deps: true
+  # Passed to sass-embedded by _plugins/sass_embedded_silence.rb (not stock Jekyll).
+  # Use silence_deprecations: [] to surface all Dart Sass deprecations again.
+  silence_deprecations:
+    - import
+    - global-builtin
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier

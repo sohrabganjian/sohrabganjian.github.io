@@ -14,5 +14,5 @@ Jekyll::Hooks.register :site, :after_init do |site|
   next unless File.directory?(dir)
 
   ENV["JUPYTER_CONFIG_DIR"] = dir
-  Jekyll.logger.info "Jupyter:", "JUPYTER_CONFIG_DIR => #{dir}"
+  Jekyll.logger.debug "Jupyter:", "JUPYTER_CONFIG_DIR => #{dir}"
 end

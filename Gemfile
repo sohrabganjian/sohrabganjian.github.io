@@ -1,4 +1,13 @@
 source 'https://rubygems.org'
+
+# Ruby 3.4+ will drop stdlib observer; jekyll-scholar loads it (quiet the preview warning on 3.3).
+gem 'observer'
+
+# Windows: avoids polling fallback warning from Jekyll file watcher.
+platforms :mingw, :x64_mingw, :mswin do
+  gem 'wdm', '>= 0.1.0'
+end
+
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'

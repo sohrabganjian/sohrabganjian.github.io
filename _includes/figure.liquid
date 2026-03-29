@@ -1,4 +1,5 @@
 {% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
+{% assign webp_srcset_ready = img_path | responsive_webp_complete %}
 {% assign parts = include.path | split: '.' %}
 {% assign ext = parts.last %}
 
@@ -13,7 +14,7 @@
       See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
       https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
     -->
-    {% if site.imagemagick.enabled %}
+    {% if site.imagemagick.enabled and webp_srcset_ready %}
       <source
         class="responsive-img-srcset"
         {% if ext == 'gif' or ext == 'jpeg' or ext == 'jpg' or ext == 'png' or ext == 'tiff' %}

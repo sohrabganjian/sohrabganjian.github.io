@@ -1,3 +1,6 @@
+# Jupyter (never commit local checkpoints)
+.ipynb_checkpoints/
+
 _site
 .bundle
 .sass-cache

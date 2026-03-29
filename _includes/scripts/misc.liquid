@@ -34,6 +34,10 @@
 
 <!-- Load Common JS -->
 <script src="{{ '/assets/js/no_defer.js' | relative_url | bust_file_cache }}"></script>
+<script>
+  /* Root-absolute Jupyter CSS for iframe injection (../css/ breaks under /blog/2026/...). */
+  window.alFolioJupyterCssUrl = "{{ '/assets/css/jupyter.css' | relative_url }}";
+</script>
 <script defer src="{{ '/assets/js/common.js' | relative_url | bust_file_cache }}"></script>
 <script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
 
