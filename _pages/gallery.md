@@ -50,6 +50,14 @@ figcaption small {
 <h1>Scholarly Pursuits</h1>
 
 <figure class="row mt-3">
+  <div class="col-12 col-md-8 offset-md-2 text-center">
+    <img src="{{ '/assets/img/Gallery/qiskit-fall-fest-2026-intro-qml.jpg' | relative_url }}" alt="Sohrab Ganjian presenting quantum computing concepts at Qiskit Fall Fest at the University of Ottawa" class="img-fluid" width="1920" height="2560" loading="lazy" style="width: 100%; max-width: 560px; aspect-ratio: 1 / 1; height: auto; object-fit: cover; object-position: center 60%;">
+    <figcaption>Presenting <a href="{{ '/assets/pdf/qiskit-fall-fest-2026-intro-qml.pdf' | relative_url }}">Introduction to Quantum Machine Learning</a> at Qiskit Fall Fest, University of Ottawa, 3 October 2026.</figcaption>
+  </div>
+</figure>
+
+
+<figure class="row mt-3">
   <div class="col-12 text-center">
     <img src="/assets/img/Gallery/2024IEEE-TPS.jpg" alt="Placeholder Image" class="img-fluid" style="max-width: 50%; height: auto;">
     <figcaption>2024 IEEE TPS Conference, Washington, D.C., October 2024</figcaption>

@@ -30,6 +30,16 @@
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
             {{ talk.event }}
           </h6>
+          {% if talk.slides_url or talk.materials_url %}
+            <p class="ml-1 ml-md-4 mb-2">
+              {% if talk.slides_url %}
+                <a href="{{ talk.slides_url | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Slides (PDF)</a>
+              {% endif %}
+              {% if talk.materials_url %}
+                <a href="{{ talk.materials_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true" style="color: #222;"></i> Tutorial materials</a>
+              {% endif %}
+            </p>
+          {% endif %}
           {% if talk.hosting_institute %}
             <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
               {{ talk.hosting_institute }}

@@ -258,6 +258,20 @@
   //   }
   // ],
   "Certificates": [
+    {
+      "name": "Quantum Programming Core",
+      "date": "2026-10",
+      "issuer": "D-Wave",
+      "url": "/assets/certificates/DWave-QuantumProgrammingCore_Certificate.pdf",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Road to Practitioner Program",
+      "date": "2026-06",
+      "issuer": "IBM",
+      "url": "https://www.credly.com/go/BGgoAHg1",
+      "icon": "fa-solid fa-clipboard-check"
+    },
     // {
     //   "name": "Machine Learning",
     //   "date": "2018-01-01",
@@ -463,6 +477,23 @@
     }
   ],
   "Talks": [
+    {
+      "title": "Introduction to Quantum Machine Learning",
+      "event": "Qiskit Fall Fest 2026",
+      "hosting_institute": "University of Ottawa",
+      "location": "Ottawa, ON, Canada",
+      "date": "October 3, 2026",
+      "url": "https://www.uoquantum.com/#/speakers",
+      "slides_url": "/assets/pdf/qiskit-fall-fest-2026-intro-qml.pdf"
+    },
+    {
+      "title": "Quantum Computing for Earth Observation",
+      "event": "XXV ISPRS Congress (tutorial co-instructor)",
+      "location": "Toronto, ON, Canada",
+      "date": "July 4, 2026",
+      "url": "https://www.isprs2026toronto.com/tutorial-session-information",
+      "materials_url": "https://github.com/MahkameSalimi/ISPRS-Tutorial"
+    },
     {
       "title": "Satellite Image Classification: Hybrid Quantum-Classical Approach",
       "event": "QUASAR End of Year Seminar",
