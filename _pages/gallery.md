@@ -52,7 +52,7 @@ figcaption small {
 <figure class="row mt-3">
   <div class="col-12 text-center">
     <img src="{{ '/assets/img/Gallery/qiskit-fall-fest-2026-intro-qml.jpg' | relative_url }}" alt="Sohrab Ganjian presenting quantum computing concepts at Qiskit Fall Fest at the University of Ottawa" class="img-fluid" width="1920" height="2560" loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 100%; max-width: 560px; aspect-ratio: 1 / 1; height: auto; object-fit: cover; object-position: center 60%;">
-    <figcaption style="max-width: 600px; margin-left: auto; margin-right: auto;">Presenting <a href="{{ '/assets/pdf/qiskit-fall-fest-2026-intro-qml.pdf' | relative_url }}">Introduction to Quantum Machine Learning</a> at Qiskit Fall Fest, University of Ottawa, 3 October 2026.</figcaption>
+    <figcaption style="max-width: 600px; margin-left: auto; margin-right: auto;">Presenting <a href="{{ '/assets/pdf/qiskit-fall-fest-2026-intro-qml.pdf' | relative_url }}">Introduction to Quantum Machine Learning</a> at Qiskit Fall Fest.<br>University of Ottawa, October 2026.</figcaption>
   </div>
 </figure>
 
