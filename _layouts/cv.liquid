@@ -27,7 +27,7 @@ layout: default
           <a class="anchor" id="{{ entry.title }}"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">
-              {{ site.section_titles[data[0]] | default: data[0] }}
+              {% if data[0] == 'Basics' %}Contact Information{% else %}{{ site.section_titles[data[0]] | default: data[0] }}{% endif %}
             </h3>
             <div>
               {% if entry.type == 'list' %}
@@ -86,7 +86,7 @@ layout: default
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">
-              {{ site.section_titles[data[0]] | default: data[0] }}
+              {% if data[0] == 'Basics' %}Contact Information{% else %}{{ site.section_titles[data[0]] | default: data[0] }}{% endif %}
             </h3>
             <div>
               {% case data[0] %}
